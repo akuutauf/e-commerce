@@ -1,0 +1,53 @@
+/* Fonts Style */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+    /* height: 2500px; */
+    background-color: #eef2ff !important;
+}
+
+/* Colors BG Theme */
+.bg-navbar {
+    background-color: #a2d2ff;
+}
+
+/* Colors Text Theme */
+.primary-text {
+    color: #000000;
+}
+
+.secondary-text {
+    color: #acacac;
+}
+
+.blue-text {
+    color: #00b0ff;
+}
+
+.orange-text {
+    color: #ffbc97;
+}
+
+/* Components */
+.btn-login {
+    font-weight: 600 !important;
+    text-decoration: none;
+    background-color: white;
+    color: #00b0ff;
+}
+
+.btn-login:hover {
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #00b0ff;
+    color: white;
+}
+
+.icon-size {
+    font-size: large;
+}
+
+.label-search {
+    position: absolute;
+}
