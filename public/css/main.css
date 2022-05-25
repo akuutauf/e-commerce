@@ -57,5 +57,15 @@ body {
 }
 
 /* Media Screen Responsive */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
+    #icon-cart {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #login-button {
+        position: relative;
+        margin-bottom: 20px;
+    }
 }
