@@ -26,7 +26,7 @@
                 <div class="mx-lg-5">
                     <a href="#"><i class="fa-solid fa-cart-shopping text-white icon-size"></i></a>
                 </div>
-                <a class="btn btn-login px-sm-4 mx-4 py-sm-1" href="#">LOGIN</a>
+                <a class="btn btn-login px-sm-4 py-sm-1" href="#">LOGIN</a>
             </div>
         </nav>
     </section>
