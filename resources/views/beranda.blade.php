@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Beranda | D-Shop</title>
+    <link rel="icon" type="image/png" href="{{ asset('icons/bagshop.svg') }}" />
+    <title>D-Shop | Beranda</title>
     {{-- Font awesome cdn --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {{-- Css custom --}}
@@ -13,9 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    {{-- Navabar --}}
+    {{-- Navabar Start --}}
     <section id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top shadow">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top shadow  ">
             <div class="container d-flex justify-content-lg-around align-items-center">
                 <a class="navbar-brand font-weight-bold" href="/welcome">D-Shop</a>
                     <form class="form-inline my-2 mx-auto search-bar">
@@ -29,7 +30,98 @@
             </div>
         </nav>
     </section>
+    {{-- Navbar End --}}
 
+    {{-- Kategori Produk Start --}}
+    <section id="kategori" class="mt-lg-5 pt-lg-5">
+        <div class="container mt-3">
+            <h3>Sepatu Olahraga</h3>
+        </div>
+        <div class="container bg-white rounded-sm shadow">
+            <div class="row py-4 d-flex justify-content-around px-2">
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <hr>
+        </div>
+        <div class="container">
+            <h3>Hoodie</h3>
+        </div>
+        <div class="container bg-white rounded-sm shadow">
+            <div class="row py-4 d-flex justify-content-around px-2">
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Kategori Produk End --}}
+
+    {{-- Footer --}}
+    <div class="container my-5">
+
+    </div>
     {{-- Font awesome ions kit --}}
     <script src="https://kit.fontawesome.com/dee340b044.js" crossorigin="anonymous"></script>
     {{-- Bootstrap JS --}}

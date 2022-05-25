@@ -3,13 +3,13 @@
 
 body {
     font-family: "Lato", sans-serif;
-    /* height: 2500px; */
+    overflow-x: hidden;
     background-color: #eef2ff !important;
 }
 
 /* Colors BG Theme */
 .bg-navbar {
-    background-color: #a2d2ff;
+    background-color: #5aafff;
 }
 
 /* Colors Text Theme */
@@ -40,7 +40,7 @@ body {
 .btn-login:hover {
     font-weight: 600;
     text-decoration: none;
-    background-color: #00b0ff;
+    background-color: #a2d2ff;
     color: white;
 }
 
@@ -50,4 +50,8 @@ body {
 
 .label-search {
     position: absolute;
+}
+
+.rounded-sm {
+    border-radius: 10px;
 }
