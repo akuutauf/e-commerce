@@ -153,6 +153,64 @@
                 </div>
             </div>
         </div>
+        <div class="container my-5">
+            <hr>
+        </div>
+        <div class="container">
+            <h3>Trousers</h3>
+        </div>
+        <div class="container bg-white rounded-sm shadow">
+            <div class="row py-4 d-flex justify-content-around px-2">
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/jeans.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="h6 card-text fw-bold">Celana Jeans - Premium</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 170.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 500+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/Hoodie-black.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="h6 card-text fw-bold">Hoodie Polos - Black Editions</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 180.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 2rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/Hoodie-Army.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="h6 card-text fw-bold">Hoodie Polos - Army Limited Edition</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 170.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/Hoodie-suprame.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="h6 card-text fw-bold">Hoodie Suprame - Red Edition</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 200.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1.2rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC"> Banyuwangi</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
     </section>
     {{-- Kategori Produk End --}}
 
