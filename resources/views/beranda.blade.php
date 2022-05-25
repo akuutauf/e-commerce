@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     {{-- Css bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
     {{-- Navabar Start --}}
@@ -48,7 +49,23 @@
                     <div class="card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
+                          <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
+                          <p class="card-text fw-bold">Toko Setia</p>
+                          <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
+                          <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                        </div>
+                      </div>    
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
+                            <p class="card-text fw-bold">Toko Setia</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
@@ -56,7 +73,11 @@
                     <div class="card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
+                            <p class="card-text fw-bold">Toko Setia</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
@@ -64,15 +85,11 @@
                     <div class="card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
+                            <p class="card-text fw-bold">Toko Setia</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
@@ -90,7 +107,11 @@
                     <div class="card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text fw-bold">Hoodie Polos - White Edition</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 150.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1.5rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
@@ -98,7 +119,11 @@
                     <div class="card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text fw-bold">Hoodie Polos - White Edition</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 150.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1.5rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
@@ -106,7 +131,11 @@
                     <div class="card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text fw-bold">Hoodie Polos - White Edition</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 150.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1.5rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
@@ -114,7 +143,11 @@
                     <div class="card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text fw-bold">Hoodie Polos - White Edition</p>
+                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 150.000</p>
+                            <p class="card-text fw-bold">Osingdeles</p>
+                            <p class="card-text" style="color: #FFBC97">Terjual 1.5rb+</p>
+                            <p class="card-text text-right" style="color: #ACACAC"> Banyuwangi</p>
                         </div>
                       </div>
                 </div>
