@@ -24,7 +24,7 @@
     <section id="navbar">
         <nav class="navbar navbar-expand-md navbar-dark bg-navbar fixed-top shadow-card  ">
             <div class="container d-flex justify-content-lg-around align-items-center">
-                <a class="navbar-brand font-weight-bold" href="/welcome">D-Shop</a>
+                <a class="navbar-brand font-weight-bold" href="/about">D-Shop</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
                     <div id="icon-cart" class="mx-lg-5">
                         <a href="#"><i class="fa-solid fa-cart-shopping text-white icon-size"></i></a>
                     </div>
-                    <a id="login-button" class="btn btn-login px-sm-4 py-sm-1" href="/about">LOGIN</a>
+                    <a id="login-button" class="btn btn-login px-sm-4 py-sm-1" href="#">LOGIN</a>
                 </div>
             </div>
         </nav>

@@ -148,7 +148,7 @@
                     <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/hoodie_04.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text">Hoodie Suprame - Red Edition</p>
+                            <p class="h6 card-text">Hoodie Supreme - Red Edition</p>
                             <p class="card-text product-price">Rp. 200.000</p>
                             <div class="row">
                                 <div class="col">

@@ -6,7 +6,22 @@ use Illuminate\Http\Request;
 
 class BerandaController extends Controller
 {
-    // produk sepatu
+    // produk sepatu (array dua dimensi)
+    public function produkSepatu()
+    {
+        $product = array(
+            'items' =>
+            [
+                ['Sneakers Sports - Green Edition Adidas', 300000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/shoes_01.jpg')],
+                ['Sneakers Sports - Green Docker Edition Adidas', 300000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/shoes_04.jpg')],
+                ['Sneakers Sports - Featuring Collab Adidas Nike', 370000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/shoes_03.jpg')],
+                ['Sneakers Sports - Black Edition Adidas', 355000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/shoes_02.jpg')],
+            ]
+        );
+        return view('beranda')->with($product);
+    }
+
+    // produk sepatu (array multi dimensi)
     public function listSepatu()
     {
         $productSepatu = array(
@@ -50,7 +65,7 @@ class BerandaController extends Controller
         return view('beranda')->with($productSepatu);
     }
 
-    // produk hoodie
+    // produk hoodie (array muti dimensi)
     public function listHoodie()
     {
         $productHoodie = array(
@@ -94,7 +109,7 @@ class BerandaController extends Controller
         return view('beranda')->with($productHoodie);
     }
 
-    // produk topi
+    // produk topi (array multi dimensi)
     public function listTopi()
     {
         $productTopi = array(

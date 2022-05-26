@@ -14,16 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 // routes default
+Route::get('/', function () {
+    return view('beranda');
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
 Route::get('/about', function () {
     return view('about');
 });
 
-// controller routes
-
-Route::get('/', 'App\Http\Controllers\BerandaController@listSepatu');
-Route::get('/', 'App\Http\Controllers\BerandaController@listHoodie');
-Route::get('/', 'App\Http\Controllers\BerandaController@listTopi');
+// controller beranda
+Route::get('/', 'App\Http\Controllers\BerandaController@produkSepatu');
 
