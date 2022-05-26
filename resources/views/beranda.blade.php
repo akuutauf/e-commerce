@@ -41,29 +41,17 @@
     {{-- Kategori Produk Start --}}
     <section id="kategori" class="mt-lg-5 pt-lg-5">
         <div id="konten" class="container mt-3">
-            <h3>Sepatu Olahraga</h3>
+            <h3>Shoes</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
             <div class="row py-4 px-2">
                 <div class="col d-flex justify-content-center">
-                    <div class="card first-card shadow-card" style="width: 15.5rem;">
+                    <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
+                          <p class="h6 card-text">Sneakers Sports - Green Edition Adidas</p>
                           <p class="card-text product-price">Rp. 300.000</p>
-                          <p class="h6 card-text">Toko Setia</p>
-                          <p class="card-text total-sales">Terjual 1rb+</p>
-                          <p class="card-text text-right shop-location">Banyuwangi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="card first-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
-                          <p class="card-text product-price">Rp. 300.000</p>
-                          <p class="h6 card-text">Toko Setia</p>
+                          <p class="h6 card-text">FashionStore</p>
                           <p class="card-text total-sales">Terjual 1rb+</p>
                           <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
@@ -71,23 +59,35 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('img/shoes_04.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
+                          <p class="h6 card-text">Sneakers Sports - Green Docker Edition Adidas</p>
                           <p class="card-text product-price">Rp. 300.000</p>
-                          <p class="h6 card-text">Toko Setia</p>
+                          <p class="h6 card-text">FashionStore</p>
                           <p class="card-text total-sales">Terjual 1rb+</p>
                           <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                     </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card last-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_03.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
+                          <p class="h6 card-text">Sneakers Sports - Featuring Collab Adidas Nike</p>
                           <p class="card-text product-price">Rp. 300.000</p>
-                          <p class="h6 card-text">Toko Setia</p>
+                          <p class="h6 card-text">FashionStore</p>
+                          <p class="card-text total-sales">Terjual 1rb+</p>
+                          <p class="card-text text-right shop-location">Banyuwangi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/shoes_02.jpg') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="h6 card-text">Sneakers Sports - Black Edition Adidas</p>
+                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="h6 card-text">FashionStore</p>
                           <p class="card-text total-sales">Terjual 1rb+</p>
                           <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
@@ -104,24 +104,24 @@
         <div id="konten" class="container bg-white rounded-sm shadow-card">
             <div class="row py-4 px-2">
                 <div class="col d-flex justify-content-center">
-                    <div class="card first-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/Hoodie.jpg') }}" alt="Card image cap">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/hoodie_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Hoodie Polos - White Edition</p>
                             <p class="card-text product-price">Rp. 150.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 1.5rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card first-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/Hoodie-black.jpg') }}" alt="Card image cap">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/hoodie_02.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text">Hoodie Polos - Black Editions</p>
+                            <p class="h6 card-text">Hoodie Polos - Blue Docker Edition Wake</p>
                             <p class="card-text product-price">Rp. 180.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 2rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
@@ -129,25 +129,25 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/Hoodie-Army.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('img/hoodie_03.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Hoodie Polos - Army Limited Edition</p>
                             <p class="card-text product-price">Rp. 170.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 1rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card last-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/Hoodie-suprame.jpg') }}" alt="Card image cap">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/hoodie_04.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Hoodie Suprame - Red Edition</p>
                             <p class="card-text product-price">Rp. 200.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 1.2rb+</p>
-                            <p class="card-text text-right shop-location"> Banyuwangi</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
@@ -157,29 +157,29 @@
             <hr>
         </div>
         <div id="konten" class="container">
-            <h3>Trousers</h3>
+            <h3>Hat</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
             <div class="row py-4 px-2">
                 <div class="col d-flex justify-content-center">
-                    <div class="card first-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/jeans.jpg') }}" alt="Card image cap">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/hat_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Celana Jeans - Premium Docker Edition</p>
                             <p class="card-text product-price">Rp. 170.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 500</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card first-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/Hoodie-black.jpg') }}" alt="Card image cap">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/hat_02.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Hoodie Polos - Black Editions</p>
                             <p class="card-text product-price">Rp. 180.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 2rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
@@ -187,25 +187,25 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/Hoodie-Army.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('img/hat_03.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Hoodie Polos - Army Limited Edition</p>
                             <p class="card-text product-price">Rp. 170.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 1rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card last-card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/Hoodie-suprame.jpg') }}" alt="Card image cap">
+                    <div class="card shadow-card" style="width: 15.5rem;">
+                        <img class="card-img-top" src="{{ asset('img/hat_04.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Hoodie Suprame - Red Edition</p>
                             <p class="card-text product-price">Rp. 200.000</p>
-                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 1.2rb+</p>
-                            <p class="card-text text-right shop-location"> Banyuwangi</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
