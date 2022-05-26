@@ -56,16 +56,62 @@ body {
     border-radius: 10px;
 }
 
+.shadow-card {
+    box-shadow: 1px 1px 1px 1px rgba(12, 12, 12, 0.2);
+}
+.product-price {
+    color: #00b0ff;
+    font-weight: 400;
+}
+
+.total-sales {
+    color: #f7d716;
+    font-weight: 400;
+}
+
+.shop-location {
+    color: #465881;
+    font-weight: 400;
+}
+
 /* Media Screen Responsive */
+@media only screen and (max-width: 1200px) {
+    .last-card {
+        margin-top: 1.5rem;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     #icon-cart {
         visibility: hidden;
     }
-}
 
+    #kategori {
+        margin-top: 6rem;
+    }
+
+    #konten {
+        max-width: 70%;
+    }
+    .card {
+        margin-top: 1.5rem;
+    }
+    .first-card {
+        margin-top: 0rem;
+    }
+    .last-card {
+        margin-top: 1.5rem;
+    }
+}
 @media only screen and (max-width: 768px) {
     #login-button {
         position: relative;
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 818px) {
+    #konten {
+        max-width: 50%;
     }
 }

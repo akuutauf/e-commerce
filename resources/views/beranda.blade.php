@@ -17,7 +17,7 @@
 <body>
     {{-- Navabar Start --}}
     <section id="navbar">
-        <nav class="navbar navbar-expand-md navbar-dark bg-navbar fixed-top shadow  ">
+        <nav class="navbar navbar-expand-md navbar-dark bg-navbar fixed-top shadow-card  ">
             <div class="container d-flex justify-content-lg-around align-items-center">
                 <a class="navbar-brand font-weight-bold" href="/welcome">D-Shop</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,172 +40,172 @@
 
     {{-- Kategori Produk Start --}}
     <section id="kategori" class="mt-lg-5 pt-lg-5">
-        <div class="container mt-3">
+        <div id="konten" class="container mt-3">
             <h3>Sepatu Olahraga</h3>
         </div>
-        <div class="container bg-white rounded-sm shadow">
-            <div class="row py-4 d-flex justify-content-around px-2">
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+        <div id="konten" class="container bg-white rounded-sm shadow-card">
+            <div class="row py-4 px-2">
+                <div class="col d-flex justify-content-center">
+                    <div class="card first-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
-                          <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
-                          <p class="card-text fw-bold">Toko Setia</p>
-                          <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
-                          <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
+                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="h6 card-text">Toko Setia</p>
+                          <p class="card-text total-sales">Terjual 1rb+</p>
+                          <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card first-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
-                            <p class="card-text fw-bold">Toko Setia</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
+                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="h6 card-text">Toko Setia</p>
+                          <p class="card-text total-sales">Terjual 1rb+</p>
+                          <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
-                            <p class="card-text fw-bold">Toko Setia</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
+                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="h6 card-text">Toko Setia</p>
+                          <p class="card-text total-sales">Terjual 1rb+</p>
+                          <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card last-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/shoes_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text fw-bold">Sneakers Sports - Green Couple</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 300.000</p>
-                            <p class="card-text fw-bold">Toko Setia</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                          <p class="h6 card-text">Sneakers Sports - Green Couple</p>
+                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="h6 card-text">Toko Setia</p>
+                          <p class="card-text total-sales">Terjual 1rb+</p>
+                          <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container my-5">
+        <div id="konten" class="container my-5">
             <hr>
         </div>
-        <div class="container">
+        <div id="konten" class="container">
             <h3>Hoodie</h3>
         </div>
-        <div class="container bg-white rounded-sm shadow">
-            <div class="row py-4 d-flex justify-content-around px-2">
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+        <div id="konten" class="container bg-white rounded-sm shadow-card">
+            <div class="row py-4 px-2">
+                <div class="col d-flex justify-content-center">
+                    <div class="card first-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Hoodie Polos - White Edition</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 150.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1.5rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                            <p class="h6 card-text">Hoodie Polos - White Edition</p>
+                            <p class="card-text product-price">Rp. 150.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 1.5rb+</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card first-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie-black.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Hoodie Polos - Black Editions</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 180.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 2rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                            <p class="h6 card-text">Hoodie Polos - Black Editions</p>
+                            <p class="card-text product-price">Rp. 180.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 2rb+</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie-Army.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Hoodie Polos - Army Limited Edition</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 170.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                            <p class="h6 card-text">Hoodie Polos - Army Limited Edition</p>
+                            <p class="card-text product-price">Rp. 170.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 1rb+</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card last-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie-suprame.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Hoodie Suprame - Red Edition</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 200.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1.2rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC"> Banyuwangi</p>
+                            <p class="h6 card-text">Hoodie Suprame - Red Edition</p>
+                            <p class="card-text product-price">Rp. 200.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 1.2rb+</p>
+                            <p class="card-text text-right shop-location"> Banyuwangi</p>
                         </div>
                       </div>
                 </div>
             </div>
         </div>
-        <div class="container my-5">
+        <div id="konten" class="container my-5">
             <hr>
         </div>
-        <div class="container">
+        <div id="konten" class="container">
             <h3>Trousers</h3>
         </div>
-        <div class="container bg-white rounded-sm shadow">
-            <div class="row py-4 d-flex justify-content-around px-2">
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+        <div id="konten" class="container bg-white rounded-sm shadow-card">
+            <div class="row py-4 px-2">
+                <div class="col d-flex justify-content-center">
+                    <div class="card first-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/jeans.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Celana Jeans - Premium</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 170.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 500+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                            <p class="h6 card-text">Celana Jeans - Premium Docker Edition</p>
+                            <p class="card-text product-price">Rp. 170.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 500+</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card first-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie-black.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Hoodie Polos - Black Editions</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 180.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 2rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                            <p class="h6 card-text">Hoodie Polos - Black Editions</p>
+                            <p class="card-text product-price">Rp. 180.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 2rb+</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie-Army.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Hoodie Polos - Army Limited Edition</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 170.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC">Banyuwangi</p>
+                            <p class="h6 card-text">Hoodie Polos - Army Limited Edition</p>
+                            <p class="card-text product-price">Rp. 170.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 1rb+</p>
+                            <p class="card-text text-right shop-location">Banyuwangi</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 15.5rem;">
+                <div class="col d-flex justify-content-center">
+                    <div class="card last-card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/Hoodie-suprame.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text fw-bold">Hoodie Suprame - Red Edition</p>
-                            <p class="card-text fw-bold" style="color: #00B0FF">Rp. 200.000</p>
-                            <p class="card-text fw-bold">Osingdeles</p>
-                            <p class="card-text" style="color: #FFBC97">Terjual 1.2rb+</p>
-                            <p class="card-text text-right" style="color: #ACACAC"> Banyuwangi</p>
+                            <p class="h6 card-text">Hoodie Suprame - Red Edition</p>
+                            <p class="card-text product-price">Rp. 200.000</p>
+                            <p class="h6 card-text">Osingdeles</p>
+                            <p class="card-text total-sales">Terjual 1.2rb+</p>
+                            <p class="card-text text-right shop-location"> Banyuwangi</p>
                         </div>
                       </div>
                 </div>
