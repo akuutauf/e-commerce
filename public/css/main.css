@@ -72,6 +72,15 @@ body {
 .shop-location {
     color: #465881;
     font-weight: 400;
+    font-size: 12.5px;
+}
+
+.name-shop {
+    font-weight: 600;
+}
+
+#nama-toko {
+    font-weight: 400 !important;
 }
 
 /* Media Screen Responsive */
