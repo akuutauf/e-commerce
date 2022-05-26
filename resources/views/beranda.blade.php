@@ -62,7 +62,7 @@
                         <img class="card-img-top" src="{{ asset('img/shoes_04.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                           <p class="h6 card-text">Sneakers Sports - Green Docker Edition Adidas</p>
-                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="card-text product-price">Rp. 370.000</p>
                           <p class="h6 card-text">FashionStore</p>
                           <p class="card-text total-sales">Terjual 1rb+</p>
                           <p class="card-text text-right shop-location">Banyuwangi</p>
@@ -74,7 +74,7 @@
                         <img class="card-img-top" src="{{ asset('img/shoes_03.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                           <p class="h6 card-text">Sneakers Sports - Featuring Collab Adidas Nike</p>
-                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="card-text product-price">Rp. 350.000</p>
                           <p class="h6 card-text">FashionStore</p>
                           <p class="card-text total-sales">Terjual 1rb+</p>
                           <p class="card-text text-right shop-location">Banyuwangi</p>
@@ -86,7 +86,7 @@
                         <img class="card-img-top" src="{{ asset('img/shoes_02.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                           <p class="h6 card-text">Sneakers Sports - Black Edition Adidas</p>
-                          <p class="card-text product-price">Rp. 300.000</p>
+                          <p class="card-text product-price">Rp. 355.000</p>
                           <p class="h6 card-text">FashionStore</p>
                           <p class="card-text total-sales">Terjual 1rb+</p>
                           <p class="card-text text-right shop-location">Banyuwangi</p>
@@ -214,10 +214,11 @@
     </section>
     {{-- Kategori Produk End --}}
 
+
+    <!-- Start Footer -->
     <div id="konten" class="container my-5">
         <hr>
     </div>
-    <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
@@ -243,9 +244,9 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none text-white" href="#">Sepatu Olahraga</a></li><br>
+                        <li><a class="text-decoration-none text-white" href="#">Shoes</a></li><br>
                         <li><a class="text-decoration-none text-white" href="#">Hoodie</a></li><br>
-                        <li><a class="text-decoration-none text-white" href="#">Topi</a></li><br>
+                        <li><a class="text-decoration-none text-white" href="#">Hat</a></li><br>
                         {{-- <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
                         <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
                         <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
@@ -256,11 +257,11 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none text-white" href="#">Home</a></li>
-                        <li><a class="text-decoration-none text-white" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none text-white" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none text-white" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none text-white" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Home</a></li><br>
+                        <li><a class="text-decoration-none text-white" href="#">About Us</a></li><br>
+                        <li><a class="text-decoration-none text-white" href="#">Shop Locations</a></li><br>
+                        <li><a class="text-decoration-none text-white" href="#">FAQs</a></li><br>
+                        <li><a class="text-decoration-none text-white" href="#">Contact</a></li><br>
                     </ul>
                 </div>
 
@@ -282,7 +283,7 @@
                             <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            <a class="text-light text-decoration-none" target="_blank" href="https://api.whatsapp.com/"><i class="fab fa-whatsapp fa-lg fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -290,7 +291,7 @@
                     <label class="sr-only" for="subscribeEmail">Email address</label>
                     <div class="input-group mb-2">
                         <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
-                        <div class="input-group-text btn-primary text-black">Subscribe</div>
+                        <div class="input-group-text btn-primary text-black">Send</div>
                     </div>
                 </div>
             </div>
