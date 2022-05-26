@@ -21,18 +21,19 @@ class BerandaController extends Controller
         return view('beranda')->with($product);
     }
 
-    //produk Hoodie (array dua dimensi)
-    // public function produkHoodie(){
-    //     $product1 = array(
-    //         'items1' => [
-    //             ['Hoodie Polos - White Edition', 150000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_01.jpg')],
-    //             ['Hoodie Polos - Blue Docker Edition Wake', 180000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_02.jpg')],
-    //             ['Hoodie Polos - Army Limited Edition', 170000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_03.jpg')],
-    //             ['Hoodie Supreme - Red Edition', 200000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_04.jpg')],
-    //         ]
-    //     );
-    //     return view('beranda')->with($product1);
-    // }
+    // produk Hoodie (array dua dimensi)
+    public function produkHoodie()
+    {
+        $product = array(
+            'items' => [
+                ['Hoodie Polos - White Edition', 150000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_01.jpg')],
+                ['Hoodie Polos - Blue Docker Edition Wake', 180000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_02.jpg')],
+                ['Hoodie Polos - Army Limited Edition', 170000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_03.jpg')],
+                ['Hoodie Supreme - Red Edition', 200000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hoodie_04.jpg')],
+            ]
+        );
+        return view('beranda')->with($product);
+    }
 
     // produk sepatu (array multi dimensi)
     public function listSepatu()
