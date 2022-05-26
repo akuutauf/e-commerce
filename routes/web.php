@@ -19,4 +19,6 @@ Route::get('/welcome', function () {
 });
 
 // controller routes
-Route::get('/', 'App\Http\Controllers\BerandaController@listProduk');
+Route::get('/', 'App\Http\Controllers\BerandaController@listSepatu');
+Route::get('/', 'App\Http\Controllers\BerandaController@listHoodie');
+Route::get('/', 'App\Http\Controllers\BerandaController@listTopi');
