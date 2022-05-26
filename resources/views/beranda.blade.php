@@ -165,8 +165,8 @@
                     <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/hat_01.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text">Celana Jeans - Premium Docker Edition</p>
-                            <p class="card-text product-price">Rp. 170.000</p>
+                            <p class="h6 card-text">Breakout hat - Black Edition Fashionstore</p>
+                            <p class="card-text product-price">Rp. 100.000</p>
                             <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 500</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
@@ -177,8 +177,8 @@
                     <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/hat_02.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text">Hoodie Polos - Black Editions</p>
-                            <p class="card-text product-price">Rp. 180.000</p>
+                            <p class="h6 card-text">Teenager Hat - White Edition Fashionstore</p>
+                            <p class="card-text product-price">Rp. 100.000</p>
                             <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 2rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
@@ -189,8 +189,8 @@
                     <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/hat_03.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text">Hoodie Polos - Army Limited Edition</p>
-                            <p class="card-text product-price">Rp. 170.000</p>
+                            <p class="h6 card-text">Underground Hat - Black Edition</p>
+                            <p class="card-text product-price">Rp. 80.000</p>
                             <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 1rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
@@ -201,8 +201,8 @@
                     <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/hat_04.jpg') }}" alt="Card image cap">
                         <div class="card-body">
-                            <p class="h6 card-text">Hoodie Suprame - Red Edition</p>
-                            <p class="card-text product-price">Rp. 200.000</p>
+                            <p class="h6 card-text">Custom Your Own Hat - Fashionstore</p>
+                            <p class="card-text product-price">Rp. 120.000</p>
                             <p class="h6 card-text">FashionStore</p>
                             <p class="card-text total-sales">Terjual 1.2rb+</p>
                             <p class="card-text text-right shop-location">Banyuwangi</p>
