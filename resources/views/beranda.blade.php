@@ -7,9 +7,9 @@
             <h3>Shoes</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            @if (count($items) > 0)
+            @if (count($shoes) > 0)
                 <div class="row py-4 px-2">
-                    @foreach ($items as $item)
+                    @foreach ($shoes as $item)
                         <div class="col d-flex justify-content-center">
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
@@ -41,79 +41,32 @@
             <h3>Hoodie</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            <div class="row py-4 px-2">
-
-                <div class="col d-flex justify-content-center">
-                    <div class="card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/hoodie_01.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="h6 card-text">Hoodie Polos - White Edition</p>
-                            <p class="card-text product-price">Rp. 150.000</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="h6 card-text">FashionStore<br><span class="card-text total-sales">Terjual
-                                            1rb+</span></p>
-                                </div>
-                                <div class="col">
-                                    <p class="card-text text-right shop-location">Banyuwangi</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/hoodie_02.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="h6 card-text">Hoodie Polos - Blue Docker Edition Wake</p>
-                            <p class="card-text product-price">Rp. 180.000</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="h6 card-text">FashionStore<br><span class="card-text total-sales">Terjual
-                                            1rb+</span></p>
-                                </div>
-                                <div class="col">
-                                    <p class="card-text text-right shop-location">Banyuwangi</p>
+            @if (count($hoodie) > 0)
+                <div class="row py-4 px-2">
+                    @foreach ($hoodie as $item1)
+                        <div class="col d-flex justify-content-center">
+                            <div class="card shadow-card" style="width: 15.5rem;">
+                                <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="h6 card-text">{{ $item1[0] }}</p>
+                                    <p class="card-text product-price">Rp. {{ $item1[1] }}</p>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <p class="card-text name-shop">{{ $item1[2] }}<br><span
+                                                    class="card-text total-sales">Terjual
+                                                    {{ $item1[3] }}</span></p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p class="card-text text-right shop-location mt-4">
+                                                {{ $item1[4] }}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/hoodie_03.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="h6 card-text">Hoodie Polos - Army Limited Edition</p>
-                            <p class="card-text product-price">Rp. 170.000</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="h6 card-text">FashionStore<br><span class="card-text total-sales">Terjual
-                                            1rb+</span></p>
-                                </div>
-                                <div class="col">
-                                    <p class="card-text text-right shop-location">Banyuwangi</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="card shadow-card" style="width: 15.5rem;">
-                        <img class="card-img-top" src="{{ asset('img/hoodie_04.jpg') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="h6 card-text">Hoodie Supreme - Red Edition</p>
-                            <div class="col">
-                                <p class="h6 card-text">FashionStore<br><span class="card-text total-sales">Terjual
-                                        1rb+</span></p>
-                            </div>
-                            <div class="col">
-                                <p class="card-text text-right shop-location">Banyuwangi</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            @endif
         </div>
         <div id="konten" class="container my-5">
             <hr>
@@ -122,7 +75,33 @@
             <h3>Hat</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            <div class="row py-4 px-2">
+            @if (count($hat) > 0)
+                <div class="row py-4 px-2">
+                    @foreach ($hat as $item2)
+                        <div class="col d-flex justify-content-center">
+                            <div class="card shadow-card" style="width: 15.5rem;">
+                                <img class="card-img-top" src="{{ $item2[5] }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="h6 card-text">{{ $item2[0] }}</p>
+                                    <p class="card-text product-price">Rp. {{ $item2[1] }}</p>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <p class="card-text name-shop">{{ $item2[2] }}<br><span
+                                                    class="card-text total-sales">Terjual
+                                                    {{ $item2[3] }}</span></p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p class="card-text text-right shop-location mt-4">
+                                                {{ $item2[4] }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
+            {{-- <div class="row py-4 px-2">
                 <div class="col d-flex justify-content-center">
                     <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/hat_01.jpg') }}" alt="Card image cap">
@@ -195,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
     {{-- Kategori Produk End --}}
