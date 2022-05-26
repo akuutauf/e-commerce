@@ -28,4 +28,5 @@ Route::get('/about', function () {
 
 // controller beranda
 Route::get('/', 'App\Http\Controllers\BerandaController@produkSepatu');
+// Route::get('/', 'App\Http\Controllers\BerandaController@produkHoodie');
 

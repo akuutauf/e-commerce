@@ -102,20 +102,18 @@
                         <img class="card-img-top" src="{{ asset('img/hoodie_04.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="h6 card-text">Hoodie Supreme - Red Edition</p>
-                            <p class="card-text product-price">Rp. 200.000</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="h6 card-text">FashionStore<br><span class="card-text total-sales">Terjual
-                                            1rb+</span></p>
-                                </div>
-                                <div class="col">
-                                    <p class="card-text text-right shop-location">Banyuwangi</p>
-                                </div>
+                            <div class="col">
+                                <p class="h6 card-text">FashionStore<br><span class="card-text total-sales">Terjual
+                                        1rb+</span></p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text text-right shop-location">Banyuwangi</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div id="konten" class="container my-5">
             <hr>
