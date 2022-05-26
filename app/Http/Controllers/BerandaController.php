@@ -17,7 +17,7 @@ class BerandaController extends Controller
                 'namaToko' => "Fashion Store",
                 'terjual' => "Terjual 1rb+",
                 'lokasi' => "Banyuwangi",
-                'fotoProduk' => "img/shoes_01.jpg",
+                'fotoProduk' => "asset('img/shoes_01.jpg')",
             ),
             'Sepatu2' => array(
                 'id' => "2",
@@ -26,7 +26,7 @@ class BerandaController extends Controller
                 'namaToko' => "Fashion Store",
                 'terjual' => "Terjual 1rb+",
                 'lokasi' => "Banyuwangi",
-                'fotoProduk' => "img/shoes_04.jpg",
+                'fotoProduk' => "asset('img/shoes_04.jpg')",
             ),
             'Sepatu3' => array(
                 'id' => "3",
@@ -35,7 +35,7 @@ class BerandaController extends Controller
                 'namaToko' => "Fashion Store",
                 'terjual' => "Terjual 1rb+",
                 'lokasi' => "Banyuwangi",
-                'fotoProduk' => "img/shoes_03.jpg",
+                'fotoProduk' => "asset('img/shoes_03.jpg')",
             ),
             'Sepatu4' => array(
                 'id' => "4",
@@ -44,7 +44,7 @@ class BerandaController extends Controller
                 'namaToko' => "Fashion Store",
                 'terjual' => "Terjual 1rb+",
                 'lokasi' => "Banyuwangi",
-                'fotoProduk' => "img/shoes_02.jpg",
+                'fotoProduk' => "asset('img/shoes_02.jpg')",
             ),
         );
         return view('beranda')->with($productSepatu);
@@ -61,7 +61,7 @@ class BerandaController extends Controller
                 'namaToko' => "FashionStore",
                 'totalPenjualan' => "Terjual 1rb+",
                 'lokasiToko' => "Banyuwangi",
-                'fotoProduk' => "img/hoodie_01.jpg",
+                'fotoProduk' => "asset('img/hoodie_01.jpg')",
             ),
             'hoodie2' => array(
                 'idProduk' => "2",
@@ -70,7 +70,7 @@ class BerandaController extends Controller
                 'namaToko' => "FashionStore",
                 'totalPenjualan' => "Terjual 1rb+",
                 'lokasiToko' => "Banyuwangi",
-                'fotoProduk' => "img/hoodie_02.jpg",
+                'fotoProduk' => "asset('img/hoodie_02.jpg')",
             ),
             'hoodie3' => array(
                 'idProduk' => "3",
@@ -79,7 +79,7 @@ class BerandaController extends Controller
                 'namaToko' => "FashionStore",
                 'totalPenjualan' => "Terjual 1rb+",
                 'lokasiToko' => "Banyuwangi",
-                'fotoProduk' => "img/hoodie_03.jpg",
+                'fotoProduk' => "asset('img/hoodie_03.jpg')",
             ),
             'hoodie4' => array(
                 'idProduk' => "4",
@@ -88,7 +88,7 @@ class BerandaController extends Controller
                 'namaToko' => "FashionStore",
                 'totalPenjualan' => "Terjual 1rb",
                 'lokasiToko' => "Banyuwangi",
-                'fotoProduk' => "img/hoodie_04.jpg",
+                'fotoProduk' => "asset('img/hoodie_04.jpg')",
             ),
         );
         return view('beranda')->with($productHoodie);
