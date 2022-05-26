@@ -90,6 +90,7 @@
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
             <div class="row py-4 px-2">
+
                 <div class="col d-flex justify-content-center">
                     <div class="card shadow-card" style="width: 15.5rem;">
                         <img class="card-img-top" src="{{ asset('img/hoodie_01.jpg') }}" alt="Card image cap">
