@@ -93,4 +93,49 @@ class BerandaController extends Controller
         );
         return view('beranda')->with($productHoodie);
     }
+
+    // produk topi
+    public function listTopi()
+    {
+        $productTopi = array(
+            'topi1' => array(
+                'idProduk' => "1",
+                'namaProduk' => "Breakout hat - Black Edition Fashionstore",
+                'hargaProduk' => "100.000",
+                'namaToko' => "FashionStore",
+                'totalPenjualan' => "1000",
+                'lokasiToko' => "Banyuwangi",
+                'fotoProduk' => "asset('img/hat_01.jpg')",
+            ),
+            'topi2' => array(
+                'idProduk' => "2",
+                'namaProduk' => "Teenager Hat - White Edition Fashionstore",
+                'hargaProduk' => "100.000",
+                'namaToko' => "FashionStore",
+                'totalPenjualan' => "1000",
+                'lokasiToko' => "Banyuwangi",
+                'fotoProduk' => "asset('img/hat_02.jpg')",
+            ),
+            'topi3' => array(
+                'idProduk' => "3",
+                'namaProduk' => "Underground Hat - Black Edition",
+                'hargaProduk' => "80.000",
+                'namaToko' => "FashionStore",
+                'totalPenjualan' => "1000",
+                'lokasiToko' => "Banyuwangi",
+                'fotoProduk' => "asset('img/hat_03.jpg')",
+            ),
+            'topi4' => array(
+                'idProduk' => "4",
+                'namaProduk' => "Custom Your Own Hat - Fashionstore",
+                'hargaProduk' => "120.000",
+                'namaToko' => "FashionStore",
+                'totalPenjualan' => "1000",
+                'lokasiToko' => "Banyuwangi",
+                'fotoProduk' => "asset('img/hat_04.jpg')",
+            ),
+
+        );
+        return view('beranda')->with($productTopi);
+    }
 }
