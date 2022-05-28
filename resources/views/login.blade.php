@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="{{ asset('icons/bagshop.svg') }}" />
-    <title>D-Shop | Beranda</title>
+    <link rel="icon" type="image/png" href="{{ asset('icons/image.png') }}" />
+    <title>Obugami | Beranda User</title>
     {{-- Font awesome cdn --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -21,10 +21,10 @@
 
 <body>
     <!-- Navbar -->
-    <div class="container mt-5 mb-3">
+    <div class="container mt-3 mb-3">
         <div class="row">
             <div class="mx-auto">
-                <h3 class="fw-bold text-primary">D-SHOP</h3>
+                <h3 style="color: #9772fb">OBUGAMI</h3>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 mt-5">
-                <img src="img/undraw_Login_re_4vu2.svg" class="mt-5 ml-3 img-hidden" width="450">
+                <img src="img/shop_login.svg" class="mt-5 ml-3 img-hidden" width="450">
             </div>
             <div class="col-md-5">
                 <div class="card shadow-sm p-3 bg-white card-border">
@@ -42,7 +42,7 @@
                             <form action="">
                                 <div class="mt-3 mb-3">
                                     <h3>Login</h3>
-                                    <small class="text-muted">Selamat datang kembali, yuk order lagi!</small>
+                                    <small class="text-muted">Selamat datang kembali</small>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-theme" placeholder="Email"
@@ -58,13 +58,17 @@
                                     <a href="" class="btn btn-primary btn-theme text-white btn-lg btn-block border"
                                         type="button">Login</a>
                                 </div>
-                                <div class="mt-5">
-                                    <p class="text-center">Belum punya akun ? <a href="/register"
-                                            class="tema-text">Daftar</a></p>
-                                </div>
+
+
                             </form>
+
                         </div>
                     </div>
+                </div>
+                <div class="form-group mt-3 ml-5">
+                    <a href="" class="btn btn-light btn-theme text-primary btn-lg btn-block border " style="width: 90%"
+                        type="button">Login
+                        Sebagai Pelanggan</a>
                 </div>
             </div>
         </div>
