@@ -8,13 +8,13 @@
 @section('content')
     {{-- Kategori Produk Start --}}
     <section id="kategori" class="mt-lg-5 pt-lg-5">
-        <div id="konten" class="container mt-3">
-            <h3>Shoes</h3>
+        <div id="konten" class="container mt-3 mb-3">
+            <h3 class="medium font-20">Cemilan Goodmood</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            @if (count($shoes) > 0)
+            @if (count($goodmood) > 0)
                 <div class="row py-4 px-2">
-                    @foreach ($shoes as $item)
+                    @foreach ($goodmood as $item)
                         <div class="col d-flex justify-content-center">
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
@@ -43,12 +43,12 @@
             <hr>
         </div>
         <div id="konten" class="container">
-            <h3>Hoodie</h3>
+            <h3 class="medium font-20 mb-3">Cemilan Santai</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            @if (count($hoodie) > 0)
+            @if (count($santai) > 0)
                 <div class="row py-4 px-2">
-                    @foreach ($hoodie as $item1)
+                    @foreach ($santai as $item1)
                         <div class="col d-flex justify-content-center">
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
@@ -74,15 +74,15 @@
             @endif
         </div>
         <div id="konten" class="container my-5">
-            <hr>
+            <hr class="hr-color">
         </div>
         <div id="konten" class="container">
-            <h3>Hat</h3>
+            <h3 class="medium font-20">Mix Kategori</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            @if (count($hat) > 0)
+            @if (count($mix) > 0)
                 <div class="row py-4 px-2">
-                    @foreach ($hat as $item2)
+                    @foreach ($mix as $item2)
                         <div class="col d-flex justify-content-center">
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item2[5] }}" alt="Card image cap">

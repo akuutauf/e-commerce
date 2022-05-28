@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
     overflow-x: hidden;
     background-color: #eef2ff !important;
 }
@@ -19,6 +19,11 @@ body {
 /* Fonts color */
 .secondary-color {
     color: #acacac !important;
+}
+
+/* Fonst Size */
+.font-20 {
+    font-size: 20px !important;
 }
 
 /* Colors BG Theme */
@@ -45,17 +50,21 @@ body {
 
 /* Components */
 .btn-login {
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     text-decoration: none;
     background-color: white;
     color: #9772fb;
 }
 
 .btn-login:hover {
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     background-color: #b8b5ff;
     color: white;
+}
+
+.hr-color {
+    background-color: #b8b5ff !important;
 }
 
 .icon-size {
