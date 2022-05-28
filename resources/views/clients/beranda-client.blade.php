@@ -1,7 +1,6 @@
 @extends('base-client')
 
 @section('title')
-    <link rel="icon" type="image/png" href="{{ asset('icons/cookie.png') }}" />
     <title>Obugami | Beranda User</title>
 @endsection
 
@@ -19,16 +18,16 @@
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="h6 card-text">{{ $item[0] }}</p>
-                                    <p class="card-text product-price">Rp. {{ $item[1] }}</p>
+                                    <p class="h6 card-text semi-bold">{{ $item[0] }}</p>
+                                    <p class="card-text product-price bold">Rp. {{ $item[1] }}</p>
                                     <div class="row">
-                                        <div class="col-7">
-                                            <p class="card-text name-shop">{{ $item[2] }}<br><span
-                                                    class="card-text total-sales">Terjual
+                                        <div class="col-6">
+                                            <p class="card-text semi-bold font-10 text-left">{{ $item[2] }}<br><span
+                                                    class="card-text total-sales regular">Terjual
                                                     {{ $item[3] }}</span></p>
                                         </div>
-                                        <div class="col-5">
-                                            <p class="card-text text-right shop-location mt-4">
+                                        <div class="col-6">
+                                            <p class="card-text text-left shop-location mt-4 regular">
                                                 {{ $item[4] }}</p>
                                         </div>
                                     </div>
@@ -40,7 +39,7 @@
             @endif
         </div>
         <div id="konten" class="container my-5">
-            <hr>
+            <hr class="hr-color">
         </div>
         <div id="konten" class="container">
             <h3 class="medium font-20 mb-3">Cemilan Santai</h3>
@@ -53,16 +52,16 @@
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="h6 card-text">{{ $item1[0] }}</p>
-                                    <p class="card-text product-price">Rp. {{ $item1[1] }}</p>
+                                    <p class="h6 card-text semi-bold">{{ $item1[0] }}</p>
+                                    <p class="card-text product-price bold">Rp. {{ $item1[1] }}</p>
                                     <div class="row">
-                                        <div class="col-7">
-                                            <p class="card-text name-shop">{{ $item1[2] }}<br><span
-                                                    class="card-text total-sales">Terjual
+                                        <div class="col-6">
+                                            <p class="card-text semi-bold font-10 text-left">{{ $item1[2] }}<br><span
+                                                    class="card-text total-sales regular">Terjual
                                                     {{ $item1[3] }}</span></p>
                                         </div>
-                                        <div class="col-5">
-                                            <p class="card-text text-right shop-location mt-4">
+                                        <div class="col-6">
+                                            <p class="card-text text-left shop-location mt-4 regular">
                                                 {{ $item1[4] }}</p>
                                         </div>
                                     </div>
@@ -87,16 +86,16 @@
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item2[5] }}" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="h6 card-text">{{ $item2[0] }}</p>
-                                    <p class="card-text product-price">Rp. {{ $item2[1] }}</p>
+                                    <p class="h6 card-text semi-bold">{{ $item2[0] }}</p>
+                                    <p class="card-text product-price bold">Rp. {{ $item2[1] }}</p>
                                     <div class="row">
-                                        <div class="col-7">
-                                            <p class="card-text name-shop">{{ $item2[2] }}<br><span
-                                                    class="card-text total-sales">Terjual
+                                        <div class="col-6">
+                                            <p class="card-text semi-bold font-10 text-left">{{ $item2[2] }}<br><span
+                                                    class="card-text total-sales regular">Terjual
                                                     {{ $item2[3] }}</span></p>
                                         </div>
-                                        <div class="col-5">
-                                            <p class="card-text text-right shop-location mt-4">
+                                        <div class="col-6">
+                                            <p class="card-text text-left shop-location mt-4 regular">
                                                 {{ $item2[4] }}</p>
                                         </div>
                                     </div>

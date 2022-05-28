@@ -8,12 +8,32 @@ body {
 }
 
 /* Fonts Style */
-.semi-bold {
-    font-weight: 600;
+.thin {
+    font-weight: 100 !important;
+}
+
+.light {
+    font-weight: 300 !important;
+}
+
+.regular {
+    font-weight: 400 !important;
 }
 
 .medium {
-    font-weight: 500;
+    font-weight: 500 !important;
+}
+
+.semi-bold {
+    font-weight: 600 !important;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.x-bold {
+    font-weight: 800 !important;
 }
 
 /* Fonts color */
@@ -22,12 +42,20 @@ body {
 }
 
 /* Fonst Size */
+.font-10 {
+    font-size: 15px !important;
+}
+
 .font-20 {
     font-size: 20px !important;
 }
 
 /* Colors BG Theme */
 .navbar-color {
+    background-color: #9772fb;
+}
+
+.footer-color {
     background-color: #9772fb;
 }
 
@@ -40,6 +68,14 @@ body {
     color: #acacac;
 }
 
+.color-theme {
+    color: #9772fb !important;
+}
+
+.color-theme-2 {
+    color: #b8b5ff;
+}
+
 .search-color {
     color: #b8b5ff;
 }
@@ -49,6 +85,9 @@ body {
 }
 
 /* Components */
+.tab-icon {
+    fill: #9772fb !important;
+}
 .btn-login {
     font-weight: 600 !important;
     text-decoration: none;
@@ -57,6 +96,20 @@ body {
 }
 
 .btn-login:hover {
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #b8b5ff;
+    color: white;
+}
+
+.btn-kirim {
+    font-weight: 600 !important;
+    text-decoration: none;
+    background-color: white;
+    color: #9772fb;
+}
+
+.btn-kirim:hover {
     font-weight: 600;
     text-decoration: none;
     background-color: #b8b5ff;
@@ -83,23 +136,16 @@ body {
     box-shadow: 1px 1px 1px 1px rgba(12, 12, 12, 0.2);
 }
 .product-price {
-    color: #00b0ff;
-    font-weight: 400;
+    color: #764af1;
 }
 
 .total-sales {
-    color: #f7d716;
-    font-weight: 400;
+    color: #ff9f45;
 }
 
 .shop-location {
     color: #465881;
-    font-weight: 400;
-    font-size: 12.5px;
-}
-
-.name-shop {
-    font-weight: 600;
+    font-size: 14px;
 }
 
 #nama-toko {
