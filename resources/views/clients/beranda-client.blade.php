@@ -2,7 +2,7 @@
 
 @section('title')
     <link rel="icon" type="image/png" href="{{ asset('icons/cookie.png') }}" />
-    <title>Obugami | Beranda Client</title>
+    <title>Obugami | Beranda User</title>
 @endsection
 
 @section('content')
