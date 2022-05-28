@@ -148,6 +148,10 @@ body {
     font-size: 14px;
 }
 
+#carouselExampleCaptions {
+    margin-top: 80px;
+}
+
 #nama-toko {
     font-weight: 400 !important;
 }
