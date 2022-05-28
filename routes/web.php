@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// routes default
+// routes view
 Route::get('/', function () {
-    return view('beranda');
+    return view('clients.beranda-client');
 });
 
 Route::get('/welcome', function () {
@@ -32,6 +32,5 @@ Route::get('/register', function () {
     return view('register');
 });
 
-// controller beranda
-Route::get('/', 'App\Http\Controllers\BerandaController@produkSepatu');
-// Route::get('/', 'App\Http\Controllers\BerandaController@produkHoodie');
+// controller
+Route::get('/', 'App\Http\Controllers\BerandaController@produk');

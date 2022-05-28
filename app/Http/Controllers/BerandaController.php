@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class BerandaController extends Controller
 {
     // produk sepatu (array dua dimensi)
-    public function produkSepatu()
+    public function produk()
     {
         $product = array(
             'shoes' =>
@@ -30,7 +30,6 @@ class BerandaController extends Controller
                 ['Custom Your Own Hat - Fashionstore', 120000, 'Fashion Store', 1000, 'Banyuwangi', asset('img/hat_04.jpg')],
             ],
         );
-        return view('beranda')->with($product);
+        return view('clients.beranda-client')->with($product);
     }
-
 }

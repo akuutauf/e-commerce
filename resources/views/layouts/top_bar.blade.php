@@ -153,7 +153,7 @@
         </footer>
     </section>
     <!-- End Footer -->
-    </div>
+
     {{-- Font awesome ions kit --}}
     <script src="https://kit.fontawesome.com/dee340b044.js" crossorigin="anonymous"></script>
     {{-- Bootstrap JS --}}
