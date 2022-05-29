@@ -30,7 +30,7 @@
                       <ul class="list-unstyled text-light footer-link-list pt-3">
                           <li><a class="text-decoration-none text-white" href="#">Snack</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Kue</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Keripik</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Cookies</a></li><br>
                       </ul>
                   </div>
 

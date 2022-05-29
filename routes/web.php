@@ -21,6 +21,11 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/dashboard-toko-client', function () {
+    return view('clients.dashboard-toko-client');
+});
+
 Route::get('/register', function () {
     return view('register');
 });

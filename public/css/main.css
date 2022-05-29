@@ -234,6 +234,14 @@ body {
     border: 2px solid #ffffff !important;
 }
 
+.icon-cart {
+    color: #ffffff;
+}
+
+.icon-cart:hover {
+    color: #b8b5ff;
+}
+
 #carouselExampleCaptions {
     margin-top: 80px;
 }
