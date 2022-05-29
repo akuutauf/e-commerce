@@ -13,13 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('toko', function (Blueprint $table) {
+        Schema::create('promos', function (Blueprint $table) {
+            
             $table->id();
-            $table->string('nama_toko', 50);
-            $table->string('deskripsi_toko', 255);
-            $table->string('lokasi_toko', 100);
-            $table->string('oprasional_toko', 100);
+            $table->unsignedBigInteger('id_product');
+            $table->string('nama_promo', 100);
+            $table->string('deskripsi_promo', 255);
+            $table->string('image_promo', 100);
+            $table->string('data_promo', 250);
             $table->timestamps();
+            $table->foreign('id_product')->references('id')->on('products')->restrict;
         });
     }
 
@@ -30,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('toko');
+        Schema::dropIfExists('promos');
     }
 };

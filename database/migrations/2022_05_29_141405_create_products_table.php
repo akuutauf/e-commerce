@@ -24,7 +24,7 @@ return new class extends Migration
             $table->double('penjualan_product',5);
             $table->string('image_product', 255);
             $table->timestamps();
-            $table->foreign('id_toko')->references('id')->on('toko')->restrict;
+            $table->foreign('id_toko')->references('id')->on('tokos')->restrict;
         });
     }
 
