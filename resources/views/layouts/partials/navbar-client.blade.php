@@ -13,8 +13,8 @@
                         placeholder="Search Produk" aria-label="Search">
                     <label for="search" class="label-search fa-solid fa-magnifying-glass search-color ml-3"></label>
                 </form>
-                <div id="icon-cart" class="mx-lg-5">
-                    <a href="#"><i class="fa-solid fa-store text-white icon-size"></i></a>
+                <div id="icon-store" class="mx-lg-5">
+                    <a href="/dashboard-toko-client"><i class="fa-solid fa-store icon-size icon-store"></i></a>
                 </div>
                 <a id="login-button" class="btn btn-login px-sm-4 py-sm-1" href="/login">LOGIN</a>
             </div>
