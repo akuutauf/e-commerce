@@ -49,5 +49,92 @@
     </section>
     {{-- End Profile Toko --}}
 
+    {{-- start dropdown --}}
+    <div class="container">
+        <div id="kategori" class="container mt-5 mb-3">
+            <h3 class="medium font-20">Kategori Produk</h3>
+        </div>
+        <div class="btn-group ml-3">
+            <button type="button" class="btn  drop text-left " data-toggle="dropdown" aria-expanded="false">
+                <div class="row">
+                    <div class="col-11 my-auto">
+                        Cari Kategori
+                    </div>
+                    <div class="col-1 my-auto">
+                        <div class="dropdown-toggle"></div>
+                    </div>
+                </div>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right down">
+                <button class="dropdown-item" type="button">Snack</button>
+                <button class="dropdown-item" type="button">Kue</button>
+                <button class="dropdown-item" type="button">Cokiess</button>
+            </div>
+        </div>
+    </div>
+    {{-- end dropdown --}}
+
+    {{-- start produk --}}
+    <div class="container">
+        @if (count($goodmood) > 0)
+            <div class="row py-4 px-2 mt-2">
+                @foreach ($goodmood as $item)
+                    <div class="col d-flex justify-content-center">
+                        <div class="card shadow-card" style="width: 15.5rem;">
+                            <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="h6 card-text semi-bold">{{ $item[0] }}</p>
+                                <p class="card-text product-price bold">Rp. {{ $item[1] }}</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="card-text semi-bold font-10 text-left">{{ $item[2] }}<br><span
+                                                class="card-text total-sales regular">Terjual
+                                                {{ $item[3] }}</span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text text-left shop-location mt-4 regular">
+                                            {{ $item[4] }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        @endif
+    </div>
+
+    <div class="container">
+        @if (count($goodmood) > 0)
+            <div class="row py-2 px-2 mt-2">
+                @foreach ($goodmood as $item)
+                    <div class="col d-flex justify-content-center">
+                        <div class="card shadow-card" style="width: 15.5rem;">
+                            <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="h6 card-text semi-bold">{{ $item[0] }}</p>
+                                <p class="card-text product-price bold">Rp. {{ $item[1] }}</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="card-text semi-bold font-10 text-left">{{ $item[2] }}<br><span
+                                                class="card-text total-sales regular">Terjual
+                                                {{ $item[3] }}</span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text text-left shop-location mt-4 regular">
+                                            {{ $item[4] }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        @endif
+    </div>
+    {{-- end produk --}}
+
+
+
     <div id="konten" class="container my-5"></div>
 @endsection

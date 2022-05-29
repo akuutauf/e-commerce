@@ -37,3 +37,5 @@ Route::get('/dashboard-toko-admin', function () {
 // controller
 Route::get('/', 'App\Http\Controllers\BerandaController@produkUser');
 Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');
+Route::get('/dashboard-toko-client', 'App\Http\Controllers\BerandaController@produkKategoriClient');
+Route::get('/dashboard-toko-admin', 'App\Http\Controllers\BerandaController@produkKategoriAdmin');
