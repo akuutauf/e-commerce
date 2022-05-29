@@ -25,6 +25,10 @@
 </head>
 
 <body>
+    {{-- Carrousel --}}
+    @yield('carrousel')
+    {{-- End Carrousel --}}
+    
     {{-- Navbar --}}
     @include('layouts.partials.navbar-client')
     {{-- End Navbar --}}
