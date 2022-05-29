@@ -43,7 +43,7 @@
                                     <input type="password" class="form-control form-theme" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <a href="" class="btn btn-theme btn-lg btn-block border-none medium"
+                                    <a href="/beranda-admin" class="btn btn-theme btn-lg btn-block border-none medium"
                                         type="button">Login</a>
                                 </div>
                                 <div class="form-group mt-3">

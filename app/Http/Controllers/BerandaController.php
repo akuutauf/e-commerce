@@ -31,5 +31,6 @@ class BerandaController extends Controller
             ],
         );
         return view('clients.beranda-client')->with($product);
+        return view('admin.beranda-admin')->with($product);
     }
 }

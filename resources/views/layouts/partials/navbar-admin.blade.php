@@ -16,7 +16,7 @@
                 <div id="icon-store" class="mx-lg-5">
                     <a href="/dashboard-toko-client"><i class="fa-solid fa-store icon-size icon-store"></i></a>
                 </div>
-                <a id="login-button" class="btn btn-login px-sm-4 py-sm-1" href="/login">LOGIN</a>
+                <a id="login-button" class="btn btn-login px-sm-4 py-sm-1" href="/login">LOGOUT</a>
             </div>
         </div>
     </nav>

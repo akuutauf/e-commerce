@@ -14,24 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 // routes view
+Route::get('/login', function () {
+    return view('login');
+});
+
 Route::get('/', function () {
     return view('clients.beranda-client');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/beranda-admin', function () {
+    return view('admin.beranda-admin');
 });
 
 Route::get('/dashboard-toko-client', function () {
     return view('clients.dashboard-toko-client');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
-
 // controller
 Route::get('/', 'App\Http\Controllers\BerandaController@produk');
+Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produk');
 
 // Route::get('/welcome', function () {
 //     return view('welcome');
