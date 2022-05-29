@@ -7,6 +7,10 @@ body {
     background-color: #eef2ff !important;
 }
 
+#login-body {
+    background-color: #ffffff !important;
+}
+
 /* Fonts Style */
 .thin {
     font-weight: 100 !important;
@@ -186,6 +190,10 @@ body {
 .shop-location {
     color: #465881;
     font-size: 14px;
+}
+
+.card-border {
+    border-radius: 15px !important;
 }
 
 #carouselExampleCaptions {
