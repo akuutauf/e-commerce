@@ -281,12 +281,12 @@ body {
 }
 
 /* Media Screen Responsive */
-@media only screen and (max-width: 1200px) {
-    .last-card {
-        margin-top: 1.5rem;
+@media only screen and (max-width: 1015px) {
+    .nama-kota {
+        margin-top: 10px;
+        margin-left: 15.5px;
     }
 }
-
 @media only screen and (max-width: 992px) {
     #icon-store {
         visibility: hidden;
@@ -308,6 +308,27 @@ body {
     .last-card {
         margin-top: 1.5rem;
     }
+    .title-footer {
+        font-size: 1.5rem !important;
+    }
+    .card-profile {
+        width: 100% !important;
+    }
+    .image-toko {
+        margin-left: 7rem !important;
+        width: 250px;
+        margin-right: 5.5rem !important;
+    }
+}
+@media only screen and (max-width: 818px) {
+    #konten {
+        max-width: 50%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .card-profile {
+        max-width: 90% !important;
+    }
 }
 @media only screen and (max-width: 768px) {
     #login-button {
@@ -323,10 +344,12 @@ body {
         padding-top: 0.9rem;
         padding-bottom: 0.9rem;
     }
+    .card-profile {
+        max-width: 90% !important;
+    }
 }
-
-@media only screen and (max-width: 818px) {
-    #konten {
-        max-width: 50%;
+@media only screen and (max-width: 517px) {
+    .vertical {
+        visibility: hidden;
     }
 }

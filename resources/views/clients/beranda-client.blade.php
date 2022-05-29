@@ -13,10 +13,10 @@
                 <li data-target="#carrousel-arrow" data-slide-to="1"></li>
                 <li data-target="#carrousel-arrow" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner mb-5">
                 <div class="carousel-item active">
                     <div class="container">
-                        <div class="row p-5">
+                        <div class="row p-5 mb-5">
                             <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                                 <img class="img-fluid" width="80%" src="{{ asset('img/carrousel_01.png') }}" alt="">
                             </div>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="container">
-                        <div class="row p-5">
+                        <div class="row p-5 mb-5">
                             <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                                 <img class="img-fluid" width="80%" src="{{ asset('img/carrousel_04.png') }}" alt="">
                             </div>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="container">
-                        <div class="row p-5">
+                        <div class="row p-5 mb-5">
                             <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                                 <img class="img-fluid" width="80%" src="{{ asset('img/carrousel_03.png') }}" alt="">
                             </div>

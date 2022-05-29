@@ -5,7 +5,7 @@
               <div class="row">
 
                   <div class="col-md-4 pt-5">
-                      <h2 class="h2 text-white border-bottom pb-3 border-light logo">Obugami</h2>
+                      <h2 class="h2 text-white border-bottom pb-3 border-light logo title-footer">Obugami</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
                           <li>
                               <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -23,7 +23,7 @@
                   </div>
 
                   <div class="col-md-4 pt-5">
-                      <h2 class="h2 text-light border-bottom pb-3 border-light">Produk</h2>
+                      <h2 class="h2 text-light border-bottom pb-3 border-light title-footer">Produk</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
                           <li><a class="text-decoration-none text-white" href="#">Snack</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Kue</a></li><br>
@@ -32,7 +32,7 @@
                   </div>
 
                   <div class="col-md-4 pt-5">
-                      <h2 class="h2 text-light border-bottom pb-3 border-light">E-Commerce</h2>
+                      <h2 class="h2 text-light border-bottom pb-3 border-light title-footer">E-Commerce</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
                           <li><a class="text-decoration-none text-white" href="#">Beranda</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Toko Kami</a></li><br>
