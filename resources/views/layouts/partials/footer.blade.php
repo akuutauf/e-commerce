@@ -1,8 +1,5 @@
   <!-- Start Footer -->
   <section>
-      <div id="konten" class="container my-5">
-          <hr>
-      </div>
       <footer class="footer-color" id="tempaltemo_footer">
           <div class="container">
               <div class="row">

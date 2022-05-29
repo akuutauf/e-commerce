@@ -193,6 +193,7 @@
                 </div>
             @endif
         </div>
+        <div id="konten" class="container my-5"></div>
     </section>
     {{-- Kategori Produk End --}}
 @endsection
