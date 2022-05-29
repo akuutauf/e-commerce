@@ -24,41 +24,40 @@
 
 <body id="login-body">
     <div class="container mt-5 pt-5">
-        <div class="row default justify-content-around">
+        <div class="row d-flex justify-content-center">
             {{-- Start Form Login --}}
-            <div class="col-5">
+            <div class="col">
                 <div class="card shadow-sm p-3 bg-white card-border">
                     <div class="card-body">
-                        <div class="form-control border">
+                        <div class="form-control border-none">
                             <form action="">
                                 <div class="mt-3 mb-3">
-                                    <h3>Login</h3>
-                                    <small class="text-muted">Selamat datang kembali</small>
+                                    <h3 class="semi-bold">Login</h3>
+                                    <small class="secondary-color font-10">Selamat datang kembali</small>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-theme" placeholder="Email"
+                                    <input type="email" class="form-control form-theme" placeholder="Username"
                                         id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control form-theme" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <a href="" class="btn btn-primary btn-theme text-white btn-lg btn-block border"
+                                    <a href="" class="btn btn-theme btn-lg btn-block border-none medium"
                                         type="button">Login</a>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <a href="/" class="btn btn-theme-2 btn-lg btn-block border-none medium"
+                                        type="button">Login as Customer</a>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="form-group mt-3 ml-5">
-                    <a href="" class="btn btn-light btn-theme text-primary btn-lg btn-block border " style="width: 90%"
-                        type="button">Login
-                        Sebagai Pelanggan</a>
-                </div>
             </div>
             {{-- End Form Login --}}
-            <div id="image-ilustrator" class="col-5">
-                <img src="{{ asset('ilustrator/login.svg') }}" class="mt-5 ml-5 img-hidden" width="350">
+            <div id="image-ilustrator" class="col-6">
+                <img src="{{ asset('ilustrator/login.svg') }}" class="mt-5 ml-4 img-hidden" width="350">
             </div>
         </div>
     </div>

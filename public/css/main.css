@@ -196,6 +196,44 @@ body {
     border-radius: 15px !important;
 }
 
+.border-none {
+    border: 0px !important;
+}
+
+.form-theme {
+    background-color: #f6f6f6 !important;
+    height: 45px;
+    border: 0px !important;
+}
+
+.btn-theme {
+    background-color: #9772fb !important;
+    color: #ffffff !important;
+    border-radius: 30px !important;
+    border: 2px solid #ffffff !important;
+}
+
+.btn-theme:hover {
+    background-color: #ffffff !important;
+    color: #9772fb !important;
+    border-radius: 30px !important;
+    border: 2px solid #9772fb !important;
+}
+
+.btn-theme-2 {
+    background-color: #ffffff !important;
+    color: #9772fb !important;
+    border-radius: 30px !important;
+    border: 2px solid #9772fb !important;
+}
+
+.btn-theme-2:hover {
+    background-color: #9772fb !important;
+    color: #ffffff !important;
+    border-radius: 30px !important;
+    border: 2px solid #ffffff !important;
+}
+
 #carouselExampleCaptions {
     margin-top: 80px;
 }
@@ -237,6 +275,10 @@ body {
     #login-button {
         position: relative;
         margin-bottom: 20px;
+    }
+
+    #image-ilustrator {
+        visibility: hidden !important;
     }
 
     #navbar-container {
