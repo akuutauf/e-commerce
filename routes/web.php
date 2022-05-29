@@ -30,14 +30,10 @@ Route::get('/dashboard-toko-client', function () {
     return view('clients.dashboard-toko-client');
 });
 
+Route::get('/dashboard-toko-admin', function () {
+    return view('admin.dashboard-toko-admin');
+});
+
 // controller
-Route::get('/', 'App\Http\Controllers\BerandaController@produk');
-Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produk');
-
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/about', function () {
-//     return view('about');
-// });
+Route::get('/', 'App\Http\Controllers\BerandaController@produkUser');
+Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');

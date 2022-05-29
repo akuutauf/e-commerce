@@ -1,7 +1,7 @@
-@extends('base-client')
+@extends('base-admin')
 
 @section('title')
-    <title>Obugami | Dashboard Toko User</title>
+    <title>Obugami | Dashboard Toko Admin</title>
 @endsection
 
 @section('content')
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <a href="" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
-                                Chat Penjual
+                                Kelola Produk
                             </a>
                         </div>
                     </div>
