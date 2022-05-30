@@ -42,6 +42,10 @@ Route::get('/kelola-produk', function () {
     return view('admin.kelola-produk');
 });
 
+Route::get('/edit-produk', function () {
+    return view('admin.edit-produk');
+});
+
 // controller
 Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUser');
 Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');

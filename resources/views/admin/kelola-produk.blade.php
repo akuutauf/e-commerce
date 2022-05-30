@@ -54,7 +54,7 @@
                     <center>
                         <div class="card card-list-produk shadow-card pt-5 pb-5">
                             <div id="icon-edit">
-                                <a href=""><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
+                                <a href="/edit-produk"><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
                             </div>
                             <hr class="hr-panel mx-auto">
                             <div id="icon-delete">
@@ -86,7 +86,7 @@
                     <center>
                         <div class="card card-list-produk shadow-card pt-5 pb-5">
                             <div id="icon-edit">
-                                <a href=""><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
+                                <a href="/edit-produk"><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
                             </div>
                             <hr class="hr-panel mx-auto">
                             <div id="icon-delete">
