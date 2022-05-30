@@ -50,8 +50,16 @@ body {
     font-size: 15px !important;
 }
 
+.font-18 {
+    font-size: 18px !important;
+}
+
 .font-20 {
     font-size: 20px !important;
+}
+
+.font-25 {
+    font-size: 25px !important;
 }
 
 .font-30 {
@@ -184,6 +192,11 @@ body {
     background-color: #b8b5ff !important;
 }
 
+.hr-panel {
+    background-color: #b8b5ff !important;
+    width: 70% !important;
+}
+
 .icon-size {
     font-size: x-large;
 }
@@ -284,6 +297,19 @@ body {
     border: 1px solid #ffffff !important;
 }
 
+.card-list-produk {
+    border-radius: 10px !important;
+    border: 2px solid #9772fb !important;
+}
+
+.icon-edit {
+    color: #9772fb;
+}
+
+.icon-delete {
+    color: #ff6584;
+}
+
 #carouselExampleCaptions {
     margin-top: 80px;
 }
@@ -294,6 +320,10 @@ body {
 
 #profile-toko {
     margin-top: 10rem;
+}
+
+#field-kelola-produk {
+    margin-top: 9rem;
 }
 
 /* Media Screen Responsive */

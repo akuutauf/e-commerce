@@ -28,7 +28,7 @@
                                             class="fa-solid fa-location-dot color-theme"></i></h6>
                                 </div>
                             </div>
-                            <a href="" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                            <a href="/kelola-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
                                 Kelola Produk
                             </a>
                         </div>

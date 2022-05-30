@@ -12,22 +12,22 @@ class BerandaController extends Controller
         $product = array(
             'goodmood' =>
             [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
             ],
             'santai' => [
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
             'mix' => [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
         );
         return view('customer.beranda-customer')->with($product);
@@ -38,22 +38,22 @@ class BerandaController extends Controller
         $product = array(
             'goodmood' =>
             [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
             ],
             'santai' => [
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
             'mix' => [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
         );
         return view('admin.beranda-admin')->with($product);
@@ -64,22 +64,22 @@ class BerandaController extends Controller
         $product = array(
             'goodmood' =>
             [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
             ],
             'santai' => [
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
             'mix' => [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
         );
         return view('customer.dashboard-toko-customer')->with($product);
@@ -89,22 +89,22 @@ class BerandaController extends Controller
         $product = array(
             'goodmood' =>
             [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
             ],
             'santai' => [
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
             'mix' => [
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
-                ['Airly - Chocolate Oat Crackers', 100000, 'Obugami', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
-                ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
+                ['Airly - Chocolate Oat Crackers', 100000, 'Obugame', 1000, 'Banyuwangi', asset('img/snack_01.jpg')],
+                ['Irvins - Zigzag Salted Egg', 120000, 'Obugame', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
         );
         return view('admin.dashboard-toko-admin')->with($product);

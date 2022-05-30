@@ -27,7 +27,7 @@
         <div class="row d-flex justify-content-center">
             {{-- Start Form Login --}}
             <div class="col">
-                <div class="card shadow-sm p-3 bg-white card-border">
+                <div class="card shadow-card p-3 bg-white card-border">
                     <div class="card-body">
                         <div class="form-control border-none">
                             <form action="">
