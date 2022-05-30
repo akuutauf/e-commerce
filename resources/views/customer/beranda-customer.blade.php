@@ -8,11 +8,6 @@
     {{-- Start Carrousel --}}
     <div class="container-fluid carrousel carrousel-color mt-5">
         <div id="carrousel-arrow" class="carousel slide bg-white pt-4" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carrousel-arrow" data-slide-to="0" class="active"></li>
-                <li data-target="#carrousel-arrow" data-slide-to="1"></li>
-                <li data-target="#carrousel-arrow" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner mb-5">
                 <div class="carousel-item active">
                     <div class="container">
@@ -24,11 +19,12 @@
                                 <div class="text-align-left align-self-center">
                                     <h1 class="h1 color-theme semi-bold">Obugame <span
                                             class="medium color-theme-2">E-Commerce</span></h1>
-                                    <h3 class="h2 font-20">Selamat Datang di toko Obugame. Obugame menyediakan berbagai
-                                        produk snack dan beverage.</h3>
+                                    <h3 class="h3 font-20 text-justify medium">Selamat Datang! Obugame adalah suatu UMKM
+                                        yang bergerak dibidang produk kuliner dan kami menjual produk secara online.
+                                    </h3>
                                     <p>
-                                        Kami memudahkan customer untuk melakukan pemesanan dengan menggunakan
-                                        website E-commerce
+                                        Kami menyediakan produk olahan hasil pertanian lainnya seperti Snack, Makanan dan
+                                        Minuman Instan.
                                     </p>
                                 </div>
                             </div>
@@ -45,11 +41,11 @@
                                 <div class="text-align-left align-self-center">
                                     <h1 class="h1 color-theme semi-bold">Obugame <span
                                             class="medium color-theme-2">E-Commerce</span></h1>
-                                    <h3 class="h2 font-20">Menyedikan berbagai produk camilan, yang enak disajikan
-                                        bersama keluarga</h3>
+                                    <h3 class="h3 font-20 text-justify medium">Selamat Datang di website Obugame. Kami
+                                        menyediakan
+                                        berbagai produk Snack dan Beverage.</h3>
                                     <p>
-                                        Obugami memudahkan customer untuk melakukan pemesanan dengan menggunakan website e
-                                        commerce
+                                        Kami Menyedikan berbagai produk camilan, yang enak disajikan bersama keluarga.
                                     </p>
                                 </div>
                             </div>
@@ -66,10 +62,10 @@
                                 <div class="text-align-left">
                                     <h1 class="h1 color-theme semi-bold">Obugame <span
                                             class="medium color-theme-2">E-Commerce</span></h1>
-                                    <h3 class="h2 font-20">Menyedikan berbagai produk camilan, yang enak disajikan
-                                        bersama keluarga</h3>
+                                    <h3 class="h3 font-20 text-justify medium">Kami memudahkan Anda untuk melakukan
+                                        pemesanan pada produk kami.</h3>
                                     <p>
-                                        Kami menyediakan beragam jenis snack, kue, keripik dan masih banyak lagi
+                                        Obugame buka di setiap hari Senin - Jumat di jam 08:00 - 16:00 WIB.
                                     </p>
                                 </div>
                             </div>
