@@ -13,12 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('categoris', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('id_product');
-            $table->string('nama_categori', 255);
+        Schema::create('tokos', function (Blueprint $table) {
+            $table->string('kode_toko', 10)->primary();
+            $table->integer('id_user');
+            $table->string('nama_toko', 50);
+            $table->string('lokasi_toko', 100);
+            $table->string('hari_opsional_toko', 50);
+            $table->string('jam_opsional_toko', 50);
             $table->timestamps();
-            $table->foreign('id_product')->references('id')->on('products')->restrict;
         });
     }
 
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categoris');
+        Schema::dropIfExists('tokos');
     }
 };

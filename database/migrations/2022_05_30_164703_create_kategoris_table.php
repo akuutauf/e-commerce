@@ -13,13 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tokos', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama_toko', 50);
-            $table->string('deskripsi_toko', 255);
-            $table->string('lokasi_toko', 100);
-            $table->string('oprasional_toko', 100); 
+        Schema::create('kategoris', function (Blueprint $table) {
+            $table->string('kode_kategori', 10)->primary();
+            $table->string('kode_product', 10);
+            $table->string('nama_kategori', 50);
             $table->timestamps();
+            $table->foreign('kode_product')->references('kode_produk')->on('products')->restrict();
         });
     }
 
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tokos');
+        Schema::dropIfExists('kategoris');
     }
 };

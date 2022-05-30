@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class products extends Model
+class kategori extends Model
 {
     use HasFactory;
     public $incrementing = false;
     protected $keyType = 'string';
-    protected $table = 'products';
-    protected $primaryKey = 'kode_produk';
-
+    protected $table = 'kategoris';
+    protected $primaryKey = 'kode_kategori';
 }

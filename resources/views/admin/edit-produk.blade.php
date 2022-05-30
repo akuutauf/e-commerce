@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="deskripsi-produk" class="medium">Berat Produk :</label>
+                            <label for="deskripsi-produk" class="medium">Deskripsi Produk :</label>
                             <textarea class="form-control form-color " id="deskripsi-produk" name="deskripsi-produk"
                                 placeholder="Deskripsi Singkat Produk Anda"
                                 rows="3">Produk ini merupakan salah satu produk rekomendasi pada toko kami</textarea>
