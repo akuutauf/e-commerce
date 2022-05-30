@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="{{ asset('icons/image.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('icons/obugame_bar.png') }}" />
 
     {{-- Ttitle --}}
     @yield('title')
@@ -30,7 +30,7 @@
     {{-- End Carrousel --}}
 
     {{-- Navbar --}}
-    @include('layouts.partials.navbar-client')
+    @include('layouts.partials.navbar-customer')
     {{-- End Navbar --}}
 
     {{-- Content --}}

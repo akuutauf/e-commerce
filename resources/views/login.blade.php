@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="{{ asset('icons/image.png') }}" />
-    <title>Obugami | Login Page</title>
+    <link rel="icon" type="image/png" href="{{ asset('icons/obugame_bar.png') }}" />
+    <title>Obugame | Login Page</title>
 
     {{-- Font awesome cdn --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -31,15 +31,16 @@
                     <div class="card-body">
                         <div class="form-control border-none">
                             <form action="">
-                                <div class="mt-3 mb-3">
+                                <div class="mt-3 mb-4">
                                     <h3 class="semi-bold">Login</h3>
-                                    <small class="secondary-color font-10">Selamat datang kembali</small>
+                                    <small class="secondary-color font-10">Selamat datang kembali di Toko Obugame!
+                                    </small>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-theme" placeholder="Username"
                                         id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group mb-4">
                                     <input type="password" class="form-control form-theme" placeholder="Password">
                                 </div>
                                 <div class="form-group">
@@ -47,8 +48,9 @@
                                         type="button">Login</a>
                                 </div>
                                 <div class="form-group mt-3">
-                                    <a href="/" class="btn btn-theme-2 btn-lg btn-block border-none medium"
-                                        type="button">Login as Customer</a>
+                                    <a href="/beranda-customer"
+                                        class="btn btn-theme-2 btn-lg btn-block border-none medium" type="button">Login
+                                        as Customer</a>
                                 </div>
                             </form>
                         </div>

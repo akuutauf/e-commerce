@@ -1,7 +1,7 @@
-@extends('base-client')
+@extends('base-customer')
 
 @section('title')
-    <title>Obugami | Beranda User</title>
+    <title>Obugame | Beranda Customer</title>
 @endsection
 
 @section('carrousel')
@@ -22,13 +22,13 @@
                             </div>
                             <div class="col-lg-6 mb-0 d-flex align-items-center">
                                 <div class="text-align-left align-self-center">
-                                    <h1 class="h1 color-theme semi-bold">Obugami <span
+                                    <h1 class="h1 color-theme semi-bold">Obugame <span
                                             class="medium color-theme-2">E-Commerce</span></h1>
-                                    <h3 class="h2 font-20">Menyedikan berbagai produk camilan, yang enak disajikan
-                                        bersama keluarga</h3>
+                                    <h3 class="h2 font-20">Selamat Datang di toko Obugame. Obugame menyediakan berbagai
+                                        produk snack dan beverage.</h3>
                                     <p>
-                                        Obugami memudahkan customer untuk melakukan pemesanan dengan menggunakan website e
-                                        commerce
+                                        Kami memudahkan customer untuk melakukan pemesanan dengan menggunakan
+                                        website E-commerce
                                     </p>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="col-lg-6 mb-0 d-flex align-items-center">
                                 <div class="text-align-left align-self-center">
-                                    <h1 class="h1 color-theme semi-bold">Obugami <span
+                                    <h1 class="h1 color-theme semi-bold">Obugame <span
                                             class="medium color-theme-2">E-Commerce</span></h1>
                                     <h3 class="h2 font-20">Menyedikan berbagai produk camilan, yang enak disajikan
                                         bersama keluarga</h3>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="col-lg-6 mb-0 d-flex align-items-center">
                                 <div class="text-align-left">
-                                    <h1 class="h1 color-theme semi-bold">Obugami <span
+                                    <h1 class="h1 color-theme semi-bold">Obugame <span
                                             class="medium color-theme-2">E-Commerce</span></h1>
                                     <h3 class="h2 font-20">Menyedikan berbagai produk camilan, yang enak disajikan
                                         bersama keluarga</h3>

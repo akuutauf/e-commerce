@@ -30,7 +30,7 @@ class BerandaController extends Controller
                 ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
         );
-        return view('clients.beranda-client')->with($product);
+        return view('customer.beranda-customer')->with($product);
     }
 
     public function produkAdmin()
@@ -82,7 +82,7 @@ class BerandaController extends Controller
                 ['Irvins - Zigzag Salted Egg', 120000, 'Obugami', 1200, 'Banyuwangi', asset('img/snack_02.jpg')],
             ],
         );
-        return view('clients.dashboard-toko-client')->with($product);
+        return view('customer.dashboard-toko-customer')->with($product);
     }
     public function produkKategoriAdmin()
     {

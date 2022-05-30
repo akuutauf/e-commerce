@@ -14,20 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 // routes view
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/', function () {
-    return view('clients.beranda-client');
+Route::get('/login-obugame', function () {
+    return view('login');
+});
+
+Route::get('/beranda-customer', function () {
+    return view('customer.beranda-customer');
 });
 
 Route::get('/beranda-admin', function () {
     return view('admin.beranda-admin');
 });
 
-Route::get('/dashboard-toko-client', function () {
-    return view('clients.dashboard-toko-client');
+Route::get('/dashboard-toko-customer', function () {
+    return view('customer.dashboard-toko-customer');
 });
 
 Route::get('/dashboard-toko-admin', function () {
@@ -35,7 +39,7 @@ Route::get('/dashboard-toko-admin', function () {
 });
 
 // controller
-Route::get('/', 'App\Http\Controllers\BerandaController@produkUser');
+Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUser');
 Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');
-Route::get('/dashboard-toko-client', 'App\Http\Controllers\BerandaController@produkKategoriClient');
+Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
 Route::get('/dashboard-toko-admin', 'App\Http\Controllers\BerandaController@produkKategoriAdmin');

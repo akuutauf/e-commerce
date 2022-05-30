@@ -1,7 +1,7 @@
 @extends('base-admin')
 
 @section('title')
-    <title>Obugami | Dashboard Toko Admin</title>
+    <title>Obugame | Dashboard Toko Admin</title>
 @endsection
 
 @section('content')

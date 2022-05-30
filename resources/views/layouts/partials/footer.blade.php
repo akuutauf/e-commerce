@@ -5,19 +5,19 @@
               <div class="row">
 
                   <div class="col-md-4 pt-5">
-                      <h2 class="h2 text-white border-bottom pb-3 border-light logo title-footer">Obugami</h2>
+                      <h2 class="h2 text-white border-bottom pb-3 border-light logo title-footer">Obugame</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
                           <li>
                               <i class="fas fa-map-marker-alt fa-fw"></i>
-                              Banyuwangi, Jawa Timur
+                              Banyuwangi - Jawa Timur
                           </li><br>
                           <li>
                               <i class="fa fa-phone fa-fw"></i>
-                              <a class="text-decoration-none text-white" href="">085896587587</a>
+                              <a class="text-decoration-none text-white" href="">082-332-743-884</a>
                           </li><br>
                           <li>
                               <i class="fa fa-envelope fa-fw"></i>
-                              <a class="text-decoration-none text-white" href="">obugami@gmail.com</a>
+                              <a class="text-decoration-none text-white" href="">obugame@gmail.com</a>
                           </li>
                       </ul>
                   </div>
@@ -25,20 +25,21 @@
                   <div class="col-md-4 pt-5">
                       <h2 class="h2 text-light border-bottom pb-3 border-light title-footer">Produk</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
-                          <li><a class="text-decoration-none text-white" href="#">Snack</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Kue</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Cookies</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Snack / Camilan</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Makanan</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Minuman</a></li><br>
                       </ul>
                   </div>
 
                   <div class="col-md-4 pt-5">
                       <h2 class="h2 text-light border-bottom pb-3 border-light title-footer">E-Commerce</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
-                          <li><a class="text-decoration-none text-white" href="#">Beranda</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Toko Kami</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Tentang Kami</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Kontak</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Sosial Media</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Home</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">About Us</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Contact Us</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Product</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Promo Media</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Obugame Story</a></li><br>
                       </ul>
                   </div>
 
@@ -83,9 +84,9 @@
                   <div class="row pt-2">
                       <div class="col-12">
                           <p class="text-right text-light">
-                              Copyright &copy; 2022 Obugami
-                              | Designed by <a rel="sponsored" href="" target="_blank" class="text-white"><b>TEAM
-                                      PROGRAMMER OBUGAMI</b></a>
+                              Copyrights &copy; 2022 Obugame
+                              | Designed by <a rel="sponsored" href="" target="_blank"
+                                  class="text-white"><b>OBUGAMI</b></a>
                           </p>
                       </div>
                   </div>

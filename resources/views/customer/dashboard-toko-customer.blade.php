@@ -1,7 +1,7 @@
-@extends('base-client')
+@extends('base-customer')
 
 @section('title')
-    <title>Obugami | Dashboard Toko User</title>
+    <title>Obugame | Dashboard Toko Customer</title>
 @endsection
 
 @section('content')
