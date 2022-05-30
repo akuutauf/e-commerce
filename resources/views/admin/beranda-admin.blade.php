@@ -1,7 +1,7 @@
 @extends('base-admin')
 
 @section('title')
-    <title>Obugami | Beranda Admin</title>
+    <title>Obugame | Beranda Admin</title>
 @endsection
 
 @section('carrousel')

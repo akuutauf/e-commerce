@@ -52,24 +52,17 @@
     {{-- start dropdown --}}
     <div class="container">
         <div id="kategori" class="container mt-5 mb-3">
-            <h3 class="medium font-20">Kategori Produk</h3>
+            <label for="kategori-form" class="medium font-20">Kategori Produk</label>
         </div>
         <div class="btn-group ml-3">
-            <button type="button" class="btn  drop text-left " data-toggle="dropdown" aria-expanded="false">
-                <div class="row">
-                    <div class="col-11 my-auto">
-                        Cari Kategori
-                    </div>
-                    <div class="col-1 my-auto">
-                        <div class="dropdown-toggle"></div>
-                    </div>
-                </div>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right down">
-                <button class="dropdown-item" type="button">Snack</button>
-                <button class="dropdown-item" type="button">Kue</button>
-                <button class="dropdown-item" type="button">Cokiess</button>
-            </div>
+            <select class="form-control form-theme" id="kategori-form" name="kategori-form">
+                <option value="Default" selected>Pilih Kategori Produk</option>
+                <option value="Snack / Camilan">Snack / Camilan</option>
+                <option value="Keripik">Keripik</option>
+                <option value="Rengginang">Rengginang</option>
+                <option value="Makanan">Makanan</option>
+                <option value="Minuman">Minuman</option>
+            </select>
         </div>
     </div>
     {{-- end dropdown --}}

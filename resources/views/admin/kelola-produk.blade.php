@@ -1,7 +1,7 @@
 @extends('base-admin')
 
 @section('title')
-    <title>Obugami | Kelola Produk</title>
+    <title>Obugame | Kelola Produk</title>
 @endsection
 
 @section('content')
@@ -17,8 +17,8 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
-                        Tambah
+                    <a href="/add-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                        Tambah Produk Baru
                     </a>
                 </div>
             </div>
