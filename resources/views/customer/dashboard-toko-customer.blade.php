@@ -16,7 +16,7 @@
                                 class="img-thumbnail image-toko rounded-circle border-none">
                         </div>
                         <div class="col py-5 my-auto">
-                            <h3 class="semi-bold">Obugami</h3>
+                            <h3 class="semi-bold">Obugame</h3>
                             <div class="row">
                                 <div class="col-4 my-auto">
                                     <button class="btn-online medium text-white">
@@ -39,40 +39,36 @@
                 </div>
                 <div class="col my-auto">
                     <h3 class="medium">Tentang toko</h3>
-                    <p class="secondary-color pr-5">Obugami menyediakan berbagai jenis cemilan yang enak dalam menemani
-                        keseharian Anda. </p>
-                    <p class="secondary-color pr-5">Selamat berbelanja di toko kami!</p>
-                    <p class="medium color-theme pr-5">Melayani : 08:00 - 20:00</p>
+                    <p class="secondary-color pr-5">Obugame adalah suatu UMKM
+                        yang bergerak dibidang produk kuliner. Kami menyediakan produk olahan hasil pertanian seperti Snack,
+                        Makanan dan Minuman Instan.</p>
+                    <p class="secondary-color pr-5">Selamat berbelanja di Toko Obugame!</p>
+                    <p class="medium color-theme pr-5">Melayani : 08:00 - 16:00</p>
                 </div>
             </div>
         </div>
     </section>
     {{-- End Profile Toko --}}
 
-    {{-- start dropdown --}}
+    {{-- Start dropdown --}}
     <div class="container">
         <div id="kategori" class="container mt-5 mb-3">
-            <h3 class="medium font-20">Kategori Produk</h3>
-        </div>
-        <div class="btn-group ml-3">
-            <button type="button" class="btn  drop text-left " data-toggle="dropdown" aria-expanded="false">
-                <div class="row">
-                    <div class="col-11 my-auto">
-                        Cari Kategori
-                    </div>
-                    <div class="col-1 my-auto">
-                        <div class="dropdown-toggle"></div>
-                    </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="kategori-form" class="medium font-20">Kategori Produk</label>
+                    <select class="form-control form-theme" id="kategori-form" name="kategori-form">
+                        <option value="Default" selected>Pilih Kategori Produk</option>
+                        <option value="Snack / Camilan">Snack / Camilan</option>
+                        <option value="Keripik">Keripik</option>
+                        <option value="Rengginang">Rengginang</option>
+                        <option value="Makanan">Makanan</option>
+                        <option value="Minuman">Minuman</option>
+                    </select>
                 </div>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right down">
-                <button class="dropdown-item" type="button">Snack</button>
-                <button class="dropdown-item" type="button">Kue</button>
-                <button class="dropdown-item" type="button">Cokiess</button>
             </div>
         </div>
     </div>
-    {{-- end dropdown --}}
+    {{-- End dropdown --}}
 
     {{-- start produk --}}
     <div class="container">

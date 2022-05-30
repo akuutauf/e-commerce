@@ -58,7 +58,7 @@
                             </div>
                             <hr class="hr-panel mx-auto">
                             <div id="icon-delete">
-                                <a href=""><i class="fa-solid fa-trash icon-size icon-delete"></i></a>
+                                <a href="/delete-produk"><i class="fa-solid fa-trash icon-size icon-delete"></i></a>
                             </div>
                         </div>
                     </center>

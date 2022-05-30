@@ -50,6 +50,10 @@ Route::get('/add-produk', function () {
     return view('admin.tambah-produk');
 });
 
+Route::get('/delete-produk', function () {
+    return view('admin.delete-produk');
+});
+
 // controller
 Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUser');
 Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');
