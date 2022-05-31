@@ -91,12 +91,12 @@
     {{-- Kategori Produk Start --}}
     <section id="kategori" class="mt-lg-5">
         <div id="konten" class="container mt-3 mb-3">
-            <h3 class="medium font-20">Cemilan Goodmood</h3>
+            <h3 class="medium font-20">Banana Snack</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            @if (count($goodmood) > 0)
+            @if (count($banana_snack) > 0)
                 <div class="row py-4 px-2">
-                    @foreach ($goodmood as $item)
+                    @foreach ($banana_snack as $item)
                         <div class="col d-flex justify-content-center">
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
@@ -125,12 +125,12 @@
             <hr class="hr-color">
         </div>
         <div id="konten" class="container">
-            <h3 class="medium font-20 mb-3">Cemilan Santai</h3>
+            <h3 class="medium font-20 mb-3">Dragon Rengginang</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            @if (count($santai) > 0)
+            @if (count($dragon_rengginang) > 0)
                 <div class="row py-4 px-2">
-                    @foreach ($santai as $item1)
+                    @foreach ($dragon_rengginang as $item1)
                         <div class="col d-flex justify-content-center">
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
@@ -159,12 +159,12 @@
             <hr class="hr-color">
         </div>
         <div id="konten" class="container">
-            <h3 class="medium font-20">Mix Kategori</h3>
+            <h3 class="medium font-20">Dragon Drink</h3>
         </div>
         <div id="konten" class="container bg-white rounded-sm shadow-card">
-            @if (count($mix) > 0)
+            @if (count($dragon_drink) > 0)
                 <div class="row py-4 px-2">
-                    @foreach ($mix as $item2)
+                    @foreach ($dragon_drink as $item2)
                         <div class="col d-flex justify-content-center">
                             <div class="card shadow-card" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item2[5] }}" alt="Card image cap">

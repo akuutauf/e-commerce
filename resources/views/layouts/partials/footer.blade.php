@@ -25,9 +25,9 @@
                   <div class="col-md-4 pt-5">
                       <h2 class="h2 text-light border-bottom pb-3 border-light title-footer">Produk</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
-                          <li><a class="text-decoration-none text-white" href="#">Snack / Camilan</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Makanan</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Minuman</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Banana Snack</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Dragon Rengginang</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Dragon Drink</a></li><br>
                       </ul>
                   </div>
 

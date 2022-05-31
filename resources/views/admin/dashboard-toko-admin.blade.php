@@ -12,8 +12,8 @@
                 <div class="col">
                     <div class="row">
                         <div class="col d-flex justify-content-center my-auto">
-                            <img src="{{ asset('img/pp_cakehsop_fix.jpg') }}" width="250"
-                                class="img-thumbnail image-toko rounded-circle border-none">
+                            <img src="{{ asset('img/obugame_logo_02.jpg') }}" width="250"
+                                class="img-thumbnail image-toko rounded-circle shadow">
                         </div>
                         <div class="col py-5 my-auto">
                             <h3 class="semi-bold">Obugame</h3>
@@ -58,11 +58,9 @@
                     <label for="kategori-form" class="medium font-20">Kategori Produk</label>
                     <select class="form-control form-theme" id="kategori-form" name="kategori-form">
                         <option value="Default" selected>Pilih Kategori Produk</option>
-                        <option value="Snack / Camilan">Snack / Camilan</option>
-                        <option value="Keripik">Keripik</option>
-                        <option value="Rengginang">Rengginang</option>
-                        <option value="Makanan">Makanan</option>
-                        <option value="Minuman">Minuman</option>
+                        <option value="Snack / Camilan">Banana Snack</option>
+                        <option value="Keripik">Dragon Rengginang</option>
+                        <option value="Rengginang">Dragon Drink</option>
                     </select>
                 </div>
             </div>
@@ -72,9 +70,9 @@
 
     {{-- start produk --}}
     <div class="container">
-        @if (count($goodmood) > 0)
+        @if (count($banana_snack) > 0)
             <div class="row py-4 px-2 mt-2">
-                @foreach ($goodmood as $item)
+                @foreach ($banana_snack as $item)
                     <div class="col d-flex justify-content-center">
                         <div class="card shadow-card" style="width: 15.5rem;">
                             <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
@@ -101,9 +99,9 @@
     </div>
 
     <div class="container">
-        @if (count($goodmood) > 0)
+        @if (count($dragon_rengginang) > 0)
             <div class="row py-2 px-2 mt-2">
-                @foreach ($goodmood as $item)
+                @foreach ($dragon_rengginang as $item)
                     <div class="col d-flex justify-content-center">
                         <div class="card shadow-card" style="width: 15.5rem;">
                             <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
