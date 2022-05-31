@@ -30,30 +30,25 @@
     <section class="p-4 mb-5">
         <div class="container">
             <div class="row">
-                @if (count($product) > 0)
-                    <div class="col">
-                        @foreach ($product as $item)
-                            <div class="card card-list-produk shadow-card p-3">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <img class="rounded-sm float-left card-img-top" src="{{ $item->image_produk }}"
-                                            width="200">
-
-                                    </div>
-                                    <div class="col my-auto">
-                                        <h4 class="font-20 text-left semi-bold">Airly - Chocolate Oat Crackers</h4>
-                                        <hr class="
-                                    hr-color">
-                                        <p class="font-18 secondary-color">
-                                            Harga : Rp. 100000 <br>
-                                            Stok : 1000
-                                        </p>
-                                    </div>
-                                </div>
+                <div class="col">
+                    <div class="card card-list-produk shadow-card p-3">
+                        <div class="row">
+                            <div class="col-5">
+                                <img class="rounded-sm float-left card-img-top" src="{{ asset('img/snack_02.jpg') }}"
+                                    width="200">
                             </div>
-                        @endforeach
+                            <div class="col my-auto">
+                                <h4 class="font-20 text-left semi-bold">Airly - Chocolate Oat Crackers</h4>
+                                <hr class="
+                                    hr-color">
+                                <p class="font-18 secondary-color">
+                                    Harga : Rp. 120000 <br>
+                                    Stok : 500
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                @endif
+                </div>
                 <div class="col-1">
                     <center>
                         <div class="card card-list-produk shadow-card pt-5 pb-5">

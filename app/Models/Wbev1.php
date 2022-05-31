@@ -5,11 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class promo extends Model
+class Wbev1 extends Model
 {
     use HasFactory;
+    protected $table = 'wbev1s';
+    protected $primaryKey = 'IDGallery';
     public $incrementing = false;
-    protected $keyType = 'string';
-    protected $table = 'promos';
-    protected $primaryKey = 'kode_promo';
 }

@@ -5,11 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class kategori extends Model
+class Owbev extends Model
 {
     use HasFactory;
+    protected $table = 'owbevs';
+    protected $primaryKey = 'EventID';
     public $incrementing = false;
-    protected $keyType = 'string';
-    protected $table = 'kategoris';
-    protected $primaryKey = 'kode_kategori';
 }

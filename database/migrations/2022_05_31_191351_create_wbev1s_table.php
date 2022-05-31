@@ -13,12 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kategoris', function (Blueprint $table) {
-            $table->string('kode_kategori', 10)->primary();
-            $table->string('kode_product', 10);
-            $table->string('nama_kategori', 50);
-            $table->timestamps();
-            $table->foreign('kode_product')->references('kode_produk')->on('products')->restrict();
+        Schema::create('wbev1s', function (Blueprint $table) {
+            $table->bigIncrements('IDGallery')->incrementing();
+            $table->string('EventCode', 8);
+            $table->integer('PictLineNo');
+            $table->boolean('ShowPicture');
         });
     }
 
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kategoris');
+        Schema::dropIfExists('wbev1s');
     }
 };

@@ -9,8 +9,8 @@ class ProductObugami extends Controller
 {
     //
 
-    public function admin(){
-        return Product::all();
-        return view('admin.kelola-produk');
-    }
+    // public function admin(){
+    //     return Product::all();
+    //     return view('admin.kelola-produk');
+    // }
 }
