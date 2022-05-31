@@ -38,7 +38,7 @@ Route::get('/dashboard-toko-admin', function () {
     return view('admin.dashboard-toko-admin');
 });
 
-Route::get('/kelola-produk', function () {
+Route::get('/kelola-produk',  function () {
     return view('admin.kelola-produk');
 });
 
@@ -59,3 +59,5 @@ Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUs
 Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
 Route::get('/dashboard-toko-admin', 'App\Http\Controllers\BerandaController@produkKategoriAdmin');
+// Route::get('product/add', [\App\Http\Controllers\ProductObugami::class, 'produk']);
+
