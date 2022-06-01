@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductsItm;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,10 +55,13 @@ Route::get('/delete-produk', function () {
     return view('admin.delete-produk');
 });
 
+Route::get('/index',[ProductsItm::class, 'index']);
+
 // controller
 Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUser');
 Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
 Route::get('/dashboard-toko-admin', 'App\Http\Controllers\BerandaController@produkKategoriAdmin');
+// Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
 // Route::get('product/add', [\App\Http\Controllers\ProductObugami::class, 'produk']);
 
