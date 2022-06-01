@@ -39,9 +39,7 @@ Route::get('/dashboard-toko-admin', function () {
     return view('admin.dashboard-toko-admin');
 });
 
-Route::get('/kelola-produk',  function () {
-    return view('admin.kelola-produk');
-});
+Route::get('/kelola-produk', [ProductsItm::class, 'index']);
 
 Route::get('/edit-produk', function () {
     return view('admin.edit-produk');

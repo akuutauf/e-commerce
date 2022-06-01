@@ -35,7 +35,7 @@
                         <div class="card card-list-produk shadow-card p-3">
                             <div class="row">
                                 <div class="col-5">
-                                    <img class="rounded-sm float-left card-img-top" src="{{ $produk->MP_Pic1 }}"
+                                    <img class="rounded-sm float-left card-img-top" src="{{ asset($produk->MP_Pic1) }}"
                                         width="200">
                                 </div>
                                 <div class="col my-auto">
@@ -65,23 +65,27 @@
                     </center>
                 </div>
                 <div class="col">
-                    <div class="card card-list-produk shadow-card p-3">
-                        <div class="row">
-                            <div class="col-5">
-                                <img class="rounded-sm float-left card-img-top" src="{{ asset('img/snack_02.jpg') }}"
-                                    width="200">
-                            </div>
-                            <div class="col my-auto">
-                                <h4 class="font-20 text-left semi-bold">Airly - Chocolate Oat Crackers</h4>
-                                <hr class="
+                    @foreach ($itm1 as $produk)
+                        <div class="col">
+                            <div class="card card-list-produk shadow-card p-3">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img class="rounded-sm float-left card-img-top"
+                                            src="{{ asset($produk->MP_Pic1) }}" width="200">
+                                    </div>
+                                    <div class="col my-auto">
+                                        <h4 class="font-20 text-left semi-bold">{{ $produk->Itemname }}</h4>
+                                        <hr class="
                                     hr-color">
-                                <p class="font-18 secondary-color">
-                                    Harga : Rp. 120000 <br>
-                                    Stok : 500
-                                </p>
+                                        <p class="font-18 secondary-color">
+                                            Harga : Rp. {{ $produk->MP_UnitPrice }} <br>
+                                            Stok : {{ $produk->MPStockProduct }}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="col-1">
                     <center>
