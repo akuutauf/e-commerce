@@ -93,12 +93,12 @@
         <div id="konten" class="container mt-3 mb-3">
             <h3 class="medium font-20">Banana Snack</h3>
         </div>
-        <div id="konten" class="container bg-white rounded-sm shadow-card">
+        <div id="konten" class="container bg-white rounded-sm shadow-card border-none">
             @if (count($banana_snack) > 0)
                 <div class="row py-4 px-2">
                     @foreach ($banana_snack as $item)
                         <div class="col d-flex justify-content-center">
-                            <div class="card shadow-card" style="width: 15.5rem;">
+                            <div class="card shadow-card border-none" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="h6 card-text semi-bold">{{ $item[0] }}</p>
@@ -127,12 +127,12 @@
         <div id="konten" class="container">
             <h3 class="medium font-20 mb-3">Dragon Rengginang</h3>
         </div>
-        <div id="konten" class="container bg-white rounded-sm shadow-card">
+        <div id="konten" class="container bg-white rounded-sm shadow-card border-none">
             @if (count($dragon_rengginang) > 0)
                 <div class="row py-4 px-2">
                     @foreach ($dragon_rengginang as $item1)
                         <div class="col d-flex justify-content-center">
-                            <div class="card shadow-card" style="width: 15.5rem;">
+                            <div class="card shadow-card border-none" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="h6 card-text semi-bold">{{ $item1[0] }}</p>
@@ -161,12 +161,12 @@
         <div id="konten" class="container">
             <h3 class="medium font-20">Dragon Drink</h3>
         </div>
-        <div id="konten" class="container bg-white rounded-sm shadow-card">
+        <div id="konten" class="container bg-white rounded-sm shadow-card border-none">
             @if (count($dragon_drink) > 0)
                 <div class="row py-4 px-2">
                     @foreach ($dragon_drink as $item2)
                         <div class="col d-flex justify-content-center">
-                            <div class="card shadow-card" style="width: 15.5rem;">
+                            <div class="card shadow-card border-none" style="width: 15.5rem;">
                                 <img class="card-img-top" src="{{ $item2[5] }}" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="h6 card-text semi-bold">{{ $item2[0] }}</p>

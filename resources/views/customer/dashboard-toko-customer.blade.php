@@ -7,7 +7,7 @@
 @section('content')
     {{-- Start Profile Toko --}}
     <section id="profile-toko">
-        <div class="container card-profile rounded-sm shadow-card py-5 bg-white">
+        <div class="container card-profile rounded-sm shadow-card border-none py-5 bg-white">
             <div class="row">
                 <div class="col">
                     <div class="row">
@@ -74,7 +74,7 @@
             <div class="row py-4 px-2 mt-2">
                 @foreach ($banana_snack as $item)
                     <div class="col d-flex justify-content-center">
-                        <div class="card shadow-card" style="width: 15.5rem;">
+                        <div class="card shadow-card border-none" style="width: 15.5rem;">
                             <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
                             <div class="card-body">
                                 <p class="h6 card-text semi-bold">{{ $item[0] }}</p>
@@ -103,7 +103,7 @@
             <div class="row py-2 px-2 mt-2">
                 @foreach ($dragon_rengginang as $item)
                     <div class="col d-flex justify-content-center">
-                        <div class="card shadow-card" style="width: 15.5rem;">
+                        <div class="card shadow-card border-none" style="width: 15.5rem;">
                             <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
                             <div class="card-body">
                                 <p class="h6 card-text semi-bold">{{ $item[0] }}</p>

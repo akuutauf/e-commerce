@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="card card-list-produk shadow-card p-3">
+                    <div class="card card-list-produk shadow-card border-none p-3">
                         <div class="row">
                             <div class="col-5">
                                 <img class="rounded-sm float-left card-img-top" src="{{ asset('img/snack_02.jpg') }}"
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-1">
                     <center>
-                        <div class="card card-list-produk shadow-card pt-5 pb-5">
+                        <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
                             <div id="icon-edit">
                                 <a href="/edit-produk"><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
                             </div>
@@ -63,7 +63,7 @@
                     </center>
                 </div>
                 <div class="col">
-                    <div class="card card-list-produk shadow-card p-3">
+                    <div class="card card-list-produk shadow-card border-none p-3">
                         <div class="row">
                             <div class="col-5">
                                 <img class="rounded-sm float-left card-img-top" src="{{ asset('img/snack_02.jpg') }}"
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-1">
                     <center>
-                        <div class="card card-list-produk shadow-card pt-5 pb-5">
+                        <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
                             <div id="icon-edit">
                                 <a href="/edit-produk"><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
                             </div>

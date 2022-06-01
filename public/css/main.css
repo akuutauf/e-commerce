@@ -58,6 +58,10 @@ body {
     font-size: 20px !important;
 }
 
+.font-23 {
+    font-size: 23px !important;
+}
+
 .font-25 {
     font-size: 25px !important;
 }
@@ -176,6 +180,34 @@ body {
     color: #ff6584;
     font-weight: 600 !important;
     border: 2px solid #ff6584 !important;
+}
+
+.btn-shopee {
+    background-color: #f84b2f;
+    color: #ffffff;
+    font-weight: 600 !important;
+    border: 2px solid #ffffff !important;
+}
+
+.btn-shopee:hover {
+    background-color: #ffffff;
+    color: #f84b2f;
+    font-weight: 600 !important;
+    border: 2px solid #f84b2f !important;
+}
+
+.btn-tokopedia {
+    background-color: #03ac0e;
+    color: #ffffff;
+    font-weight: 600 !important;
+    border: 2px solid #ffffff !important;
+}
+
+.btn-tokopedia:hover {
+    background-color: #ffffff;
+    color: #03ac0e;
+    font-weight: 600 !important;
+    border: 2px solid #03ac0e !important;
 }
 
 .vertical {
