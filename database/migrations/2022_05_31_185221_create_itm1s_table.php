@@ -17,8 +17,8 @@ return new class extends Migration
             $table->bigIncrements('DocEntry')->unsigned()->incrementing();
             $table->string('Itemcode');
             $table->string('Itemname', 64);
-            $table->string('MPName',32);
-            $table->string('MP_ProductName',128);
+            $table->string('MPName', 32);
+            $table->string('MP_ProductName', 128);
             $table->string('MP_ProductCategory', 128);
             $table->string('Etalase', 128);
             $table->string('MPKondisi', 5);
