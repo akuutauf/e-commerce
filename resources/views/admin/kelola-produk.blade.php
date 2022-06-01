@@ -30,6 +30,7 @@
     <section class="p-4 mb-5">
         <div class="container">
             <div class="row">
+<<<<<<< HEAD
                 <div class="col">
                     <div class="card card-list-produk shadow-card border-none p-3">
                         <div class="row">
@@ -40,15 +41,29 @@
                             <div class="col my-auto">
                                 <h4 class="font-20 text-left semi-bold">Airly - Chocolate Oat Crackers</h4>
                                 <hr class="
+=======
+                @foreach ($itm1 as $p)
+                    <div class="col">
+                        <div class="card card-list-produk shadow-card p-3">
+                            <div class="row">
+                                <div class="col-5">
+                                    <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic1) }}"
+                                        width="200">
+                                </div>
+                                <div class="col my-auto">
+                                    <h4 class="font-20 text-left semi-bold">{{ $p->Itemname }}</h4>
+                                    <hr class="
+>>>>>>> 72aacd891c6386d9cc4632ae05bfc7551289e53e
                                     hr-color">
-                                <p class="font-18 secondary-color">
-                                    Harga : Rp. 120000 <br>
-                                    Stok : 500
-                                </p>
+                                    <p class="font-18 secondary-color">
+                                        Harga : Rp. {{ $p->MP_UnitPrice }} <br>
+                                        Stok : {{ $p->MPStockProduct }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
                 <div class="col-1">
                     <center>
                         <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
@@ -62,6 +77,7 @@
                         </div>
                     </center>
                 </div>
+<<<<<<< HEAD
                 <div class="col">
                     <div class="card card-list-produk shadow-card border-none p-3">
                         <div class="row">
@@ -72,15 +88,29 @@
                             <div class="col my-auto">
                                 <h4 class="font-20 text-left semi-bold">Airly - Chocolate Oat Crackers</h4>
                                 <hr class="
+=======
+                @foreach ($itm1 as $p)
+                    <div class="col">
+                        <div class="card card-list-produk shadow-card p-3">
+                            <div class="row">
+                                <div class="col-5">
+                                    <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic3) }}"
+                                        width="200">
+                                </div>
+                                <div class="col my-auto">
+                                    <h4 class="font-20 text-left semi-bold">{{ $p->Itemname }}</h4>
+                                    <hr class="
+>>>>>>> 72aacd891c6386d9cc4632ae05bfc7551289e53e
                                     hr-color">
-                                <p class="font-18 secondary-color">
-                                    Harga : Rp. 120000 <br>
-                                    Stok : 500
-                                </p>
+                                    <p class="font-18 secondary-color">
+                                        Harga : Rp. {{ $p->MP_UnitPrice }} <br>
+                                        Stok : {{ $p->MPStockProduct }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
                 <div class="col-1">
                     <center>
                         <div class="card card-list-produk shadow-card border-none pt-5 pb-5">

@@ -15,6 +15,7 @@ class ProductsItm extends Controller
     public function index()
     {
         $itm1= Itm1::all();
+        return view('admin.kelola-produk',compact(['itm1']));
         return view('admin.index',compact(['itm1']));
     }
 
