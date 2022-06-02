@@ -55,14 +55,14 @@
                             <label for="MP_ProductCategory" class="medium">MP Product Category :</label>
                             <input type="text" class="form-control form-theme" id="MP_ProductCategory"
                                 name="MP_ProductCategory" placeholder="Nama Kategori Produk"
-                                value="{{ $itm1->MP_ProductCategory }}">
+                                {{ $itm1->MP_ProductCategory }}>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="Etalase" class="medium">MP Etalase :</label>
                             <input type="text" class="form-control form-theme" id="Etalase" name="Etalase"
-                                placeholder="Nama Etalase di Marketplace" value="{{ $itm1->Etalase }}">
+                                placeholder="Nama Etalase di Marketplace" {{ $itm1->Etalase }}>
                         </div>
                     </div>
                 </div>
@@ -76,20 +76,13 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="UrlVideoProduct" class="medium">Video Product :</label>
-                            <input type="text" class="form-control form-theme" id="UrlVideoProduct" name="UrlVideoProduct"
-                                placeholder="Url Video Product" value="{{ $itm1->UrlVideoProduct }}">
-                        </div>
-                    </div>
-                </div>
-                <div class="row ml-4 mr-4">
-                    <div class="col-md-6">
-                        <div class="form-group">
                             <label for="MP_MinOrder" class="medium">MP Min Order :</label>
                             <input type="text" class="form-control form-theme" id="MP_MinOrder" name="MP_MinOrder"
                                 placeholder="Minimal Order" value="{{ $itm1->MP_MinOrder }}">
                         </div>
                     </div>
+                </div>
+                <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_UnitPrice" class="medium">MP Unit Price :</label>
@@ -97,8 +90,6 @@
                                 placeholder="Harga Produk Per Unit" value="{{ $itm1->MP_UnitPrice }}">
                         </div>
                     </div>
-                </div>
-                <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_GroceryPrice" class="medium">MP Grocery Price :</label>
@@ -106,11 +97,22 @@
                                 placeholder="Harga Grosir" value="{{ $itm1->MP_GroceryPrice }}">
                         </div>
                     </div>
+                </div>
+                <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MPStockProduct" class="medium">MP Stock Produk :</label>
                             <input type="text" class="form-control form-theme" id="MPStockProduct" name="MPStockProduct"
                                 placeholder="Jumlah Stock Produk di Market Place" value="{{ $itm1->MPStockProduct }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="MPSKU" class="medium">MPSKU :</label>
+                                <input type="text" class="form-control form-theme" id="MPSKU" name="MPSKU"
+                                    placeholder="Stock Keeping Unit" value="{{ $itm1->MPSKU }}">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,9 +151,9 @@
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="MP_Pic1" class="medium">IMG Product :</label>
-                            <input type="text" class="form-control form-theme" id="MP_Pic1" name="MP_Pic1"
-                                placeholder="Gambar Produk 1" value="{{ $itm1->MP_Pic1 }}">
+                            <label for="UrlVideoProduct" class="medium">Video Product :</label>
+                            <input type="text" class="form-control form-theme" id="UrlVideoProduct" name="UrlVideoProduct"
+                                placeholder="Url Video Product" value="{{ $itm1->UrlVideoProduct }}">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -159,6 +161,54 @@
                             <label for="MPProductLink" class="medium">MP Product Link :</label>
                             <input type="text" class="form-control form-theme" id="MPProductLink" name="MPProductLink"
                                 placeholder="Link Produk Pada Marketplace" value="{{ $itm1->MPProductLink }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic1" class="medium">IMG Product 1 :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic1" name="MP_Pic1"
+                                placeholder="Gambar Produk 1" value="{{ $itm1->MP_Pic1 }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic2" class="medium">IMG Product 2 :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic2" name="MP_Pic2"
+                                placeholder="Gambar Produk 2" value="{{ $itm1->MP_Pic2 }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic3" class="medium">IMG Product 3 :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic3" name="MP_Pic3"
+                                placeholder="Gambar Produk 3" value="{{ $itm1->MP_Pic3 }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic4" class="medium">IMG Product 4 :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic4" name="MP_Pic4"
+                                placeholder="Gambar Produk 4" value="{{ $itm1->MP_Pic4 }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic5" class="medium">IMG Product 5 :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic5" name="MP_Pic5"
+                                placeholder="Gambar Produk 5" value="{{ $itm1->MP_Pic5 }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="PromoSupport" class="medium">Promo Support :</label>
+                            <input type="text" class="form-control form-theme" id="PromoSupport" name="PromoSupport"
+                                placeholder="#BananaSnack #BananaSnackRenyah" value="{{ $itm1->PromoSupport }}">
                         </div>
                     </div>
                 </div>
@@ -179,8 +229,8 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <div class="form-group">
-                                <label for="varian-produk" class="medium">PO Product :</label>
-                                <select class="form-control form-theme" id="varian-produk" name="varian-produk">
+                                <label for="MP_POProduct" class="medium">PO Product :</label>
+                                <select class="form-control form-theme" id="MP_POProduct" name="MP_POProduct">
                                     <option value="Default" selected>{{ $itm1->MP_POProduct == 1 ? 'YES' : 'NO' }}
                                     </option>
                                     <option value="1">YES</option>
@@ -194,9 +244,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <div class="form-group">
-                                <label for="MPSKU" class="medium">MPSKU :</label>
-                                <input type="text" class="form-control form-theme" id="MPSKU" name="MPSKU"
-                                    placeholder="Stock Keeping Unit" value="{{ $itm1->MPSKU }}">
+                                <label for="MP_ProdInsurance" class="medium">Asuransi :</label>
+                                <select class="form-control form-theme" id="MP_ProdInsurance" name="MP_ProdInsurance">
+                                    <option value="Default" selected>{{ $itm1->MP_ProdInsurance == 1 ? 'YES' : 'NO' }}
+                                    </option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -205,8 +259,10 @@
                             <div class="form-group">
                                 <label for="MP_Delivery" class="medium">MP Delivery :</label>
                                 <select class="form-control form-theme" id="MP_Delivery" name="MP_Delivery">
-                                    <option value="Default" selected>{{ $itm1->MP_Delivery }}</option>
-                                    <option value="STANDARD / Camilan">STANDAR</option>
+                                    <option value="Default" selected>
+                                        {{ $itm1->MP_Delivery == 'STANDAR' ? 'STANDAR' : 'CUSTOM' }}
+                                    </option>
+                                    <option value="STANDAR">STANDAR</option>
                                     <option value="CUSTOM">CUSTOM</option>
                                 </select>
                             </div>
@@ -214,13 +270,6 @@
                     </div>
                 </div>
                 <div class="row ml-4 mr-4">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="PromoSupport" class="medium">Promo Support :</label>
-                            <input type="text" class="form-control form-theme" id="PromoSupport" name="PromoSupport"
-                                placeholder="#BananaSnack #BananaSnackRenyah" value="{{ $itm1->PromoSupport }}">
-                        </div>
-                    </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_ProductDescription" class="medium">Product Description :</label>
