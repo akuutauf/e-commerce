@@ -57,7 +57,6 @@ Route::get('/detail-produk', function () {
     return view('detail-produk');
 });
 
-Route::get('/index', [ProductsItm::class, 'index']);
 
 // controller
 Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUser');

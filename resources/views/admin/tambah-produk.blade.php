@@ -7,7 +7,8 @@
 @section('content')
     {{-- Start Container Form --}}
     <section id="edit-card" class="mt-5 p-lg-5">
-        <form action="" class="form-group pt-5 pb-5" method="POST">
+        <form action="/productsitm/" class="form-group pt-5 pb-5" method="POST">
+            @csrf
             <div class="container container-form">
                 <div class="row">
                     <div class="col">
@@ -164,12 +165,65 @@
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
+                            <label for="MP_Pic2" class="medium">IMG Product :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic2" name="MP_Pic2"
+                                placeholder="Gambar Produk 2">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="MP_ProdInsurance" class="medium">Asuransi :</label>
+                                <select class="form-control form-theme" id="MP_ProdInsurance" name="MP_ProdInsurance">
+                                    <option value="Default" selected>Apakah Produk Mendapatkan Asuransi</option>
+                                    <option value="true">YES</option>
+                                    <option value="false">NO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic3" class="medium">IMG Product :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic3" name="MP_Pic3"
+                                placeholder="Gambar Produk 3">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic4" class="medium">IMG Product :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic4" name="MP_Pic4"
+                                placeholder="Gambar Produk 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic5" class="medium">IMG Product :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic5" name="MP_Pic5"
+                                placeholder="Gambar Produk 5">
+                        </div>
+                    </div>
+                    {{-- <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic4" class="medium">IMG Product :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic4" name="MP_Pic4"
+                                placeholder="Gambar Produk 4">
+                        </div>
+                    </div> --}}
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
                             <div class="form-group">
                                 <label for="MPStatusProduct" class="medium">Status Product :</label>
                                 <select class="form-control form-theme" id="MPStatusProduct" name="MPStatusProduct">
                                     <option value="Default" selected>Pilih Status Produk</option>
-                                    <option value="Snack / Camilan">YES</option>
-                                    <option value="Keripik">NO</option>
+                                    <option value="true">YES</option>
+                                    <option value="false">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -177,11 +231,11 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <div class="form-group">
-                                <label for="varian-produk" class="medium">PO Product :</label>
-                                <select class="form-control form-theme" id="varian-produk" name="varian-produk">
+                                <label for="MP_POProduct" class="medium">PO Product :</label>
+                                <select class="form-control form-theme" id="MP_POProduct" name="MP_POProduct">
                                     <option value="Default" selected>Apakah Produk Wajib Pre Order</option>
-                                    <option value="Snack / Camilan">YES</option>
-                                    <option value="Keripik">NO</option>
+                                    <option value="true">YES</option>
+                                    <option value="false">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -203,8 +257,8 @@
                                 <label for="MP_Delivery" class="medium">MP Delivery :</label>
                                 <select class="form-control form-theme" id="MP_Delivery" name="MP_Delivery">
                                     <option value="Default" selected>Pilih Layanan Pengiriman Produk</option>
-                                    <option value="Snack / Camilan">STANDAR</option>
-                                    <option value="Keripik">CUSTOM</option>
+                                    <option value="true">STANDAR</option>
+                                    <option value="false">CUSTOM</option>
                                 </select>
                             </div>
                         </div>
@@ -230,12 +284,16 @@
                 <div class="row ml-4 mr-4 pb-5">
                     <div class="col-md-12">
                         <div class="mt-2">
-                            <a type="submit" href="/kelola-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                            <input type="submit" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3" value="Simpan"
+                                value="Simpan">
+                            {{-- <a type="submit" href="/productsitm/store" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3"
+                                value="save">
                                 Simpan
-                            </a>
-                            <a type="button" href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
+                            </a> --}}
+                            <input type="submit" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3" value="Reset">
+                            {{-- <a type="button" href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
                                 Reset
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                 </div>

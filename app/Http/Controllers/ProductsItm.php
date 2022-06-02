@@ -28,7 +28,7 @@ class ProductsItm extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.tambah-produk');
     }
 
     /**
@@ -39,7 +39,8 @@ class ProductsItm extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->except('_token'));
+        Itm1::create($request->except(['_token','MP_ProdInsurance']));
     }
 
     /**
