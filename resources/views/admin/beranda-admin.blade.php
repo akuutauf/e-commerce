@@ -98,24 +98,27 @@
                 <div class="row py-4 px-2">
                     @foreach ($banana_snack as $item)
                         <div class="col d-flex justify-content-center">
-                            <div class="card shadow-card border-none" style="width: 15.5rem;">
-                                <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="h6 card-text semi-bold">{{ $item[0] }}</p>
-                                    <p class="card-text product-price bold">Rp. {{ $item[1] }}</p>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="card-text semi-bold font-10 text-left">{{ $item[2] }}<br><span
-                                                    class="card-text total-sales regular">Terjual
-                                                    {{ $item[3] }}</span></p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p class="card-text text-left shop-location mt-4 regular">
-                                                {{ $item[4] }}</p>
+                            <a href="" class="card-a">
+                                <div class="card shadow-card border-none" style="width: 15.5rem;" href="">
+                                    <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="h6 card-text semi-bold text-card">{{ $item[0] }}</p>
+                                        <p class="card-text product-price bold">Rp. {{ $item[1] }}</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="card-text semi-bold font-10 text-left text-card">
+                                                    {{ $item[2] }}<br><span
+                                                        class="card-text total-sales regular medium">Stok
+                                                        {{ $item[3] }}</span></p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="card-text text-left shop-location mt-4 medium">
+                                                    {{ $item[4] }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
                 </div>
@@ -132,24 +135,27 @@
                 <div class="row py-4 px-2">
                     @foreach ($dragon_rengginang as $item1)
                         <div class="col d-flex justify-content-center">
-                            <div class="card shadow-card border-none" style="width: 15.5rem;">
-                                <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="h6 card-text semi-bold">{{ $item1[0] }}</p>
-                                    <p class="card-text product-price bold">Rp. {{ $item1[1] }}</p>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="card-text semi-bold font-10 text-left">{{ $item1[2] }}<br><span
-                                                    class="card-text total-sales regular">Terjual
-                                                    {{ $item1[3] }}</span></p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p class="card-text text-left shop-location mt-4 regular">
-                                                {{ $item1[4] }}</p>
+                            <a href="" class="card-a">
+                                <div class="card shadow-card border-none" style="width: 15.5rem;" href="">
+                                    <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="h6 card-text semi-bold text-card">{{ $item1[0] }}</p>
+                                        <p class="card-text product-price bold">Rp. {{ $item1[1] }}</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="card-text semi-bold font-10 text-left text-card">
+                                                    {{ $item1[2] }}<br><span
+                                                        class="card-text total-sales regular medium">Stok
+                                                        {{ $item1[3] }}</span></p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="card-text text-left shop-location mt-4 medium">
+                                                    {{ $item1[4] }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
                 </div>

@@ -104,7 +104,7 @@ class BerandaController extends Controller
                 ['Dragon Drink - Varian Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
                 ['Dragon Drink - Spesial Varian Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
                 ['Dragon Drink - Varian Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
-                ['Semua Variasi Dragon Drin (Original, Spesial Jahe, dan Jahe Merah)k', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
+                ['Semua Variasi Dragon Drink (Original, Spesial Jahe, dan Jahe Merah)', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
             ],
         );
         return view('admin.dashboard-toko-admin')->with($product);

@@ -168,8 +168,8 @@
                                 <label for="MPStatusProduct" class="medium">Status Product :</label>
                                 <select class="form-control form-theme" id="MPStatusProduct" name="MPStatusProduct">
                                     <option value="Default" selected>Pilih Status Produk</option>
-                                    <option value="Snack / Camilan">YES</option>
-                                    <option value="Keripik">NO</option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -180,8 +180,8 @@
                                 <label for="varian-produk" class="medium">PO Product :</label>
                                 <select class="form-control form-theme" id="varian-produk" name="varian-produk">
                                     <option value="Default" selected>Apakah Produk Wajib Pre Order</option>
-                                    <option value="Snack / Camilan">YES</option>
-                                    <option value="Keripik">NO</option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -203,8 +203,8 @@
                                 <label for="MP_Delivery" class="medium">MP Delivery :</label>
                                 <select class="form-control form-theme" id="MP_Delivery" name="MP_Delivery">
                                     <option value="Default" selected>Pilih Layanan Pengiriman Produk</option>
-                                    <option value="Snack / Camilan">STANDAR</option>
-                                    <option value="Keripik">CUSTOM</option>
+                                    <option value="STANDAR">STANDAR</option>
+                                    <option value="CUSTOM">CUSTOM</option>
                                 </select>
                             </div>
                         </div>

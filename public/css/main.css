@@ -372,6 +372,14 @@ body {
     border: 2px solid #9772fb !important;
 }
 
+.card-a {
+    text-decoration: none !important;
+}
+
+.text-card {
+    color: #000000 !important;
+}
+
 .icon-edit {
     color: #9772fb;
 }
