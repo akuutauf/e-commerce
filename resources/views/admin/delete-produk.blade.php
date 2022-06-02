@@ -12,80 +12,225 @@
                 <div class="row">
                     <div class="col">
                         <div class="text-center pt-5">
-                            <h3 class="semi-bold">Delete Produk</h3>
-                            <p class="secondary-color">Menghapus produk Makanan</p>
+                            <h3 class="semi-bold">Update Produk</h3>
+                            <p class="secondary-color">Mengubah Informasi Data Produk</p>
                         </div>
                     </div>
                 </div>
                 <div class="row ml-4 mr-4 mt-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="kode-produk" class="medium">Kode Produk :</label>
-                            <input type="text" class="form-control form-theme-disable" id="kode-produk" name="kode-produk"
-                                placeholder="Kode Produk" value="11025" disabled>
+                            <label for="Itemcode" class="medium">Item Code :</label>
+                            <input type="text" class="form-control form-theme-disable" id="Itemcode" name="Itemcode"
+                                placeholder="Kode Item" value="Itemcode" disabled>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="nama-produk" class="medium">Nama Produk :</label>
-                            <input type="text" class="form-control form-theme-disable" id="nama-produk" name="nama-produk"
-                                placeholder="Nama Produk" value="Airly - Chocolate Oat Crackers" disabled>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ml-4 mr-4">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="harga-produk" class="medium">Harga Produk :</label>
-                            <input type="text" class="form-control form-theme-disable" id="harga-produk" name="harga-produk"
-                                placeholder="Harga Produk" value="100000" disabled>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="stok-produk" class="medium">Stok Produk :</label>
-                            <input type="text" class="form-control form-theme-disable" id="stok-produk" name="stok-produk"
-                                placeholder="Jumlah Stok" value="1000" disabled>
+                            <label for="Itemname" class="medium">Item Name :</label>
+                            <input type="text" class="form-control form-theme-disable" id="Itemname" name="Itemname"
+                                placeholder="Nama Produk" value="Itemname" disabled>
                         </div>
                     </div>
                 </div>
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="kategori-produk" class="medium">Kategori Produk :</label>
-                            <input type="text" class="form-control form-theme-disable" id="kategori-produk"
-                                name="kategori-produk" placeholder="Kategori" value="Chococips" disabled>
+                            <label for="MPName" class="medium">MP Name :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MPName" name="MPName"
+                                placeholder="Nama Marketplace" value="MPName" disabled>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="varian-produk" class="medium">Varian Produk :</label>
-                            <select class="form-control form-theme-disable" id="varian-produk" name="varian-produk"
+                            <label for="MP_ProductName" class="medium">MP Product Name :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_ProductName"
+                                name="MP_ProductName" placeholder="Nama Produk di Marketplace" value="MP_ProductName"
                                 disabled>
-                                <option value="Default">Pilih Varian</option>
-                                <option value="Snack / Camilan" selected>Snack / Camilan</option>
-                                <option value="Keripik">Keripik</option>
-                                <option value="Rengginang">Rengginang</option>
-                                <option value="Makanan">Makanan</option>
-                                <option value="Minuman">Minuman</option>
-                            </select>
                         </div>
                     </div>
                 </div>
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="berat-produk" class="medium">Berat Produk :</label>
-                            <input type="text" class="form-control form-theme-disable" id="berat-produk" name="berat-produk"
-                                placeholder="Berat Bersih (gram)" value="250" disabled>
+                            <label for="MP_ProductCategory" class="medium">MP Product Category :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_ProductCategory"
+                                name="MP_ProductCategory" placeholder="Nama Kategori Produk" value="MP_ProductCategory"
+                                disabled>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="deskripsi-produk" class="medium">Berat Produk :</label>
-                            <textarea class="form-control theme-form-2 " id="deskripsi-produk" name="deskripsi-produk"
-                                placeholder="Deskripsi Singkat Produk Anda" rows="3"
-                                disabled>Produk ini merupakan salah satu produk rekomendasi pada toko kami</textarea>
+                            <label for="Etalase" class="medium">MP Etalase :</label>
+                            <input type="text" class="form-control form-theme-disable" id="Etalase" name="Etalase"
+                                placeholder="Nama Etalase di Marketplace" value="Etalase" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MPKondisi" class="medium">Kondisi Produk :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MPKondisi" name="MPKondisi"
+                                placeholder="Contoh Baru" value="MPKondisi" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="UrlVideoProduct" class="medium">Video Product :</label>
+                            <input type="text" class="form-control form-theme-disable" id="UrlVideoProduct"
+                                name="UrlVideoProduct" placeholder="Url Video Product" value="UrlVideoProduct" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_MinOrder" class="medium">MP Min Order :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_MinOrder" name="MP_MinOrder"
+                                placeholder="Minimal Order" value="MP_MinOrder" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_UnitPrice" class="medium">MP Unit Price :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_UnitPrice" name="MP_UnitPrice"
+                                placeholder="Harga Produk Per Unit" value="MP_UnitPrice" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_GroceryPrice" class="medium">MP Grocery Price :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_GroceryPrice"
+                                name="MP_GroceryPrice" placeholder="Harga Grosir" value="MP_GroceryPrice" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MPStockProduct" class="medium">MP Stock Produk :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MPStockProduct"
+                                name="MPStockProduct" placeholder="Jumlah Stock Produk di Market Place"
+                                value="MPStockProduct" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MPProductWeight" class="medium">Product Weight :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MPProductWeight"
+                                name="MPProductWeight" placeholder="Berat Produk" value="MPProductWeight" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_ProductLength" class="medium">Product Length :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_ProductLength"
+                                name="MP_ProductLength" placeholder="Panjang Produk" value="MP_ProductLength" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_ProductWidth" class="medium">Product Width :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_ProductWidth"
+                                name="MP_ProductWidth" placeholder="Lebar Produk" value="MP_ProductWidth" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_ProductHeight" class="medium">Product Height :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_ProductHeight"
+                                name="MP_ProductHeight" placeholder="Tinggi Produk" value="MP_ProductHeight" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_Pic1" class="medium">IMG Product :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MP_Pic1" name="MP_Pic1"
+                                placeholder="Gambar Produk 1" value="MP_Pic1" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MPProductLink" class="medium">MP Product Link :</label>
+                            <input type="text" class="form-control form-theme-disable" id="MPProductLink"
+                                name="MPProductLink" placeholder="Link Produk Pada Marketplace" value="MPProductLink"
+                                disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="MPStatusProduct" class="medium">Status Product :</label>
+                                <select class="form-control form-theme-disable" id="MPStatusProduct" name="MPStatusProduct"
+                                    disabled>
+                                    <option value="Default" selected>MPStatusProduct(YES)</option>
+                                    <option value="Snack / Camilan">YES</option>
+                                    <option value="Keripik">NO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="varian-produk" class="medium">PO Product :</label>
+                                <select class="form-control form-theme-disable" id="varian-produk" name="varian-produk"
+                                    disabled>
+                                    <option value="Default" selected>MP_POProduct(NO)</option>
+                                    <option value="Snack / Camilan">YES</option>
+                                    <option value="Keripik">NO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="MPSKU" class="medium">MPSKU :</label>
+                                <input type="text" class="form-control form-theme-disable" id="MPSKU" name="MPSKU"
+                                    placeholder="Stock Keeping Unit" value="MPSKU" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="MP_Delivery" class="medium">MP Delivery :</label>
+                                <select class="form-control form-theme-disable" id="MP_Delivery" name="MP_Delivery"
+                                    disabled>
+                                    <option value="Default" selected>MP_Delivery(STANDAR)</option>
+                                    <option value="Snack / Camilan">STANDAR</option>
+                                    <option value="Keripik">CUSTOM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="PromoSupport" class="medium">Promo Support :</label>
+                            <input type="text" class="form-control form-theme-disable" id="PromoSupport"
+                                name="PromoSupport" placeholder="#BananaSnack #BananaSnackRenyah" value="PromoSupport"
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_ProductDescription" class="medium">Product Description :</label>
+                            <textarea class="form-control theme-form-2" id="MP_ProductDescription" name="MP_ProductDescription"
+                                placeholder="Deskripsi Produk" rows="3" disabled>MP_ProductDescription</textarea>
 
                         </div>
                     </div>
@@ -93,8 +238,8 @@
                 <div class="row ml-4 mr-4 pb-5">
                     <div class="col-md-12">
                         <div class="mt-2">
-                            <a type="submit" href="/kelola-produk" class="btn btn-delete px-sm-3 py-sm-2 medium mt-3">
-                                Hapus
+                            <a type="submit" href="/kelola-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                                Simpan
                             </a>
                             <a type="button" href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
                                 Reset
