@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsItm;
+use App\Http\Controllers\FrontEnd\BerandaAdmin;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,9 @@ Route::get('/detail-produk', function () {
 
 // resource
 Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
+Route::resource('berandaadmin', 'App\Http\Controllers\FrontEnd\BerandaAdmin');
+
+// get route from resource
 Route::get('/kelola-produk', [ProductsItm::class, 'index']);
 Route::get('/beranda-admin', [ProductsItm::class, 'index']);
 

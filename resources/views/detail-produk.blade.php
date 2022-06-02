@@ -140,8 +140,8 @@
                                     <h3 class="semi-bold color-theme">Rp. 50.000</h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
-                                    <h4 class="medium font-25">Terjual :</h4>
-                                    <h3 class="semi-bold total-sales">Rp. 1000</h3>
+                                    <h4 class="medium font-25">Stok :</h4>
+                                    <h3 class="semi-bold total-sales">50</h3>
                                 </div>
                             </div>
                             <div class="row">
@@ -183,12 +183,14 @@
                             </div>
                             <div class="row d-flex justify-content-md-start mb-3">
                                 <div class="col-lg-3 mt-2">
-                                    <a type="submit" href="/kelola-produk" class="btn btn-shopee px-sm-3 py-sm-2 medium">
+                                    <a type="submit"
+                                        href="https://shopee.co.id/Banana-Snack-(Keripik-Pisang-Kepok)-varian-jagung-manis-i.65325206.14530487418?sp_atk=844c18f8-f791-43f5-8bdf-47ebe4b03641&xptdk=844c18f8-f791-43f5-8bdf-47ebe4b03641"
+                                        class="btn btn-shopee px-sm-3 py-sm-2 medium">
                                         Order Shopee
                                     </a>
                                 </div>
                                 <div class="col-lg-9 mt-2">
-                                    <a type="button" href="/kelola-produk" class="btn btn-tokopedia px-sm-3 py-sm-2 medium">
+                                    <a type="button" href="#" class="btn btn-tokopedia px-sm-3 py-sm-2 medium">
                                         Order Tokopedia
                                     </a>
                                 </div>
