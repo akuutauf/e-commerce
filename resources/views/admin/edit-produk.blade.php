@@ -55,14 +55,14 @@
                             <label for="MP_ProductCategory" class="medium">MP Product Category :</label>
                             <input type="text" class="form-control form-theme" id="MP_ProductCategory"
                                 name="MP_ProductCategory" placeholder="Nama Kategori Produk"
-                                {{ $itm1->MP_ProductCategory }}>
+                                value="{{ $itm1->MP_ProductCategory }}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="Etalase" class="medium">MP Etalase :</label>
                             <input type="text" class="form-control form-theme" id="Etalase" name="Etalase"
-                                placeholder="Nama Etalase di Marketplace" {{ $itm1->Etalase }}>
+                                placeholder="Nama Etalase di Marketplace" value="{{ $itm1->Etalase }}">
                         </div>
                     </div>
                 </div>
