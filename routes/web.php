@@ -27,9 +27,9 @@ Route::get('/beranda-customer', function () {
     return view('customer.beranda-customer');
 });
 
-Route::get('/beranda-admin', function () {
-    return view('admin.beranda-admin');
-});
+// Route::get('/beranda-admin', function () {
+//     return view('admin.beranda-admin');
+// });
 
 Route::get('/dashboard-toko-customer', function () {
     return view('customer.dashboard-toko-customer');
@@ -40,10 +40,8 @@ Route::get('/dashboard-toko-admin', function () {
 });
 
 Route::get('/kelola-produk', [ProductsItm::class, 'index']);
+Route::get('/beranda-admin', [ProductsItm::class, 'index']);
 
-// Route::get('/edit-produk', function () {
-//     return view('admin.edit-produk');
-// });
 
 Route::get('/add-produk', function () {
     return view('admin.tambah-produk');
@@ -64,4 +62,9 @@ Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
 Route::get('/dashboard-toko-admin', 'App\Http\Controllers\BerandaController@produkKategoriAdmin');
 Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
+
+
 // Route::get('product/add', [\App\Http\Controllers\ProductObugami::class, 'produk']);
+// Route::get('/edit-produk', function () {
+//     return view('admin.edit-produk');
+// });

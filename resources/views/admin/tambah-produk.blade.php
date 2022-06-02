@@ -76,20 +76,13 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="UrlVideoProduct" class="medium">Video Product :</label>
-                            <input type="text" class="form-control form-theme" id="UrlVideoProduct" name="UrlVideoProduct"
-                                placeholder="Url Video Product">
-                        </div>
-                    </div>
-                </div>
-                <div class="row ml-4 mr-4">
-                    <div class="col-md-6">
-                        <div class="form-group">
                             <label for="MP_MinOrder" class="medium">MP Min Order :</label>
                             <input type="text" class="form-control form-theme" id="MP_MinOrder" name="MP_MinOrder"
                                 placeholder="Minimal Order">
                         </div>
                     </div>
+                </div>
+                <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_UnitPrice" class="medium">MP Unit Price :</label>
@@ -97,8 +90,6 @@
                                 placeholder="Harga Produk Per Unit">
                         </div>
                     </div>
-                </div>
-                <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_GroceryPrice" class="medium">MP Grocery Price :</label>
@@ -106,11 +97,22 @@
                                 placeholder="Harga Grosir">
                         </div>
                     </div>
+                </div>
+                <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MPStockProduct" class="medium">MP Stock Produk :</label>
                             <input type="text" class="form-control form-theme" id="MPStockProduct" name="MPStockProduct"
                                 placeholder="Jumlah Stock Produk di Market Place">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="MPSKU" class="medium">MPSKU :</label>
+                                <input type="text" class="form-control form-theme" id="MPSKU" name="MPSKU"
+                                    placeholder="Stock Keeping Unit">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,9 +151,9 @@
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="MP_Pic1" class="medium">IMG Product :</label>
-                            <input type="text" class="form-control form-theme" id="MP_Pic1" name="MP_Pic1"
-                                placeholder="Gambar Produk 1">
+                            <label for="UrlVideoProduct" class="medium">Video Product :</label>
+                            <input type="text" class="form-control form-theme" id="UrlVideoProduct" name="UrlVideoProduct"
+                                placeholder="Url Video Product">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -165,35 +167,30 @@
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="MP_Pic2" class="medium">IMG Product :</label>
-                            <input type="text" class="form-control form-theme" id="MP_Pic2" name="MP_Pic2"
-                                placeholder="Gambar Produk 2">
+                            <label for="MP_Pic1" class="medium">IMG Product 1 :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic1" name="MP_Pic1"
+                                placeholder="Gambar Produk 1">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <div class="form-group">
-                                <label for="MP_ProdInsurance" class="medium">Asuransi :</label>
-                                <select class="form-control form-theme" id="MP_ProdInsurance" name="MP_ProdInsurance">
-                                    <option value="Default" selected>Apakah Produk Mendapatkan Asuransi</option>
-                                    <option value="1">YES</option>
-                                    <option value="0">NO</option>
-                                </select>
-                            </div>
+                            <label for="MP_Pic2" class="medium">IMG Product 2 :</label>
+                            <input type="text" class="form-control form-theme" id="MP_Pic2" name="MP_Pic2"
+                                placeholder="Gambar Produk 2">
                         </div>
                     </div>
                 </div>
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="MP_Pic3" class="medium">IMG Product :</label>
+                            <label for="MP_Pic3" class="medium">IMG Product 3 :</label>
                             <input type="text" class="form-control form-theme" id="MP_Pic3" name="MP_Pic3"
                                 placeholder="Gambar Produk 3">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="MP_Pic4" class="medium">IMG Product :</label>
+                            <label for="MP_Pic4" class="medium">IMG Product 4 :</label>
                             <input type="text" class="form-control form-theme" id="MP_Pic4" name="MP_Pic4"
                                 placeholder="Gambar Produk 4">
                         </div>
@@ -202,18 +199,18 @@
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="MP_Pic5" class="medium">IMG Product :</label>
+                            <label for="MP_Pic5" class="medium">IMG Product 5 :</label>
                             <input type="text" class="form-control form-theme" id="MP_Pic5" name="MP_Pic5"
                                 placeholder="Gambar Produk 5">
                         </div>
                     </div>
-                    {{-- <div class="col-md-6">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <label for="MP_Pic4" class="medium">IMG Product :</label>
-                            <input type="text" class="form-control form-theme" id="MP_Pic4" name="MP_Pic4"
-                                placeholder="Gambar Produk 4">
+                            <label for="PromoSupport" class="medium">Promo Support :</label>
+                            <input type="text" class="form-control form-theme" id="PromoSupport" name="PromoSupport"
+                                placeholder="#BananaSnack #BananaSnackRenyah">
                         </div>
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
@@ -245,9 +242,12 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <div class="form-group">
-                                <label for="MPSKU" class="medium">MPSKU :</label>
-                                <input type="text" class="form-control form-theme" id="MPSKU" name="MPSKU"
-                                    placeholder="Stock Keeping Unit">
+                                <label for="MP_ProdInsurance" class="medium">Asuransi :</label>
+                                <select class="form-control form-theme" id="MP_ProdInsurance" name="MP_ProdInsurance">
+                                    <option value="Default" selected>Apakah Produk Mendapatkan Asuransi</option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -267,13 +267,6 @@
                 <div class="row ml-4 mr-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="PromoSupport" class="medium">Promo Support :</label>
-                            <input type="text" class="form-control form-theme" id="PromoSupport" name="PromoSupport"
-                                placeholder="#BananaSnack #BananaSnackRenyah">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
                             <label for="MP_ProductDescription" class="medium">Product Description :</label>
                             <textarea class="form-control form-color " id="MP_ProductDescription" name="MP_ProductDescription"
                                 placeholder="Deskripsi Produk" rows="3"></textarea>
@@ -286,14 +279,7 @@
                         <div class="mt-2">
                             <input type="submit" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3" value="Simpan"
                                 value="Simpan">
-                            {{-- <a type="submit" href="/productsitm/store" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3"
-                                value="save">
-                                Simpan
-                            </a> --}}
-                            <input type="submit" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3" value="Reset">
-                            {{-- <a type="button" href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
-                                Reset
-                            </a> --}}
+                            <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">Cancel</a>
                         </div>
                     </div>
                 </div>
