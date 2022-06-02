@@ -16,6 +16,7 @@ class ProductsItm extends Controller
     {
         $itm1= Itm1::all();
         return view('admin.kelola-produk',compact(['itm1']));
+        return view('admin.beranda-admin',compact(['itm1']));
         return view('admin.index',compact(['itm1']));
     }
 
@@ -48,8 +49,11 @@ class ProductsItm extends Controller
      */
     public function show($id)
     {
-        //
+
+            $itm1 = $itm1::show($id);
+            return view('admin.index')->with('itm1',$itm1);
     }
+
 
     /**
      * Show the form for editing the specified resource.
