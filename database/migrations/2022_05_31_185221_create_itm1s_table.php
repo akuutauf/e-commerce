@@ -43,7 +43,7 @@ return new class extends Migration
             $table->string('MP_Pic4', 64);
             $table->string('MP_Pic5', 64);
             $table->string('PromoSupport', 256);
-            $table->string('MPProductLink', 128);
+            $table->string('MPProductLink', 512);
         });
     }
 

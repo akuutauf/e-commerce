@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Itm1;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProductsItm extends Controller
+class DetailsProduct extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +13,7 @@ class ProductsItm extends Controller
      */
     public function index()
     {
-        // menampilkan produk dan memperoleh id nya dari halaman kelola produk
-        $itm1 = Itm1::all();
-        return view('admin.kelola-produk', compact(['itm1']));
-        return view('admin.beranda-admin', compact(['itm1']));
+        //
     }
 
     /**
@@ -53,7 +48,6 @@ class ProductsItm extends Controller
         //
     }
 
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -62,9 +56,7 @@ class ProductsItm extends Controller
      */
     public function edit($id)
     {
-        // mengambil data id dan menampilkannya pada halaman edit
-        $itm1 = Itm1::find($id);
-        return view('admin.edit-produk')->with('itm1', $itm1);
+        //
     }
 
     /**
