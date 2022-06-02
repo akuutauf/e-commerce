@@ -20,16 +20,32 @@
                 <div class="row ml-4 mr-4 mt-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="kode-produk" class="medium">Kode Produk :</label>
-                            <input type="text" class="form-control form-theme" id="kode-produk" name="kode-produk"
-                                placeholder="Kode Produk">
+                            <label for="Itemcode" class="medium">Itemcode :</label>
+                            <input type="text" class="form-control form-theme" id="Itemcode" name="Itemcode"
+                                placeholder="Itemcode">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="nama-produk" class="medium">Nama Produk :</label>
-                            <input type="text" class="form-control form-theme" id="nama-produk" name="nama-produk"
-                                placeholder="Nama Produk">
+                            <label for="Itemname" class="medium">Itemname :</label>
+                            <input type="text" class="form-control form-theme" id="Itemname" name="Itemname"
+                                placeholder="Itemname">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-4 mr-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MPName" class="medium">MPName :</label>
+                            <input type="text" class="form-control form-theme" id="MPName" name="MPName"
+                                placeholder="Nama Marketplace">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="MP_ProductName" class="medium">MP ProductName :</label>
+                            <input type="text" class="form-control form-theme" id="MP_ProductName" name="MP_ProductName"
+                                placeholder="Nama Produk di Marketplace">
                         </div>
                     </div>
                 </div>

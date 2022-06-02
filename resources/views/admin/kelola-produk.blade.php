@@ -31,8 +31,8 @@
         <div class="container">
             <div class="row">
                 @foreach ($itm1 as $p)
-                    <div class="col">
-                        <div class="card card-list-produk shadow-card p-3">
+                    <div class="col-lg-5">
+                        <div class="card card-list-produk shadow-card border-none p-3">
                             <div class="row">
                                 <div class="col-5">
                                     <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic1) }}"
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 @endforeach
-                <div class="col-1">
+                <div class="col-lg-1">
                     <center>
                         <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
                             <div id="icon-edit">
@@ -65,8 +65,8 @@
                     </center>
                 </div>
                 @foreach ($itm1 as $p)
-                    <div class="col">
-                        <div class="card card-list-produk shadow-card p-3">
+                    <div class="col-lg-5">
+                        <div class="card card-list-produk shadow-card border-none p-3">
                             <div class="row">
                                 <div class="col-5">
                                     <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic3) }}"
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 @endforeach
-                <div class="col-1">
+                <div class="col-lg-1">
                     <center>
                         <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
                             <div id="icon-edit">
