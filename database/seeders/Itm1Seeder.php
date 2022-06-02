@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Seeders;
+
 use App\Models\Itm1;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -27,7 +28,7 @@ class Itm1Seeder extends Seeder
                 'UrlVideoProduct' => '',
                 'MP_MinOrder' => 1,
                 'MP_UnitPrice' => 50000,
-                'MP_GroceryPrice' =>0,
+                'MP_GroceryPrice' => 0,
                 'MPStatusProduct' => true,
                 'MPStockProduct' => 200,
                 'MPSKU' => '',
