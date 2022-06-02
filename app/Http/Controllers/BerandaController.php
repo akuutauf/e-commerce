@@ -24,10 +24,10 @@ class BerandaController extends Controller
                 ['Rengginang Buah Naga - Dragon Reco', 48000, 'Obugame', 1200, 'Banyuwangi', asset('img/rengginang/dragon_reco.jpg')],
             ],
             'dragon_drink' => [
-                ['Dragon Drink - Varian Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
-                ['Dragon Drink - Spesial Varian Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
-                ['Dragon Drink - Varian Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
-                ['Semua Variasi Dragon Drin (Original, Spesial Jahe, dan Jahe Merah)k', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
+                ['Dragon Drink -  Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
+                ['Dragon Drink - Spesial  Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
+                ['Dragon Drink -  Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
+                ['All Dragon Drink (Original, Spesial Jahe, dan Jahe Merah)', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
             ],
         );
         return view('customer.beranda-customer')->with($product);
@@ -50,10 +50,10 @@ class BerandaController extends Controller
                 ['Rengginang Buah Naga - Dragon Reco', 48000, 'Obugame', 1200, 'Banyuwangi', asset('img/rengginang/dragon_reco.jpg')],
             ],
             'dragon_drink' => [
-                ['Dragon Drink - Varian Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
-                ['Dragon Drink - Spesial Varian Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
-                ['Dragon Drink - Varian Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
-                ['Semua Variasi Dragon Drin (Original, Spesial Jahe, dan Jahe Merah)k', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
+                ['Dragon Drink -  Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
+                ['Dragon Drink - Spesial  Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
+                ['Dragon Drink -  Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
+                ['All Dragon Drink (Original, Spesial Jahe, dan Jahe Merah)', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
             ],
         );
         return view('admin.beranda-admin')->with($product);
@@ -76,10 +76,10 @@ class BerandaController extends Controller
                 ['Rengginang Buah Naga - Dragon Reco', 48000, 'Obugame', 1200, 'Banyuwangi', asset('img/rengginang/dragon_reco.jpg')],
             ],
             'dragon_drink' => [
-                ['Dragon Drink - Varian Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
-                ['Dragon Drink - Spesial Varian Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
-                ['Dragon Drink - Varian Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
-                ['Semua Variasi Dragon Drin (Original, Spesial Jahe, dan Jahe Merah)k', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
+                ['Dragon Drink -  Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
+                ['Dragon Drink - Spesial  Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
+                ['Dragon Drink -  Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
+                ['All Dragon Drink (Original, Spesial Jahe, dan Jahe Merah)', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
             ],
         );
         return view('customer.dashboard-toko-customer')->with($product);
@@ -101,10 +101,10 @@ class BerandaController extends Controller
                 ['Rengginang Buah Naga - Dragon Reco', 48000, 'Obugame', 1200, 'Banyuwangi', asset('img/rengginang/dragon_reco.jpg')],
             ],
             'dragon_drink' => [
-                ['Dragon Drink - Varian Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
-                ['Dragon Drink - Spesial Varian Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
-                ['Dragon Drink - Varian Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
-                ['Semua Variasi Dragon Drink (Original, Spesial Jahe, dan Jahe Merah)', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
+                ['Dragon Drink -  Original', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_original.jpg')],
+                ['Dragon Drink - Spesial  Jahe', 15000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahe.jpg')],
+                ['Dragon Drink -  Jahe Merah', 15000, 'Obugame', 1000, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_jahemerah.jpg')],
+                ['All Dragon Drink (Original, Spesial Jahe, dan Jahe Merah)', 40000, 'Obugame', 1200, 'Banyuwangi', asset('img/dragon_drink/dragon_drink_all.jpg')],
             ],
         );
         return view('admin.dashboard-toko-admin')->with($product);
