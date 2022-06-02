@@ -176,8 +176,8 @@
                                 <label for="MP_ProdInsurance" class="medium">Asuransi :</label>
                                 <select class="form-control form-theme" id="MP_ProdInsurance" name="MP_ProdInsurance">
                                     <option value="Default" selected>Apakah Produk Mendapatkan Asuransi</option>
-                                    <option value="true">YES</option>
-                                    <option value="false">NO</option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
                                 </select>
                             </div>
                         </div>
