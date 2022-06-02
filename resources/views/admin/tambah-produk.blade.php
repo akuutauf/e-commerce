@@ -222,8 +222,8 @@
                                 <label for="MPStatusProduct" class="medium">Status Product :</label>
                                 <select class="form-control form-theme" id="MPStatusProduct" name="MPStatusProduct">
                                     <option value="Default" selected>Pilih Status Produk</option>
-                                    <option value="true">YES</option>
-                                    <option value="false">NO</option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -234,8 +234,8 @@
                                 <label for="MP_POProduct" class="medium">PO Product :</label>
                                 <select class="form-control form-theme" id="MP_POProduct" name="MP_POProduct">
                                     <option value="Default" selected>Apakah Produk Wajib Pre Order</option>
-                                    <option value="true">YES</option>
-                                    <option value="false">NO</option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -257,8 +257,8 @@
                                 <label for="MP_Delivery" class="medium">MP Delivery :</label>
                                 <select class="form-control form-theme" id="MP_Delivery" name="MP_Delivery">
                                     <option value="Default" selected>Pilih Layanan Pengiriman Produk</option>
-                                    <option value="true">STANDAR</option>
-                                    <option value="false">CUSTOM</option>
+                                    <option value="STANDAR">STANDAR</option>
+                                    <option value="CUSTOM">CUSTOM</option>
                                 </select>
                             </div>
                         </div>
