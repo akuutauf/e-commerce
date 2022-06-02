@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="col-lg-1 mt-3">
-                        <center>
+                        <center class="pt-4 pb-4">
                             <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
                                 <div id="icon-edit">
                                     <a href="/productsitm/{{ $p->DocEntry }}/edit"><i
