@@ -17,7 +17,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="/add-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                    <a href="/productsitm/create" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
                         Tambah Produk Baru
                     </a>
                 </div>
