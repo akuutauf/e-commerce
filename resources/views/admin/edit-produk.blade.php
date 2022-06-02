@@ -7,7 +7,8 @@
 @section('content')
     {{-- Start Container Form --}}
     <section id="edit-card" class="mt-5 p-lg-5">
-        <form action="" class="form-group pt-5 pb-5" method="POST">
+        <form action="/productsitm/{{ $itm1->DocEntry }}" class="form-group pt-5 pb-5" method="POST">
+            @method('put')
             <div class="container container-form">
                 <div class="row">
                     <div class="col">

@@ -78,7 +78,8 @@ class ProductsItm extends Controller
      */
     public function update(Request $request, $id)
     {
-
+        $itm1 = Itm1::find($id);
+        $itm1->update($request->except(['_token']));
     }
 
     /**
