@@ -168,9 +168,10 @@
                             <div class="form-group">
                                 <label for="MPStatusProduct" class="medium">Status Product :</label>
                                 <select class="form-control form-theme" id="MPStatusProduct" name="MPStatusProduct">
-                                    <option value="Default" selected>{{ $itm1->MPStatusProduct }}</option>
-                                    <option value="Snack / Camilan">YES</option>
-                                    <option value="Keripik">NO</option>
+                                    <option value="Default" selected>{{ $itm1->MPStatusProduct == 1 ? 'YES' : 'NO' }}
+                                    </option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -180,9 +181,10 @@
                             <div class="form-group">
                                 <label for="varian-produk" class="medium">PO Product :</label>
                                 <select class="form-control form-theme" id="varian-produk" name="varian-produk">
-                                    <option value="Default" selected>{{ $itm1->MP_POProduct }}</option>
-                                    <option value="Snack / Camilan">YES</option>
-                                    <option value="Keripik">NO</option>
+                                    <option value="Default" selected>{{ $itm1->MP_POProduct == 1 ? 'YES' : 'NO' }}
+                                    </option>
+                                    <option value="1">YES</option>
+                                    <option value="0">NO</option>
                                 </select>
                             </div>
                         </div>
@@ -204,8 +206,8 @@
                                 <label for="MP_Delivery" class="medium">MP Delivery :</label>
                                 <select class="form-control form-theme" id="MP_Delivery" name="MP_Delivery">
                                     <option value="Default" selected>{{ $itm1->MP_Delivery }}</option>
-                                    <option value="Snack / Camilan">STANDAR</option>
-                                    <option value="Keripik">CUSTOM</option>
+                                    <option value="STANDARD / Camilan">STANDAR</option>
+                                    <option value="CUSTOM">CUSTOM</option>
                                 </select>
                             </div>
                         </div>
