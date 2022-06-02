@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 @foreach ($itm1 as $p)
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 mt-3">
                         <div class="card card-list-produk shadow-card border-none p-3">
                             <div class="row">
                                 <div class="col-5">
@@ -50,54 +50,21 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
-                <div class="col-lg-1">
-                    <center>
-                        <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
-                            <div id="icon-edit">
-                                <a href="/edit-produk"><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
-                            </div>
-                            <hr class="hr-panel mx-auto">
-                            <div id="icon-delete">
-                                <a href="/delete-produk"><i class="fa-solid fa-trash icon-size icon-delete"></i></a>
-                            </div>
-                        </div>
-                    </center>
-                </div>
-                @foreach ($itm1 as $p)
-                    <div class="col-lg-5">
-                        <div class="card card-list-produk shadow-card border-none p-3">
-                            <div class="row">
-                                <div class="col-5">
-                                    <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic3) }}"
-                                        width="200">
+                    <div class="col-lg-1 mt-3">
+                        <center>
+                            <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
+                                <div id="icon-edit">
+                                    <a href="/productsitm/{{ $p->DocEntry }}/edit"><i
+                                            class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
                                 </div>
-                                <div class="col my-auto">
-                                    <h4 class="font-20 text-left semi-bold">{{ $p->Itemname }}</h4>
-                                    <hr class="
-                                    hr-color">
-                                    <p class="font-18 secondary-color">
-                                        Harga : Rp. {{ $p->MP_UnitPrice }} <br>
-                                        Stok : {{ $p->MPStockProduct }}
-                                    </p>
+                                <hr class="hr-panel mx-auto">
+                                <div id="icon-delete">
+                                    <a href="/delete-produk"><i class="fa-solid fa-trash icon-size icon-delete"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </center>
                     </div>
                 @endforeach
-                <div class="col-lg-1">
-                    <center>
-                        <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
-                            <div id="icon-edit">
-                                <a href="/edit-produk"><i class="fa-solid fa-pen-to-square icon-size icon-edit"></i></a>
-                            </div>
-                            <hr class="hr-panel mx-auto">
-                            <div id="icon-delete">
-                                <a href=""><i class="fa-solid fa-trash icon-size icon-delete"></i></a>
-                            </div>
-                        </div>
-                    </center>
-                </div>
             </div>
         </div>
     </section>

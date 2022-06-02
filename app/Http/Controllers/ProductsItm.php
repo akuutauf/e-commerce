@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Itm1;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -17,6 +18,7 @@ class ProductsItm extends Controller
         $itm1= Itm1::all();
         return view('admin.kelola-produk',compact(['itm1']));
         return view('admin.beranda-admin',compact(['itm1']));
+
     }
 
     /**
@@ -48,9 +50,7 @@ class ProductsItm extends Controller
      */
     public function show($id)
     {
-
-            $itm1 = $itm1::show($id);
-            return view('admin.index')->with('itm1',$itm1);
+        //
     }
 
 
@@ -62,7 +62,9 @@ class ProductsItm extends Controller
      */
     public function edit($id)
     {
-        //
+        // menampilkan data pada halaman edit
+        $itm1 = Itm1::find($id);
+        return view('admin.edit-produk')->with('itm1', $itm1);
     }
 
     /**
