@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Itm1;
 use Illuminate\Http\Request;
 
-class BerandaAdmin extends Controller
+class DetailsProduct extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -45,7 +46,8 @@ class BerandaAdmin extends Controller
      */
     public function show($id)
     {
-        //
+        $itm1 = Itm1::find($id);
+        return view('detail-produk')->with('itm1', $itm1);
     }
 
     /**

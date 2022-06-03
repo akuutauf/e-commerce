@@ -18,7 +18,7 @@ class ProductsItm extends Controller
         // menampilkan produk dan memperoleh id nya dari halaman kelola produk
         $itm1 = Itm1::all();
         return view('admin.kelola-produk', compact(['itm1']));
-        return view('admin.beranda-admin', compact(['itm1']));
+        // return view('admin.beranda-admin', compact(['itm1']));
     }
 
     /**
@@ -78,7 +78,6 @@ class ProductsItm extends Controller
      */
     public function update(Request $request, $id)
     {
-
     }
 
     /**

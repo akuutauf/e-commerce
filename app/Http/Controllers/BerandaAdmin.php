@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Itm1;
 use Illuminate\Http\Request;
 
-class DetailsProduct extends Controller
+class BerandaAdmin extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,13 @@ class DetailsProduct extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'categories' => Itm1::select('MP_ProductName')->groupBy('MP_ProductName')->get(),
+            'products' => Itm1::all()
+        ];
+
+        // return dd($data['items']);
+        return view('admin.beranda-admin', $data);
     }
 
     /**
