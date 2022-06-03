@@ -1,4 +1,4 @@
-@extends('base-customer')
+@extends('base-admin')
 
 @section('title')
     <title>Obugame | Detail Produk</title>
@@ -167,7 +167,8 @@
                             <div class="row">
                                 <div class="col-lg-12 mt-4">
                                     <h4 class="medium font-25">Deskripsi :</h4>
-                                    <p class="secondary-color regular font-18">{{ $itm1->MP_ProductDescription }}</p>
+                                    <p class="secondary-color regular font-18 text-justify">
+                                        {{ $itm1->MP_ProductDescription }}</p>
                                 </div>
                             </div>
                             <div class="row d-flex justify-content-md-start mb-3">

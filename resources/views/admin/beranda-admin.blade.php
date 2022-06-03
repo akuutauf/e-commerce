@@ -73,11 +73,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev carrousel-color carrousel-btn" style="width: 10%" type="button"
+            <a class="carousel-control-prev carrousel-color carrousel-btn" style="width: 8%" type="button"
                 data-target="#carrousel-arrow" data-slide="prev">
                 <i class="fas fa-chevron-left font-30" style="color: #9772fb"></i>
             </a>
-            <a class="carousel-control-next carrousel-color carrousel-btn" style="width: 10%" type="button"
+            <a class="carousel-control-next carrousel-color carrousel-btn" style="width: 8%" type="button"
                 data-target="#carrousel-arrow" data-slide="next">
                 <i class="fas fa-chevron-right font-30" style="color: #9772fb"></i>
             </a>
@@ -88,18 +88,18 @@
 
 @section('content')
     {{-- Kategori Produk Start --}}
-    <section id="kategori" class="mt-lg-5">
+    <section class="mt-lg-5">
         @foreach ($categories as $item)
-            <div id="konten" class="container mt-3 mb-3">
-                <h3 class="medium font-20">{{ $item->MP_ProductName }}</h3>
+            <div class="container mt-5 mb-3">
+                <h3 class="medium font-23 text-left">{{ $item->MP_ProductName }}</h3>
             </div>
-            <div id="konten" class="container bg-white rounded-sm shadow-card border-none">
+            <div class="container bg-white rounded-sm shadow-card border-none">
                 <div class="row py-4 px-2">
                     @foreach ($products as $value)
                         @if ($item->MP_ProductName == $value->MP_ProductName)
-                            <div class="col d-flex">
+                            <div class="col-lg-3 d-flex justify-content-center">
                                 <a href="/details_product/{{ $value->DocEntry }}/show" class="card-a">
-                                    <div class="card shadow-card border-none" style="width: 15.5rem;">
+                                    <div class="card shadow-card border-none">
                                         <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
                                         <div class="card-body">
                                             <p class="h6 card-text semi-bold text-card">{{ $value->Itemname }}</p>
@@ -124,10 +124,10 @@
                     @endforeach
                 </div>
             </div>
+            <div id="konten" class="container mt-5 pt-1 mb-4">
+                <hr class="hr-color">
+            </div>
         @endforeach
-        <div id="konten" class="container my-5">
-            <hr class="hr-color">
-        </div>
         <div id="konten" class="container my-5"></div>
     </section>
     {{-- Kategori Produk End --}}
