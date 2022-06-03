@@ -59,7 +59,11 @@
                                 </div>
                                 <hr class="hr-panel mx-auto">
                                 <div id="icon-delete">
-                                    <a href="/delete-produk"><i class="fa-solid fa-trash icon-size icon-delete"></i></a>
+                                    <button type="submit" class="" action="/products{{ $p->DocEntry }}"
+                                        method="POST">
+                                        @csrf
+                                        @method('delete')
+                                        <i class="fa-solid fa-trash icon-size icon-delete"></i></button>
                                 </div>
                             </div>
                         </center>

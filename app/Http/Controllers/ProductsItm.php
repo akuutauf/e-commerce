@@ -78,9 +78,27 @@ class ProductsItm extends Controller
      */
     public function update(Request $request, $id)
     {
-        $itm1 = Itm1::find($id);
-        $itm1->update($request->except(['_token']));
+        $itm1 = Itm1::where('DocEntry', $id);
+        $itm1->update($request->only('Itemcode','Itemname','MPName', 'MP_ProductName', 'MP_ProductCategory', 'Etalase',
+                                    'MPKondisi', 'UrlVideoProduct','MP_MinOrder','MP_UnitPrice', 'MP_GroceryPrice',
+                                    'MPStockProduct','MPProductWeight','MP_ProductLength','MP_ProductWidth','MP_ProductHeight',
+                                    'MP_Pic1','MPProductLink','MPStatusProduct','MP_POProduct','MPSKU','MP_Delivery',
+                                    'PromoSupport','MP_ProductDescription'));
+        return redirect('/kelola-produk');
     }
+
+
+    // public function update($DocEntry) {
+    //     $update = [
+    //         'updateitm1' => Itm1::find($DocEntry)
+    //     ];
+    //     return view('/kelola-produk', $update);
+    // }
+
+    // public function updateData(Request $request, $DocEntry) {
+    //     Itm1::where('DocEntry',$DocEntry)->update($request->all());
+    //     return redirect()->route('produk')->with('success', 'Data berhasil diupdate');
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -90,6 +108,7 @@ class ProductsItm extends Controller
      */
     public function destroy($id)
     {
-        //
+        $itm1 = Itm1::find($id);
+        $itm1->delete();
     }
 }

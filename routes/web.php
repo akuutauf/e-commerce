@@ -39,7 +39,7 @@ Route::get('/dashboard-toko-admin', function () {
     return view('admin.dashboard-toko-admin');
 });
 
-Route::get('/kelola-produk', [ProductsItm::class, 'index']);
+Route::get('/kelola-produk', [ProductsItm::class, 'index'])->name('produk');
 Route::get('/beranda-admin', [ProductsItm::class, 'index']);
 
 
@@ -61,6 +61,10 @@ Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUs
 Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
 Route::get('/dashboard-toko-admin', 'App\Http\Controllers\BerandaController@produkKategoriAdmin');
+// Route::get('/dashboard-toko-admin/{id}', 'App\Http\Controllers\ProductsItm');
+// Route::post('/dashboard-toko-admin/{id}', 'App\Http\Controllers\ProductsItm');
+// Route::put('/updateitm1/{DocEntry}',[ProductsItm::class, 'update']);
+// Route::put('/updateitm1/{DocEntry}',[ProductsItm::class, 'updateData']);
 Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
 
 

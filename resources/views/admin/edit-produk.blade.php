@@ -8,6 +8,7 @@
     {{-- Start Container Form --}}
     <section id="edit-card" class="mt-5 p-lg-5">
         <form action="/productsitm/{{ $itm1->DocEntry }}" class="form-group pt-5 pb-5" method="POST">
+            @csrf
             @method('put')
             <div class="container container-form">
                 <div class="row">
@@ -169,10 +170,8 @@
                             <div class="form-group">
                                 <label for="MPStatusProduct" class="medium">Status Product :</label>
                                 <select class="form-control form-theme" id="MPStatusProduct" name="MPStatusProduct">
-                                    <option value="Default" selected>{{ $itm1->MPStatusProduct == 1 ? 'YES' : 'NO' }}
-                                    </option>
-                                    <option value="1">YES</option>
-                                    <option value="0">NO</option>
+                                    <option value="1" {{ $itm1->MPStatusProduct == 1 ? 'selected' : '' }}>YES</option>
+                                    <option value="0" {{ $itm1->MPStatusProduct == 0 ? 'selected' : '' }}>NO</option>
                                 </select>
                             </div>
                         </div>
@@ -234,9 +233,9 @@
                 <div class="row ml-4 mr-4 pb-5">
                     <div class="col-md-12">
                         <div class="mt-2">
-                            <a type="submit" href="/kelola-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                            <button type="submit" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
                                 Simpan
-                            </a>
+                            </button>
                             <a type="button" href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
                                 Reset
                             </a>
