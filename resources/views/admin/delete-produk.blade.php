@@ -300,7 +300,7 @@
                             <form action="/productsitm/{{ $itm1->DocEntry }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <input type="submit" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3" value="Delete">
+                                <input type="submit" class="btn btn-delete px-sm-3 py-sm-2 medium mt-3" value="Delete">
 
                             </form>
                             <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
