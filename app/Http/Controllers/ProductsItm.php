@@ -52,7 +52,8 @@ class ProductsItm extends Controller
      */
     public function show($id)
     {
-        //
+        $itm1= Itm1::find($id);
+        return view('admin.delete-produk')->with('itm1', $itm1);
     }
 
 
@@ -110,5 +111,6 @@ class ProductsItm extends Controller
     {
         $itm1 = Itm1::find($id);
         $itm1->delete();
+        return redirect('/kelola-produk');
     }
 }

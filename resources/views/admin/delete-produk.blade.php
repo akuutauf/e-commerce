@@ -7,13 +7,13 @@
 @section('content')
     {{-- Start Container Form --}}
     <section id="edit-card" class="mt-5 p-lg-5">
-        <form action="" class="form-group pt-5 pb-5" method="POST">
+        <form action="/productsitm/{{ $itm1->DocEntry }}" class="form-group pt-5 pb-5" method="POST">
             <div class="container container-form">
                 <div class="row">
                     <div class="col">
                         <div class="text-center pt-5">
-                            <h3 class="semi-bold">Update Produk</h3>
-                            <p class="secondary-color">Mengubah Informasi Data Produk</p>
+                            <h3 class="semi-bold">Delete Produk</h3>
+                            <p class="secondary-color">Menghapus Informasi Data Produk</p>
                         </div>
                     </div>
                 </div>
@@ -297,11 +297,14 @@
                 <div class="row ml-4 mr-4 pb-5">
                     <div class="col-md-12">
                         <div class="mt-2">
-                            <a type="submit" href="/kelola-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
-                                Simpan
-                            </a>
-                            <a type="button" href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
-                                Reset
+                            <form action="/productsitm/{{ $itm1->DocEntry }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <input type="submit" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3" value="Delete">
+
+                            </form>
+                            <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
+                                Batal
                             </a>
                         </div>
                     </div>

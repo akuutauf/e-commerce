@@ -45,9 +45,10 @@ Route::get('/add-produk', function () {
     return view('admin.tambah-produk');
 });
 
-Route::get('/delete-produk', function () {
-    return view('admin.delete-produk');
-});
+// Route::get('/delete-produk', function () {
+//     return view('admin.delete-produk');
+// });
+
 
 // resource
 Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
@@ -60,6 +61,8 @@ Route::get('/kelola-produk', [ProductsItm::class, 'index']);
 Route::get('/beranda_admin', [ProductsItm::class, 'index']);
 Route::get('/beranda_customer', [ProductsItm::class, 'index']);
 Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
+Route::get('/productsitm/{id}/show', [ProductsItm::class, 'show']);
+
 
 // controller
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
