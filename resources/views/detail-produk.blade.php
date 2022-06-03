@@ -125,7 +125,7 @@
                             <div class="row">
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Harga :</h4>
-                                    <h3 class="semi-bold color-theme">{{ $itm1->MP_UnitPrice }}</h3>
+                                    <h3 class="semi-bold color-theme">{{ intval($itm1->MP_UnitPrice) }}</h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Stok :</h4>
@@ -145,7 +145,8 @@
                             <div class="row">
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Berat Bersih :</h4>
-                                    <h3 class="secondary-color regular font-23">{{ $itm1->MPProductWeight }} gram</h3>
+                                    <h3 class="secondary-color regular font-23">{{ intval($itm1->MPProductWeight) }} gram
+                                    </h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Kondisi Produk :</h4>

@@ -104,7 +104,8 @@
                                         <div class="card-body">
                                             <p class="h6 card-text medium text-left text-card">{{ $value->Itemname }}
                                             </p>
-                                            <p class="card-text product-price bold">Rp. {{ $value->MP_UnitPrice }}</p>
+                                            <p class="card-text product-price bold">Rp. {{ intval($value->MP_UnitPrice) }}
+                                            </p>
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <p class="card-text semi-bold font-10 text-left text-card">
