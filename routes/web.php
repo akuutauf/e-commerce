@@ -25,9 +25,9 @@ Route::get('/login-obugame', function () {
     return view('login');
 });
 
-Route::get('/beranda-customer', function () {
-    return view('customer.beranda-customer');
-});
+// Route::get('/beranda-customer', function () {
+//     return view('customer.beranda-customer');
+// });
 
 Route::get('/dashboard-toko-customer', function () {
     return view('customer.dashboard-toko-customer');
@@ -45,25 +45,26 @@ Route::get('/delete-produk', function () {
     return view('admin.delete-produk');
 });
 
-
 // resource
 Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
 Route::resource('beranda-admin', 'App\Http\Controllers\BerandaAdmin');
+Route::resource('beranda-customer', 'App\Http\Controllers\BerandaCustomer');
 Route::resource('details-product', 'App\Http\Controllers\DetailsProduct');
 
 // get route from resource
 Route::get('/kelola-produk', [ProductsItm::class, 'index']);
 Route::get('/beranda_admin', [ProductsItm::class, 'index']);
+Route::get('/beranda_customer', [ProductsItm::class, 'index']);
 Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
 
 // controller
-Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUser');
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
 Route::get('/dashboard-toko-admin', 'App\Http\Controllers\BerandaController@produkKategoriAdmin');
 
 // not use controller
 // Route::get('product/add', [\App\Http\Controllers\ProductObugami::class, 'produk']);
 // Route::get('/beranda-admin', 'App\Http\Controllers\BerandaController@produkAdmin');
+// Route::get('/beranda-customer', 'App\Http\Controllers\BerandaController@produkUser');
 
 // not use view
 // Route::get('/edit-produk', function () {

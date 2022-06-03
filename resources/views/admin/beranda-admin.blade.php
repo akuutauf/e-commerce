@@ -102,18 +102,18 @@
                                     <div class="card shadow-card border-none">
                                         <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
                                         <div class="card-body">
-                                            <p class="h6 card-text semi-bold text-card">{{ $value->Itemname }}</p>
+                                            <p class="h6 card-text medium text-left text-card">{{ $value->Itemname }}
+                                            </p>
                                             <p class="card-text product-price bold">Rp. {{ $value->MP_UnitPrice }}</p>
                                             <div class="row">
-                                                <div class="col-6">
+                                                <div class="col-lg-6">
                                                     <p class="card-text semi-bold font-10 text-left text-card">
-                                                        {{ $value->MPName }}<br><span
-                                                            class="card-text total-sales regular medium">Stok
+                                                        Obugame<br><span class="card-text total-sales regular medium">Stok
                                                             {{ $value->MPStockProduct }}</span></p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class="card-text text-left shop-location mt-4 medium">
-                                                        {{ $value->MPName }}</p>
+                                                <div class="col-lg-6">
+                                                    <h6 class="card-text text-right shop-location mt-4 font-10 semi-bold">
+                                                        {{ $value->MPName }}</h6>
                                                 </div>
                                             </div>
                                         </div>
