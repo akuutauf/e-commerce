@@ -55,12 +55,12 @@
         <div id="kategori" class="container mt-5 mb-3">
             <div class="row">
                 <div class="col-md-6">
-                    <label for="kategori-form" class="medium font-20">Kategori Produk</label>
+                    <label for="kategori-form" class="medium font-18 text-left">Kategori Produk</label>
                     <select class="form-control form-theme" id="kategori-form" name="kategori-form">
-                        <option value="Default" selected>Pilih Kategori Produk</option>
-                        <option value="Snack / Camilan">Banana Snack</option>
-                        <option value="Keripik">Dragon Rengginang</option>
-                        <option value="Rengginang">Dragon Drink</option>
+                        <option value="" selected>Semua Produk</option>
+                        <option value="Banana Snack">Banana Snack</option>
+                        <option value="Dragon Rengginang">Dragon Rengginang</option>
+                        <option value="Dragon Drink">Dragon Drink</option>
                     </select>
                 </div>
             </div>

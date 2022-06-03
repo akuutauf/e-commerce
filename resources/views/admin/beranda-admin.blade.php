@@ -73,11 +73,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev carrousel-color carrousel-btn" style="width: 10%" type="button"
+            <a class="carousel-control-prev carrousel-color carrousel-btn" style="width: 8%" type="button"
                 data-target="#carrousel-arrow" data-slide="prev">
                 <i class="fas fa-chevron-left font-30" style="color: #9772fb"></i>
             </a>
-            <a class="carousel-control-next carrousel-color carrousel-btn" style="width: 10%" type="button"
+            <a class="carousel-control-next carrousel-color carrousel-btn" style="width: 8%" type="button"
                 data-target="#carrousel-arrow" data-slide="next">
                 <i class="fas fa-chevron-right font-30" style="color: #9772fb"></i>
             </a>
@@ -87,117 +87,47 @@
 @endsection
 
 @section('content')
-
     {{-- Kategori Produk Start --}}
-    <section id="kategori" class="mt-lg-5">
-        <div id="konten" class="container mt-3 mb-3">
-            <h3 class="medium font-20">Banana Snack</h3>
-        </div>
-        <div id="konten" class="container bg-white rounded-sm shadow-card border-none">
-            @if (count($banana_snack) > 0)
+    <section class="mt-lg-5">
+        @foreach ($categories as $item)
+            <div class="container mt-5 mb-3">
+                <h3 class="medium font-23 text-left">{{ $item->MP_ProductName }}</h3>
+            </div>
+            <div class="container bg-white rounded-sm shadow-card border-none">
                 <div class="row py-4 px-2">
-                    @foreach ($banana_snack as $item)
-                        <div class="col d-flex justify-content-center">
-                            <a href="/detail-produk" class="card-a">
-                                <div class="card shadow-card border-none" style="width: 15.5rem;" href="">
-                                    <img class="card-img-top" src="{{ $item[5] }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="h6 card-text semi-bold text-card">{{ $item[0] }}</p>
-                                        <p class="card-text product-price bold">Rp. {{ $item[1] }}</p>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="card-text semi-bold font-10 text-left text-card">
-                                                    {{ $item[2] }}<br><span
-                                                        class="card-text total-sales regular medium">Stok
-                                                        {{ $item[3] }}</span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p class="card-text text-left shop-location mt-4 medium">
-                                                    {{ $item[4] }}</p>
+                    @foreach ($products as $value)
+                        @if ($item->MP_ProductName == $value->MP_ProductName)
+                            <div class="col-lg-3 d-flex justify-content-center">
+                                <a href="/details_product/{{ $value->DocEntry }}/show" class="card-a">
+                                    <div class="card shadow-card border-none">
+                                        <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="h6 card-text medium text-left text-card">{{ $value->Itemname }}
+                                            </p>
+                                            <p class="card-text product-price bold">Rp. {{ $value->MP_UnitPrice }}</p>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <p class="card-text semi-bold font-10 text-left text-card">
+                                                        Obugame<br><span class="card-text total-sales regular medium">Stok
+                                                            {{ $value->MPStockProduct }}</span></p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h6 class="card-text text-right shop-location mt-4 font-10 semi-bold">
+                                                        {{ $value->MPName }}</h6>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        @endif
                     @endforeach
                 </div>
-            @endif
-        </div>
-        <div id="konten" class="container my-5">
-            <hr class="hr-color">
-        </div>
-        <div id="konten" class="container">
-            <h3 class="medium font-20 mb-3">Dragon Rengginang</h3>
-        </div>
-        <div id="konten" class="container bg-white rounded-sm shadow-card border-none">
-            @if (count($dragon_rengginang) > 0)
-                <div class="row py-4 px-2">
-                    @foreach ($dragon_rengginang as $item1)
-                        <div class="col d-flex justify-content-center">
-                            <a href="/detail-produk" class="card-a">
-                                <div class="card shadow-card border-none" style="width: 15.5rem;" href="">
-                                    <img class="card-img-top" src="{{ $item1[5] }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="h6 card-text semi-bold text-card">{{ $item1[0] }}</p>
-                                        <p class="card-text product-price bold">Rp. {{ $item1[1] }}</p>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="card-text semi-bold font-10 text-left text-card">
-                                                    {{ $item1[2] }}<br><span
-                                                        class="card-text total-sales regular medium">Stok
-                                                        {{ $item1[3] }}</span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p class="card-text text-left shop-location mt-4 medium">
-                                                    {{ $item1[4] }}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-            @endif
-        </div>
-        <div id="konten" class="container my-5">
-            <hr class="hr-color">
-        </div>
-        <div id="konten" class="container">
-            <h3 class="medium font-20">Dragon Drink</h3>
-        </div>
-        <div id="konten" class="container bg-white rounded-sm shadow-card border-none">
-            @if (count($dragon_drink) > 0)
-                <div class="row py-4 px-2">
-                    @foreach ($dragon_drink as $item2)
-                        <div class="col d-flex justify-content-center">
-                            <a href="/detail-produk" class="card-a">
-                                <div class="card shadow-card border-none" style="width: 15.5rem;" href="">
-                                    <img class="card-img-top" src="{{ $item2[5] }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="h6 card-text semi-bold text-card">{{ $item2[0] }}</p>
-                                        <p class="card-text product-price bold">Rp. {{ $item2[1] }}</p>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="card-text semi-bold font-10 text-left text-card">
-                                                    {{ $item2[2] }}<br><span
-                                                        class="card-text total-sales regular medium">Stok
-                                                        {{ $item2[3] }}</span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p class="card-text text-left shop-location mt-4 medium">
-                                                    {{ $item[4] }}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-            @endif
-        </div>
+            </div>
+            <div id="konten" class="container mt-5 pt-1 mb-4">
+                <hr class="hr-color">
+            </div>
+        @endforeach
         <div id="konten" class="container my-5"></div>
     </section>
     {{-- Kategori Produk End --}}

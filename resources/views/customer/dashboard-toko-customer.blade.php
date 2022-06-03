@@ -28,7 +28,8 @@
                                             class="fa-solid fa-location-dot color-theme"></i></h6>
                                 </div>
                             </div>
-                            <a href="" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                            <a href="https://shopee.co.id/elladeffi" target="_blank"
+                                class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
                                 Chat Penjual
                             </a>
                         </div>
@@ -55,12 +56,12 @@
         <div id="kategori" class="container mt-5 mb-3">
             <div class="row">
                 <div class="col-md-6">
-                    <label for="kategori-form" class="medium font-20">Kategori Produk</label>
+                    <label for="kategori-form" class="medium font-18 text-left">Kategori Produk</label>
                     <select class="form-control form-theme" id="kategori-form" name="kategori-form">
-                        <option value="Default" selected>Pilih Kategori Produk</option>
-                        <option value="Snack / Camilan">Banana Snack</option>
-                        <option value="Keripik">Dragon Rengginang</option>
-                        <option value="Rengginang">Dragon Drink</option>
+                        <option value="" selected>Semua Produk</option>
+                        <option value="Banana Snack">Banana Snack</option>
+                        <option value="Dragon Rengginang">Dragon Rengginang</option>
+                        <option value="Dragon Drink">Dragon Drink</option>
                     </select>
                 </div>
             </div>

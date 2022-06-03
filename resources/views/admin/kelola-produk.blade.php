@@ -34,12 +34,12 @@
                     <div class="col-lg-5 mt-3">
                         <div class="card card-list-produk shadow-card border-none p-3">
                             <div class="row">
-                                <div class="col-5">
+                                <div class="col-5 mx-auto my-auto">
                                     <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic1) }}"
                                         width="200">
                                 </div>
                                 <div class="col my-auto">
-                                    <h4 class="font-20 text-left semi-bold">{{ $p->Itemname }}</h4>
+                                    <h4 class=" font-18 text-left semi-bold">{{ $p->Itemname }}</h4>
                                     <hr class="
                                     hr-color">
                                     <p class="font-18 secondary-color">
@@ -50,8 +50,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-1 mt-3">
-                        <center>
+                    <div class="col-lg-1 mt-3 ">
+                        <center class="pt-4 pb-4">
                             <div class="card card-list-produk shadow-card border-none pt-5 pb-5">
                                 <div id="icon-edit">
                                     <a href="/productsitm/{{ $p->DocEntry }}/edit"><i

@@ -1,4 +1,4 @@
-@extends('base-customer')
+@extends('base-admin')
 
 @section('title')
     <title>Obugame | Detail Produk</title>
@@ -11,8 +11,7 @@
             <div class="row">
                 <div class="col-lg-5 mt-5">
                     <div class="card mb-3 shadow-card border-none">
-                        <img class="card-img img-fluid"
-                            src="{{ asset('img/banana-snack/banana_snack_jagung_manis_02.jpg') }}" alt="Card image cap"
+                        <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}" alt="Card image cap"
                             id="product-detail">
                     </div>
                     <div class="row">
@@ -35,22 +34,19 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_02.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 1">
                                                 </a>
                                             </div>
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_01.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 2">
                                                 </a>
                                             </div>
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_02.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 3">
                                                 </a>
                                             </div>
@@ -63,22 +59,19 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_01.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 4">
                                                 </a>
                                             </div>
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_02.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 5">
                                                 </a>
                                             </div>
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_01.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 6">
                                                 </a>
                                             </div>
@@ -91,22 +84,19 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_02.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 7">
                                                 </a>
                                             </div>
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_01.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 8">
                                                 </a>
                                             </div>
                                             <div class="col-4">
                                                 <a href="#">
-                                                    <img class="card-img img-fluid"
-                                                        src="{{ asset('img/banana-snack/banana_snack_jagung_manis_02.jpg') }}"
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 9">
                                                 </a>
                                             </div>
@@ -131,64 +121,65 @@
                 <div class="col-lg-7 mt-5">
                     <div class="card shadow-card border-none">
                         <div class="card-body">
-                            <h1 class="h3 semi-bold text-lef mt-2">Banana Snack - Keripik Pisang Kepok (Rasa Jagung
-                                Manis)
-                            </h1>
+                            <h1 class="h3 semi-bold text-lef mt-2">{{ $itm1->Itemname }}</h1>
                             <div class="row">
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Harga :</h4>
-                                    <h3 class="semi-bold color-theme">Rp. 50.000</h3>
+                                    <h3 class="semi-bold color-theme">{{ $itm1->MP_UnitPrice }}</h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
-                                    <h4 class="medium font-25">Terjual :</h4>
-                                    <h3 class="semi-bold total-sales">Rp. 1000</h3>
+                                    <h4 class="medium font-25">Stok :</h4>
+                                    <h3 class="semi-bold total-sales">{{ $itm1->MPStockProduct }}</h3>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 mt-4">
-                                    <h4 class="medium font-25">Varian :</h4>
-                                    <h3 class="secondary-color regular font-23">Rasa Jagung Manis</h3>
+                                    <h4 class="medium font-25">Produk :</h4>
+                                    <h3 class="secondary-color regular font-23">{{ $itm1->MP_ProductName }}</h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
-                                    <h4 class="medium font-25">Stok :</h4>
-                                    <h3 class="secondary-color regular font-23">500</h3>
+                                    <h4 class="medium font-25">Etalase :</h4>
+                                    <h3 class="secondary-color regular font-23">{{ $itm1->Etalase }}</h3>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Berat Bersih :</h4>
-                                    <h3 class="secondary-color regular font-23">500 Gram</h3>
+                                    <h3 class="secondary-color regular font-23">{{ $itm1->MPProductWeight }} gram</h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
-                                    <h4 class="medium font-25">Kategori :</h4>
-                                    <h3 class="secondary-color regular font-23">Makanan</h3>
+                                    <h4 class="medium font-25">Kondisi Produk :</h4>
+                                    <h3 class="secondary-color regular font-23">{{ $itm1->MPKondisi }}</h3>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 mt-4">
-                                    <h4 class="medium font-25">Etalase :</h4>
-                                    <h3 class="secondary-color regular font-23">Banana Snack</h3>
+                                    <h4 class="medium font-25">Status Produk :</h4>
+                                    <h3 class="secondary-color regular font-23">
+                                        {{ $itm1->MPStatusProduct ? 'Tersedia' : 'Habis' }}</h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Pre Order :</h4>
-                                    <h3 class="secondary-color regular font-23">No</h3>
+                                    <h3 class="secondary-color regular font-23">
+                                        {{ $itm1->MP_PoProduct ? 'Iya' : 'Tidak' }}</h3>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 mt-4">
                                     <h4 class="medium font-25">Deskripsi :</h4>
-                                    <p class="secondary-color regular font-23">Produk ini merupakan salah satu produk yang
-                                        paling laris di toko Obugame</p>
+                                    <p class="secondary-color regular font-18 text-justify">
+                                        {{ $itm1->MP_ProductDescription }}</p>
                                 </div>
                             </div>
                             <div class="row d-flex justify-content-md-start mb-3">
                                 <div class="col-lg-3 mt-2">
-                                    <a type="submit" href="/kelola-produk" class="btn btn-shopee px-sm-3 py-sm-2 medium">
+                                    <a type="submit" target="_blank" href="{{ $itm1->MPProductLink }}"
+                                        class="btn btn-shopee px-sm-3 py-sm-2 medium">
                                         Order Shopee
                                     </a>
                                 </div>
                                 <div class="col-lg-9 mt-2">
-                                    <a type="button" href="/kelola-produk" class="btn btn-tokopedia px-sm-3 py-sm-2 medium">
+                                    <a type="button" href="#" class="btn btn-tokopedia px-sm-3 py-sm-2 medium">
                                         Order Tokopedia
                                     </a>
                                 </div>
