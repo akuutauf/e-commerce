@@ -279,7 +279,7 @@
                         <div class="mt-2">
                             <input type="submit" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3" value="Simpan"
                                 value="Simpan">
-                            <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">Cancel</a>
+                            <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">Batal</a>
                         </div>
                     </div>
                 </div>

@@ -283,8 +283,8 @@
                             <button type="submit" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
                                 Simpan
                             </button>
-                            <a type="button" href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
-                                Reset
+                            <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
+                                Batal
                             </a>
                         </div>
                     </div>
