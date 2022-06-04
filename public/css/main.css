@@ -214,6 +214,13 @@ body {
     border: 2px solid #03ac0e !important;
 }
 
+.btn-not-available {
+    background-color: #465881;
+    color: #ffffff;
+    font-weight: 600 !important;
+    border: 2px solid #ffffff !important;
+}
+
 .vertical {
     border-left: 1px solid hsla(200, 10%, 50%, 100);
     height: 80%;

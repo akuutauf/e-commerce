@@ -32,20 +32,20 @@
                                     <!--First slide-->
                                     <div class="carousel-item active">
                                         <div class="row">
-                                            <div class="col-4">
-                                                <a href="#">
+                                            <div class="col-4 my-auto">
+                                                <a href="">
                                                     <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 1">
                                                 </a>
                                             </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
+                                            <div class="col-4 my-auto">
+                                                <a href="">
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic3) }}"
                                                         alt="Product Image 2">
                                                 </a>
                                             </div>
-                                            <div class="col-4">
-                                                <a href="#">
+                                            <div class="col-4 my-auto">
+                                                <a href="">
                                                     <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
                                                         alt="Product Image 3">
                                                 </a>
@@ -57,56 +57,32 @@
                                     <!--Second slide-->
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
+                                            <div class="col-4 my-auto">
+                                                <a href="">
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic4) }}"
                                                         alt="Product Image 4">
                                                 </a>
                                             </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
+                                            <div class="col-4 my-auto">
+                                                <a href="">
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic2) }}"
                                                         alt="Product Image 5">
                                                 </a>
                                             </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
+                                            <div class="col-4 my-auto">
+                                                <a href="">
+                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic5) }}"
                                                         alt="Product Image 6">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <!--/.Second slide-->
-
-                                    <!--Third slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
-                                                        alt="Product Image 7">
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
-                                                        alt="Product Image 8">
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a href="#">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
-                                                        alt="Product Image 9">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--/.Third slide-->
                                 </div>
                                 <!--End Slides-->
                             </div>
                             <!--End Carousel Wrapper-->
+
                             <!--Start Controls-->
                             <div class="col-1 align-self-center">
                                 <a href="#multi-item-example" role="button" data-bs-slide="next">
@@ -167,23 +143,49 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 mt-4">
-                                    <h4 class="medium font-25">Deskripsi :</h4>
-                                    <p class="secondary-color regular font-18 text-justify">
+                                    <h4 class="medium font-20">Deskripsi :</h4>
+                                    <p class="secondary-color regular font-15 text-justify">
                                         {{ $itm1->MP_ProductDescription }}</p>
                                 </div>
                             </div>
                             <div class="row d-flex justify-content-md-start mb-3">
-                                <div class="col-lg-3 mt-2">
-                                    <a type="submit" target="_blank" href="{{ $itm1->MPProductLink }}"
-                                        class="btn btn-shopee px-sm-3 py-sm-2 medium">
-                                        Order Shopee
-                                    </a>
-                                </div>
-                                <div class="col-lg-9 mt-2">
-                                    <a type="button" href="#" class="btn btn-tokopedia px-sm-3 py-sm-2 medium">
-                                        Order Tokopedia
-                                    </a>
-                                </div>
+                                {{-- condition button --}}
+                                @if ($itm1->MPName == 'Shopee')
+                                    <div class="col-lg-3 mt-2">
+                                        <a type="button" target="_blank" href="{{ $itm1->MPProductLink }}"
+                                            class="btn btn-shopee px-sm-3 py-sm-2 medium">
+                                            Order Shopee
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-9 mt-2">
+                                        <a type="button" href="{{ $itm1->UrlVideoProduct }}" target="_blank"
+                                            class="btn btn-chat-2 px-sm-3 py-sm-2 medium">
+                                            Video Product
+                                        </a>
+                                    </div>
+                                @elseif ($itm1->MPName == 'Tokopedia')
+                                    <div class="col-lg-4 mt-2">
+                                        <a type="button" href="{{ $itm1->MPProductLink }}"
+                                            class="
+                                            btn btn-tokopedia px-sm-3 py-sm-2 medium">
+                                            Order Tokopedia
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8 mt-2">
+                                        <a type="button" href="{{ $itm1->UrlVideoProduct }}" target="_blank"
+                                            class="btn btn-chat-2 px-sm-3 py-sm-2 medium">
+                                            Video Product
+                                        </a>
+                                    </div>
+                                @else
+                                    <div class="col-lg-12 mt-2">
+                                        <button type="button" href="#"
+                                            class="
+                                            btn btn-not-available px-sm-3 py-sm-2 medium"
+                                            disabled>
+                                            Belum Tersedia </button>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
