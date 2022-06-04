@@ -1,7 +1,7 @@
-@extends('base-admin')
+@extends('base-customer')
 
 @section('title')
-    <title>Obugame | Detail Produk</title>
+    <title>Obugame | Detail Produk Customer</title>
 @endsection
 
 @section('content')

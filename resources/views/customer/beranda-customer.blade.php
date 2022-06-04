@@ -98,7 +98,7 @@
                     @foreach ($products as $value)
                         @if ($item->MP_ProductName == $value->MP_ProductName)
                             <div class="col-lg-3 d-flex justify-content-center">
-                                <a href="/details_product/{{ $value->DocEntry }}/show" class="card-a">
+                                <a href="/details_product_customer/{{ $value->DocEntry }}/show" class="card-a">
                                     <div class="card shadow-card border-none">
                                         <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
                                         <div class="card-body">
@@ -124,7 +124,7 @@
                     @endforeach
                 </div>
             </div>
-            <div id="konten" class="container mt-5 pt-1 mb-4">
+            <div class="container mt-5 pt-1 mb-4">
                 <hr class="hr-color">
             </div>
         @endforeach

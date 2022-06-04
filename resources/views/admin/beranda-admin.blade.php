@@ -125,7 +125,7 @@
                     @endforeach
                 </div>
             </div>
-            <div id="konten" class="container mt-5 pt-1 mb-4">
+            <div class="container mt-5 pt-1 mb-4">
                 <hr class="hr-color">
             </div>
         @endforeach

@@ -75,7 +75,7 @@
             <div class="row py-4 px-2">
                 @foreach ($data as $product)
                     <div class="col-lg-3 d-flex justify-content-center mb-4">
-                        <a href="/details_product/{{ $product->DocEntry }}/show" class="card-a">
+                        <a href="/details_product_customer/{{ $product->DocEntry }}/show" class="card-a">
                             <div class="card shadow-card border-none">
                                 <img class="card-img-top" src="{{ $product->MP_Pic1 }}" alt="Card image cap">
                                 <div class="card-body">

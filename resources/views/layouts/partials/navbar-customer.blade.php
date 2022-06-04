@@ -7,16 +7,17 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
                 <form class="form-inline my-3 mx-auto search-bar">
                     <input id="search" class="form-control pl-5 medium secondary-color" size="46" type="search"
                         placeholder="Cari produk di Obugame" aria-label="Search">
-                    <label for="search" class="label-search fa-solid fa-magnifying-glass search-color ml-3"></label>
+                    <label for="search"
+                        class="label-search fa-solid fa-magnifying-glass search-color ml-3 my-auto"></label>
                 </form>
-                <div id="icon-store" class="mx-lg-5">
-                    <a href="/dashboard-toko-customer"><i class="fa-solid fa-store icon-size icon-store"></i></a>
+                <div id="icon-store" class="mx-lg-5 p-3">
+                    <a href="/dashboard-toko-customer"><i class="fa-solid fa-store icon-size icon-store-2"></i></a>
                 </div>
-                <a id="login-button" class="btn btn-login px-sm-4 py-sm-1" href="/login-obugame">LOGIN</a>
+                <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="/login-obugame">LOGIN</a>
             </div>
         </div>
     </nav>

@@ -9,6 +9,7 @@ body {
 
 #login-body {
     background-color: #ffffff !important;
+    overflow-x: hidden !important;
 }
 
 /* Fonts Style */
@@ -362,6 +363,14 @@ body {
     color: #b8b5ff;
 }
 
+.icon-store-2 {
+    color: #ffffff;
+}
+
+.icon-store-2:hover {
+    color: #b8b5ff;
+}
+
 .drop {
     width: 500px;
     background-color: #ffffff;
@@ -429,7 +438,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
     #icon-store {
-        visibility: hidden;
+        /* visibility: hidden; */
+        margin-bottom: 1rem;
     }
 
     #kategori {
@@ -438,6 +448,12 @@ body {
 
     #konten {
         max-width: 70%;
+    }
+    .icon-store {
+        font-size: 2.8rem;
+    }
+    .icon-store-2 {
+        font-size: 2.4rem;
     }
     .card {
         margin-top: 1.5rem;

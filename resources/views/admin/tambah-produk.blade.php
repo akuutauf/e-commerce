@@ -6,7 +6,7 @@
 
 @section('content')
     {{-- Start Container Form --}}
-    <section id="edit-card" class="mt-5 p-lg-5">
+    <section id="edit-card" class="mt-4 p-lg-5">
         <form action="/productsitm/" class="form-group pt-5 pb-5" method="POST">
             @csrf
             <div class="container container-form">
@@ -270,7 +270,6 @@
                             <label for="MP_ProductDescription" class="medium">Product Description :</label>
                             <textarea class="form-control form-color " id="MP_ProductDescription" name="MP_ProductDescription"
                                 placeholder="Deskripsi Produk" rows="3"></textarea>
-
                         </div>
                     </div>
                 </div>

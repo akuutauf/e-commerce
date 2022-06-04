@@ -24,9 +24,9 @@
 
 <body id="login-body">
     <div class="container mt-5 pt-5">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
             {{-- Start Form Login --}}
-            <div class="col">
+            <div class="col-lg-6">
                 <div class="card shadow-card p-3 bg-white card-border">
                     <div class="card-body">
                         <div class="form-control border-none">
@@ -58,7 +58,7 @@
                 </div>
             </div>
             {{-- End Form Login --}}
-            <div id="image-ilustrator" class="col-6">
+            <div id="image-ilustrator" class="col-lg-6">
                 <img src="{{ asset('ilustrator/login.svg') }}" class="mt-5 ml-4 img-hidden" width="350">
             </div>
         </div>

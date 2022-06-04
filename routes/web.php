@@ -2,9 +2,9 @@
 
 use App\Http\Controllers\DashboardAdmin;
 use App\Http\Controllers\DetailsProduct;
+use App\Http\Controllers\DetailsProductCustomer;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsItm;
-use App\Http\Controllers\FrontEnd\BerandaAdmin;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +33,7 @@ Route::resource('beranda-admin', 'App\Http\Controllers\BerandaAdmin');
 Route::resource('details-product', 'App\Http\Controllers\DetailsProduct');
 Route::resource('beranda-customer', 'App\Http\Controllers\BerandaCustomer');
 Route::resource('dashboard-toko-admin', 'App\Http\Controllers\DashboardAdmin');
+Route::resource('details-product-customer', 'App\Http\Controllers\DetailsProduct');
 Route::resource('dashboard-toko-customer', 'App\Http\Controllers\DashboardTokoCustomer');
 
 // get route from resource
@@ -42,7 +43,8 @@ Route::get('/beranda_customer', [ProductsItm::class, 'index']);
 Route::get('/productsitm/{id}/show', [ProductsItm::class, 'show']);
 Route::get('/dashboard-toko-admin', [DashboardAdmin::class, 'index']);
 Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
-Route::get('/dashboard_toko_customer', [DashboardTokoCustomer::class, 'index']);
+Route::get('/details_product_customer/{id}/show', [DetailsProductCustomer::class, 'show']);
+// Route::get('/dashboard_toko_customer', [DashboardTokoCustomer::class, 'index']);
 
 /* not use controller
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
