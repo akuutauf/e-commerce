@@ -88,15 +88,15 @@
                         <div class="form-group">
                             <label for="MP_UnitPrice" class="medium">MP Unit Price :</label>
                             <input type="text" class="form-control form-theme-disable" id="MP_UnitPrice" name="MP_UnitPrice"
-                                placeholder="Harga Produk Per Unit" value="{{ $itm1->MP_UnitPrice }}" disabled>
+                                placeholder="Harga Produk Per Unit" value="{{ intval($itm1->MP_UnitPrice) }}" disabled>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_GroceryPrice" class="medium">MP Grocery Price :</label>
                             <input type="text" class="form-control form-theme-disable" id="MP_GroceryPrice"
-                                name="MP_GroceryPrice" placeholder="Harga Grosir" value="{{ $itm1->MP_GroceryPrice }}"
-                                disabled>
+                                name="MP_GroceryPrice" placeholder="Harga Grosir"
+                                value="{{ intval($itm1->MP_GroceryPrice) }}" disabled>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                             <label for="MP_ProductLength" class="medium">Product Length :</label>
                             <input type="text" class="form-control form-theme-disable" id="MP_ProductLength"
                                 name="MP_ProductLength" placeholder="Panjang Produk"
-                                value="{{ $itm1->MP_ProductLength }}" disabled>
+                                value="{{ intval($itm1->MP_ProductLength) }}" disabled>
                         </div>
                     </div>
                 </div>
@@ -142,16 +142,16 @@
                         <div class="form-group">
                             <label for="MP_ProductWidth" class="medium">Product Width :</label>
                             <input type="text" class="form-control form-theme-disable" id="MP_ProductWidth"
-                                name="MP_ProductWidth" placeholder="Lebar Produk" value="{{ $itm1->MP_ProductWidth }}"
-                                disabled>
+                                name="MP_ProductWidth" placeholder="Lebar Produk"
+                                value="{{ intval($itm1->MP_ProductWidth) }}" disabled>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_ProductHeight" class="medium">Product Height :</label>
                             <input type="text" class="form-control form-theme-disable" id="MP_ProductHeight"
-                                name="MP_ProductHeight" placeholder="Tinggi Produk" value="{{ $itm1->MP_ProductHeight }}"
-                                disabled>
+                                name="MP_ProductHeight" placeholder="Tinggi Produk"
+                                value="{{ intval($itm1->MP_ProductHeight) }}" disabled>
                         </div>
                     </div>
                 </div>
@@ -301,7 +301,6 @@
                                 @csrf
                                 @method('DELETE')
                                 <input type="submit" class="btn btn-delete px-sm-3 py-sm-2 medium mt-3" value="Delete">
-
                             </form>
                             <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
                                 Batal

@@ -89,14 +89,14 @@
                         <div class="form-group">
                             <label for="MP_UnitPrice" class="medium">MP Unit Price :</label>
                             <input type="text" class="form-control form-theme" id="MP_UnitPrice" name="MP_UnitPrice"
-                                placeholder="Harga Produk Per Unit" value="{{ $itm1->MP_UnitPrice }}">
+                                placeholder="Harga Produk Per Unit" value="{{ intval($itm1->MP_UnitPrice) }}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_GroceryPrice" class="medium">MP Grocery Price :</label>
                             <input type="text" class="form-control form-theme" id="MP_GroceryPrice" name="MP_GroceryPrice"
-                                placeholder="Harga Grosir" value="{{ $itm1->MP_GroceryPrice }}">
+                                placeholder="Harga Grosir" value="{{ intval($itm1->MP_GroceryPrice) }}">
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                         <div class="form-group">
                             <label for="MP_ProductLength" class="medium">Product Length :</label>
                             <input type="text" class="form-control form-theme" id="MP_ProductLength" name="MP_ProductLength"
-                                placeholder="Panjang Produk" value="{{ $itm1->MP_ProductLength }}">
+                                placeholder="Panjang Produk" value="{{ intval($itm1->MP_ProductLength) }}">
                         </div>
                     </div>
                 </div>
@@ -139,14 +139,14 @@
                         <div class="form-group">
                             <label for="MP_ProductWidth" class="medium">Product Width :</label>
                             <input type="text" class="form-control form-theme" id="MP_ProductWidth" name="MP_ProductWidth"
-                                placeholder="Lebar Produk" value="{{ $itm1->MP_ProductWidth }}">
+                                placeholder="Lebar Produk" value="{{ intval($itm1->MP_ProductWidth) }}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="MP_ProductHeight" class="medium">Product Height :</label>
                             <input type="text" class="form-control form-theme" id="MP_ProductHeight" name="MP_ProductHeight"
-                                placeholder="Tinggi Produk" value="{{ $itm1->MP_ProductHeight }}">
+                                placeholder="Tinggi Produk" value="{{ intval($itm1->MP_ProductHeight) }}">
                         </div>
                     </div>
                 </div>

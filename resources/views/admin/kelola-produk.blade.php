@@ -43,8 +43,9 @@
                                     <hr class="
                                     hr-color">
                                     <p class="font-18 secondary-color">
-                                        Harga : Rp. {{ $p->MP_UnitPrice }} <br>
-                                        Stok : {{ $p->MPStockProduct }}
+                                        Stok : {{ $p->MPStockProduct }} <br>
+                                        Harga : Rp. {{ intval($p->MP_UnitPrice) }} <br>
+                                        Berat : {{ $p->MPProductWeight }} Gram
                                     </p>
                                 </div>
                             </div>
