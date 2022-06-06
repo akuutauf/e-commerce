@@ -109,7 +109,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard-toko-admin', [DashboardAdmin::class, 'index']);
     Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
     Route::get('/productsitm/{id}/show', [ProductsItm::class, 'show']);
-
 });
 
 Auth::routes();

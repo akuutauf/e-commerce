@@ -16,8 +16,9 @@ class DashboardAdmin extends Controller
      */
     public function index()
     {
+        $kategori = Itm1::distinct()->get(['MP_ProductName']);
         $data = Itm1::all();
-        return view('admin.dashboard-toko-admin')->with('data', $data);
+        return view('admin.dashboard-toko-admin')->with('data', $data)->with('kategori', $kategori);
     }
 
     /**

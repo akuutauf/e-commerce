@@ -17,7 +17,7 @@
                 <div id="icon-store" class="mx-lg-5 p-3">
                     <a href="/dashboard-toko-customer"><i class="fa-solid fa-store icon-size icon-store-2"></i></a>
                 </div>
-                <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="/login-obugame">LOGIN</a>
+                <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="/">LOGIN</a>
             </div>
         </div>
     </nav>

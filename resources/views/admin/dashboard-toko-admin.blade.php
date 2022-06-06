@@ -58,10 +58,14 @@
                     <label for="kategori-form" class="medium font-18 text-left">Kategori Produk</label>
                     <select class="form-control form-theme" id="kategori-form" name="kategori-form">
                         <option value="All">Semua Produk</option>
-                        <option value="Banana Snack">Banana Snack</option>
-                        <option value="Dragon Rengginang">Dragon Rengginang</option>
-                        <option value="Dragon Drink">Dragon Drink</option>
+                        @foreach ($kategori as $categories)
+                            <option value="{{ $categories->MP_ProductName }}">{{ $categories->MP_ProductName }}
+                            </option>
+                        @endforeach
                     </select>
+                    <div class="col-md-6">
+                        <h2>{{ $categories->MP_ProductName }}</h2>
+                    </div>
                 </div>
             </div>
         </div>
