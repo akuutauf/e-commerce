@@ -17,7 +17,17 @@
                 <div id="icon-store" class="mx-lg-5 p-3">
                     <a href="/dashboard-toko-admin"><i class="fa-solid fa-store icon-size icon-store"></i></a>
                 </div>
-                <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="/login-obugame">LOGOUT</a>
+                <a id="Login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+                {{-- <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto"
+                    href="{{ route('logout') }}">LOGOUT</a> --}}
             </div>
         </div>
     </nav>
