@@ -57,7 +57,7 @@
                 <div class="col-md-6">
                     <label for="kategori-form" class="medium font-18 text-left">Kategori Produk</label>
                     <select class="form-control form-theme" id="kategori-form" name="kategori-form">
-                        <option value="" selected>Semua Produk</option>
+                        <option value="All">Semua Produk</option>
                         <option value="Banana Snack">Banana Snack</option>
                         <option value="Dragon Rengginang">Dragon Rengginang</option>
                         <option value="Dragon Drink">Dragon Drink</option>

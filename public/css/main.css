@@ -442,6 +442,10 @@ body {
         margin-bottom: 1rem;
     }
 
+    #search-box {
+        margin-top: 5rem;
+    }
+
     #kategori {
         margin-top: 6rem;
     }
@@ -487,6 +491,10 @@ body {
     }
 }
 @media only screen and (max-width: 768px) {
+    #search-box {
+        margin-top: 3rem;
+    }
+
     #login-button {
         position: relative;
         margin-bottom: 20px;
