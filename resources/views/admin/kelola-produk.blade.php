@@ -34,14 +34,12 @@
                     <div class="col-lg-5 mt-3">
                         <div class="card card-list-produk shadow-card border-none p-3">
                             <div class="row">
-                                <div class="col-5 mx-auto my-auto">
-                                    <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic1) }}"
-                                        width="200">
+                                <div class="col-lg-5 mx-auto my-auto">
+                                    <img class="rounded-sm float-left card-img-top" src="{{ asset($p->MP_Pic1) }}">
                                 </div>
-                                <div class="col my-auto">
-                                    <h4 class=" font-18 text-left semi-bold">{{ $p->Itemname }}</h4>
-                                    <hr class="
-                                    hr-color">
+                                <div class="col-lg-7 my-auto padding-card">
+                                    <h4 class="font-18 text-left semi-bold">{{ $p->Itemname }}</h4>
+                                    <hr class="hr-color">
                                     <p class="font-18 secondary-color">
                                         Stok : {{ $p->MPStockProduct }} <br>
                                         Harga : Rp. {{ intval($p->MP_UnitPrice) }} <br>
