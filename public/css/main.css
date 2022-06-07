@@ -439,7 +439,7 @@ body {
 @media only screen and (max-width: 992px) {
     #icon-store {
         /* visibility: hidden; */
-        margin-bottom: 1rem;
+        padding-bottom: 1rem;
     }
 
     #search-box {
@@ -454,7 +454,7 @@ body {
         max-width: 70%;
     }
     .icon-store {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
     .icon-store-2 {
         font-size: 2.4rem;

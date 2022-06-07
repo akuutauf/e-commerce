@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
                 <form class="form-inline my-3 mx-auto search-bar" method="GET" action="{{ url('search-admin') }}">
                     <input type="text" name="search" id="search" class="form-control pl-5 medium secondary-color"
-                        size="46" type="search" placeholder="Cari produk di Obugame" aria-label="Search" <label
+                        size="40" type="search" placeholder="Cari produk di Obugame" aria-label="Search" <label
                         for="search" class="label-search fa-solid fa-magnifying-glass search-color ml-3 my-auto"></label>
                 </form>
                 <div id="icon-store" class="mx-lg-5 p-3">

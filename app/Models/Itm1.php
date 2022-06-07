@@ -11,5 +11,5 @@ class Itm1 extends Model
     protected $table = 'itm1s';
     protected $primaryKey = 'DocEntry';
     public $timestamps = false;
-    protected $guarded =[];
+    protected $guarded = [];
 }

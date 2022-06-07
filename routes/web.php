@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsItm;
 use App\Http\Controllers\SearchAdmin;
 use App\Http\Controllers\SearchCustomer;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
