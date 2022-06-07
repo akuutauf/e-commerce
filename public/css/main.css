@@ -413,6 +413,14 @@ body {
     border-radius: 7px;
 }
 
+.judul-promo {
+    color: #9772fb;
+}
+
+.text-promo {
+    color: #575a89;
+}
+
 #carouselExampleCaptions {
     margin-top: 80px;
 }
@@ -478,6 +486,9 @@ body {
         margin-left: 7rem !important;
         width: 250px;
         margin-right: 5.5rem !important;
+    }
+    .padding-card {
+        padding-top: 1.5rem;
     }
 }
 @media only screen and (max-width: 818px) {

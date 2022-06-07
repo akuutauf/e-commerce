@@ -25,12 +25,11 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-// Route::get('/login', function () {
-//     return view('login');
-// });
+Route::get('/kelola-promo', function () {
+    return view('admin.kelola-promo');
+});
 
 // resource
-
 Route::resource('beranda-customer', 'App\Http\Controllers\BerandaCustomer');
 Route::resource('details-product-customer', 'App\Http\Controllers\DetailsProduct');
 Route::resource('dashboard-toko-customer', 'App\Http\Controllers\DashboardTokoCustomer');
@@ -38,7 +37,6 @@ Route::resource('search-admin', 'App\Http\Controllers\SearchAdmin');
 Route::resource('search-customer', 'App\Http\Controllers\SearchCustomer');
 
 // get route from resource
-
 Route::get('/beranda_customer', [ProductsItm::class, 'index']);
 Route::get('/details_product_customer/{id}/show', [DetailsProductCustomer::class, 'show']);
 Route::get('/search-admin', [SearchAdmin::class, 'index']);
@@ -63,6 +61,10 @@ Route::get('/dashboard_toko_customer', [DashboardTokoCustomer::class, 'index']);
 */
 
 /* not use view
+Route::get('/login', function () {
+     return view('login');
+});
+
 Route::get('/edit-produk', function () {
     return view('admin.edit-produk');
 });

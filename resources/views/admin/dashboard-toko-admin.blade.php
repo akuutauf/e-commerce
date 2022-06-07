@@ -31,6 +31,9 @@
                             <a href="/kelola-produk" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
                                 Kelola Produk
                             </a>
+                            <a href="/kelola-promo" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
+                                Kelola Promo
+                            </a>
                         </div>
                     </div>
                 </div>
