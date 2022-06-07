@@ -543,6 +543,7 @@ class ComposerStaticInit04b1e4bb11ad53d462ebffeffa1593ec
         'App\\Http\\Controllers\\SearchAdmin' => __DIR__ . '/../..' . '/app/Http/Controllers/SearchAdmin.php',
         'App\\Http\\Controllers\\SearchCustomer' => __DIR__ . '/../..' . '/app/Http/Controllers/SearchCustomer.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Livewire\\CategoryIndex' => __DIR__ . '/../..' . '/app/Http/Livewire/CategoryIndex.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',

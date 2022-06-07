@@ -28,6 +28,7 @@ return array(
     'App\\Http\\Controllers\\SearchAdmin' => $baseDir . '/app/Http/Controllers/SearchAdmin.php',
     'App\\Http\\Controllers\\SearchCustomer' => $baseDir . '/app/Http/Controllers/SearchCustomer.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
+    'App\\Http\\Livewire\\CategoryIndex' => $baseDir . '/app/Http/Livewire/CategoryIndex.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => $baseDir . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
