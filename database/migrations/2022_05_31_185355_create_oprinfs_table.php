@@ -26,7 +26,6 @@ return new class extends Migration
             $table->string('ImgUrlPromo1', 32);
             $table->string('ImgUrlPromo2', 32);
             $table->string('PromoSupport', 256);
-
         });
     }
 

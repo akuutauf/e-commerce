@@ -127,6 +127,8 @@
     <script>
         dateDropper({
             selector: 'input[type="date"]',
+            large: true,
+            largeDefault: true,
         });
     </script>
 @endsection
