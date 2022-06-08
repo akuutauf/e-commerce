@@ -2,6 +2,19 @@
 
 @section('title')
     <title>Obugame | Kelola Promo</title>
+
+    @php
+    // fungsi konversi data tipe date ke tanggal
+    function dateConversion($date)
+    {
+        $month = [1 => 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+        $slug = explode('-', $date);
+        return $slug[2] . ' ' . $month[(int) $slug[1]] . ' ' . $slug[0];
+    }
+
+    $tanggal = dateConversion(date('Y-m-d'));
+    @endphp
 @endsection
 
 @section('content')
@@ -44,7 +57,9 @@
                                     <hr class="hr-color">
                                     <p class="font-18 text-atribut medium">
                                         Deskripsi : {{ $promo->PromoDescription }} <br>
-                                        Periode : {{ $promo->PromoSDate }} - {{ $promo->PromoEDate }} <br>
+                                        Periode : {{ dateConversion($promo->PromoSDate) }} -
+                                        {{ dateConversion($promo->PromoEDate) }}
+                                        <br>
                                         Status : {{ $promo->PromoIsActive == 1 ? 'AKTIF' : 'TIDAK AKTIF' }} <br>
                                         Tagline : {{ $promo->PromoSupport }}
                                     </p>
