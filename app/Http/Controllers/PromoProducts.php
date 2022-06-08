@@ -48,7 +48,8 @@ class PromoProducts extends Controller
      */
     public function show($id)
     {
-        //
+        $oprinf= Oprinf::find($id);
+        return view('admin.delete-promo')->with('oprinf', $oprinf);
     }
 
     /**
@@ -59,7 +60,8 @@ class PromoProducts extends Controller
      */
     public function edit($id)
     {
-        //
+        $oprinf = Oprinf::find($id);
+        return view('admin.edit-promo')->with('oprinf', $oprinf);
     }
 
     /**
@@ -71,7 +73,9 @@ class PromoProducts extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $oprinf = Oprinf::find($id);
+        $oprinf->update($request->except(['_token']));
+        return redirect('/kelola-promo');
     }
 
     /**
@@ -82,6 +86,8 @@ class PromoProducts extends Controller
      */
     public function destroy($id)
     {
-        //
+        $oprinf = Oprinf::find($id);
+        $oprinf->delete();
+        return redirect('/kelola-promo');
     }
 }
