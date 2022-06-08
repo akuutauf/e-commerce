@@ -33,6 +33,14 @@ Route::get('/add-promo', function () {
     return view('admin.tambah-promo');
 });
 
+Route::get('/edit-promo', function () {
+    return view('admin.edit-promo');
+});
+
+Route::get('/delete-promo', function () {
+    return view('admin.delete-promo');
+});
+
 // resource
 Route::resource('beranda-customer', 'App\Http\Controllers\BerandaCustomer');
 Route::resource('details-product-customer', 'App\Http\Controllers\DetailsProduct');

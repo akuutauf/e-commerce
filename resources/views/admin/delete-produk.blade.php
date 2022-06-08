@@ -288,8 +288,7 @@
                         <div class="form-group">
                             <label for="MP_ProductDescription" class="medium">Product Description :</label>
                             <textarea class="form-control form-theme-2 " id="MP_ProductDescription" name="MP_ProductDescription"
-                                placeholder="Deskripsi Produk" rows="3"
-                                disabled>{{ $itm1->MP_ProductDescription }}</textarea>
+                                placeholder="Deskripsi Produk" rows="3" disabled>{{ $itm1->MP_ProductDescription }}</textarea>
 
                         </div>
                     </div>
@@ -300,7 +299,7 @@
                             <form action="/productsitm/{{ $itm1->DocEntry }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <input type="submit" class="btn btn-delete px-sm-3 py-sm-2 medium mt-3" value="Delete">
+                                <input type="submit" class="btn btn-delete px-sm-3 py-sm-2 medium mt-3" value="Hapus">
                             </form>
                             <a href="/kelola-produk" class="btn btn-chat-2 px-sm-3 py-sm-2 medium mt-3">
                                 Batal
