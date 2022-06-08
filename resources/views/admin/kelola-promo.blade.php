@@ -45,7 +45,7 @@
                                     <p class="font-18 text-atribut medium">
                                         Deskripsi : {{ $promo->PromoDescription }} <br>
                                         Periode : {{ $promo->PromoSDate }} - {{ $promo->PromoEDate }} <br>
-                                        Status : Tidak Aktif <br>
+                                        Status : {{ $promo->PromoIsActive }} <br>
                                         Tagline : {{ $promo->PromoSupport }}
                                     </p>
                                 </div>
@@ -55,14 +55,16 @@
                     <div class="col-lg-2">
                         <div class="row d-flex justify-content-center padding-card-2">
                             <div class="col-lg-12">
-                                <a href="/edit-promo" class="btn btn-block btn-chat py-sm-2 medium mt-5">
+                                <a href="/promoproducts/{{ $promo->PrID }}/edit"
+                                    class="btn btn-block btn-chat py-sm-2 medium mt-5">
                                     Update
                                 </a>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">
                             <div class="col-lg-12">
-                                <a href="/delete-promo" class="btn btn-block btn-delete py-sm-2 medium mt-3">
+                                <a href="/promoproducts/{{ $promo->PrID }}/show"
+                                    class="btn btn-block btn-delete py-sm-2 medium mt-3">
                                     Delete
                                 </a>
                             </div>

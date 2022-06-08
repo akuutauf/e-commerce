@@ -22,7 +22,7 @@ return new class extends Migration
             $table->date('PromoEDate');
             $table->boolean('PromoIsActive');
             $table->integer('PrCreatedBy');
-            $table->datetime('PrCreatedDate');
+            $table->datetime('PrCreatedDate')->default('CURRENT_TIMESTAMP');
             $table->string('ImgUrlPromo1', 32);
             $table->string('ImgUrlPromo2', 32);
             $table->string('PromoSupport', 256);

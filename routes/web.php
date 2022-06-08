@@ -34,9 +34,9 @@ Route::get('/', function () {
 //     return view('admin.tambah-promo');
 // });
 
-Route::get('/edit-promo', function () {
-    return view('admin.edit-promo');
-});
+// Route::get('/edit-promo', function () {
+//     return view('admin.edit-promo');
+// });
 
 Route::get('/delete-promo', function () {
     return view('admin.delete-promo');
@@ -128,6 +128,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
     Route::get('/productsitm/{id}/show', [ProductsItm::class, 'show']);
     Route::get('/kelola-promo',[PromoProducts::class, 'index']);
+    Route::get('/promoproducts/{id}/show', [PromoProducts::class, 'show']);
 });
 
 Auth::routes();
