@@ -29,6 +29,10 @@ Route::get('/kelola-promo', function () {
     return view('admin.kelola-promo');
 });
 
+Route::get('/add-promo', function () {
+    return view('admin.tambah-promo');
+});
+
 // resource
 Route::resource('beranda-customer', 'App\Http\Controllers\BerandaCustomer');
 Route::resource('details-product-customer', 'App\Http\Controllers\DetailsProduct');

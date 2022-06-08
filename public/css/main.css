@@ -417,7 +417,7 @@ body {
     color: #9772fb;
 }
 
-.text-promo {
+.text-atribut {
     color: #575a89;
 }
 
@@ -438,6 +438,11 @@ body {
 }
 
 /* Media Screen Responsive */
+@media only screen and (max-width: 1750px) {
+    .padding-card-2 {
+        margin-top: 2.5rem !important;
+    }
+}
 @media only screen and (max-width: 1015px) {
     .nama-kota {
         margin-top: 10px;
@@ -489,6 +494,9 @@ body {
     }
     .padding-card {
         padding-top: 1.5rem;
+    }
+    .padding-card-2 {
+        margin-top: 0.5rem !important;
     }
 }
 @media only screen and (max-width: 818px) {

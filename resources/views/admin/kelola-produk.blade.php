@@ -40,7 +40,7 @@
                                 <div class="col-lg-7 my-auto padding-card">
                                     <h4 class="font-18 text-left semi-bold">{{ $p->Itemname }}</h4>
                                     <hr class="hr-color">
-                                    <p class="font-18 secondary-color">
+                                    <p class="font-18 text-atribut medium">
                                         Stok : {{ $p->MPStockProduct }} <br>
                                         Harga : Rp. {{ intval($p->MP_UnitPrice) }} <br>
                                         Berat : {{ $p->MPProductWeight }} Gram
