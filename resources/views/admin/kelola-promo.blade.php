@@ -45,7 +45,7 @@
                                     <p class="font-18 text-atribut medium">
                                         Deskripsi : {{ $promo->PromoDescription }} <br>
                                         Periode : {{ $promo->PromoSDate }} - {{ $promo->PromoEDate }} <br>
-                                        Status : {{ $promo->PromoIsActive }} <br>
+                                        Status : {{ $promo->PromoIsActive == 1 ? 'AKTIF' : 'TIDAK AKTIF' }} <br>
                                         Tagline : {{ $promo->PromoSupport }}
                                     </p>
                                 </div>

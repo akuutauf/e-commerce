@@ -80,11 +80,9 @@
                                 <label for="PromoIsActive" class="medium">Status Promo :</label>
                                 <select class="form-control form-theme-disable" id="PromoIsActive" name="PromoIsActive"
                                     disabled>
-                                    <option value="Default" selected>
+                                    <option value="{{ $oprinf->PromoIsActive }}">
                                         {{ $oprinf->PromoIsActive == 1 ? 'AKTIF' : 'TIDAK AKTIF' }}
                                     </option>
-                                    <option value="1" selected>AKTIF</option>
-                                    <option value="0">TIDAK AKTIF</option>
                                 </select>
                             </div>
                         </div>

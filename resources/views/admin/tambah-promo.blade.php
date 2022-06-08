@@ -12,7 +12,7 @@
     {{-- <script src="datedropper-javascript.js"></script> --}}
 
     <script src="{{ asset('js/datedropper-javascript.js') }}"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> --}}
 @endsection
 
 @section('content')
@@ -49,15 +49,15 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoSDate" class="medium">Promo Start Date :</label>
-                            <input type="date" data-dd-opt-custom-class="dd-theme-bootstrap" data-datedropper
-                                class="form-control form-theme" id="PromoSDate" name="PromoSDate"
+                            <input id="date-input" type="date" data-dd-opt-custom-class="dd-theme-bootstrap"
+                                data-datedropper class="form-control form-theme" id="PromoSDate" name="PromoSDate"
                                 placeholder="Pilih Tanggal">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoEDate" class="medium">Promo End Date :</label>
-                            <input type="date" data-large-mode="true" data-large-default="true"
+                            <input id="date-input" type="date" data-large-mode="true" data-large-default="true"
                                 class="form-control form-theme" id="PromoEDate" name="PromoEDate"
                                 placeholder="Pilih Tanggal">
                         </div>
@@ -127,8 +127,8 @@
     <script>
         dateDropper({
             selector: 'input[type="date"]',
-            large: true,
-            largeDefault: true,
+            // large: false,
+            // largeDefault: true,
         });
     </script>
 @endsection
