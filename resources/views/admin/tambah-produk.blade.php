@@ -218,7 +218,7 @@
                             <div class="form-group">
                                 <label for="MPStatusProduct" class="medium">Status Product :</label>
                                 <select class="form-control form-theme" id="MPStatusProduct" name="MPStatusProduct">
-                                    <option value="Default" selected>Pilih Status Produk</option>
+                                    <option value="Default">Pilih Status Produk</option>
                                     <option value="1">YES</option>
                                     <option value="0">NO</option>
                                 </select>
@@ -230,7 +230,7 @@
                             <div class="form-group">
                                 <label for="MP_POProduct" class="medium">PO Product :</label>
                                 <select class="form-control form-theme" id="MP_POProduct" name="MP_POProduct">
-                                    <option value="Default" selected>Apakah Produk Wajib Pre Order</option>
+                                    <option value="">Apakah Produk Wajib Pre Order</option>
                                     <option value="1">YES</option>
                                     <option value="0">NO</option>
                                 </select>
