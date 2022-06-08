@@ -29,8 +29,8 @@
     {{-- Start List Promo --}}
     <section class="pt-4">
         <div class="container">
-            <div class="row pb-5">
-                @foreach ($oprinf as $promo)
+            @foreach ($oprinf as $promo)
+                <div class="row pb-4">
                     <div class="col-lg-10">
                         <div class="card card-list-produk shadow-card border-none p-4">
                             <div class="row d-flex justify-content-center">
@@ -68,8 +68,8 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
     </section>
     {{-- End List Promo --}}
