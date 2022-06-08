@@ -3,9 +3,9 @@
 @section('title')
     <title>Obugame | Edit Promo</title>
 
-    {{-- Datedropper Requirements --}}
+    {{-- Date dropper Requirements --}}
     <script src="{{ asset('js/datedropper-javascript.js') }}"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 @endsection
 
 @section('content')
@@ -43,7 +43,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoSDate" class="medium">Promo Start Date :</label>
-                            <input type="date" data-dd-opt-custom-class="dd-theme-bootstrap" data-datedropper
+                            <input id="date-input" type="date" data-dd-opt-custom-class="dd-theme-bootstrap"
                                 class="form-control form-theme" id="PromoSDate" name="PromoSDate" placeholder="2022-10-01"
                                 value="{{ $oprinf->PromoSDate }}">
                         </div>
@@ -51,7 +51,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoEDate" class="medium">Promo End Date :</label>
-                            <input type="date" data-large-mode="true" data-large-default="true"
+                            <input id="date-input" type="date" data-dd-opt-custom-class="dd-theme-bootstrap"
                                 class="form-control form-theme" id="PromoEDate" name="PromoEDate" placeholder="2022-10-01"
                                 value="{{ $oprinf->PromoEDate }}">
                         </div>
@@ -122,7 +122,12 @@
     {{-- Initialize Date Form --}}
     <script>
         dateDropper({
-            selector: 'input[type="date"]',
+            selector: '#date-input',
+            expandedDefault: true,
+            expandable: true,
+            overlay: true,
+            showArrowsOnHover: true,
+            autoFill: false
         });
     </script>
 @endsection
