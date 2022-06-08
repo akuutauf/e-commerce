@@ -4,11 +4,8 @@
     <title>Obugame | Edit Promo</title>
 
     {{-- Datedropper Requirements --}}
-    <link href="{{ asset('datedropper/datedropper.css') }}" rel="stylesheet" />
-    <link href="{{ asset('datedropper/my-style.css') }}" rel="stylesheet" />
-
-    <script src="{{ asset('datedropper/jquery-1.10.2.min.js') }}"></script>
-    <script src="{{ asset('datedropper/datedropper.js') }}"></script>
+    <script src="{{ asset('js/datedropper-javascript.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 @endsection
 
 @section('content')
@@ -45,15 +42,15 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoSDate" class="medium">Promo Start Date :</label>
-                            <input type="date" data-large-mode="true" data-large-default="true" data-theme="my-style"
-                                class="form-control form-theme" id="PromoSDate" name="PromoSDate" placeholder="20/12/2022">
+                            <input type="date" data-dd-opt-custom-class="dd-theme-bootstrap" data-datedropper
+                                class="form-control form-theme" id="PromoSDate" name="PromoSDate" placeholder="2022-10-01">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoEDate" class="medium">Promo End Date :</label>
-                            <input type="date" data-large-mode="true" data-large-default="true" data-theme="my-style"
-                                class="form-control form-theme" id="PromoEDate" name="PromoEDate" placeholder="02/01/2023">
+                            <input type="date" data-large-mode="true" data-large-default="true"
+                                class="form-control form-theme" id="PromoEDate" name="PromoEDate" placeholder="2022-10-01">
                         </div>
                     </div>
                 </div>
@@ -119,6 +116,8 @@
 
     {{-- Initialize Date Form --}}
     <script>
-        $("input[type='date']").dateDropper({});
+        dateDropper({
+            selector: 'input[type="date"]',
+        });
     </script>
 @endsection
