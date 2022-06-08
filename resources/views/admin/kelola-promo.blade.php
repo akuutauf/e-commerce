@@ -17,7 +17,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="/add-promo" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                    <a href="/promoproducts/create" class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
                         Tambah Promo Baru
                     </a>
                 </div>
@@ -30,43 +30,45 @@
     <section class="pt-4">
         <div class="container">
             <div class="row pb-5">
-                <div class="col-lg-10">
-                    <div class="card card-list-produk shadow-card border-none p-4">
+                @foreach ($oprinf as $promo)
+                    <div class="col-lg-10">
+                        <div class="card card-list-produk shadow-card border-none p-4">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-3 mx-auto my-auto">
+                                    <img class="rounded-sm float-left card-img-top"
+                                        src="{{ asset('img/promo/' . $promo->ImgUrlPromo1) }}">
+                                </div>
+                                <div class="col-lg-9 my-auto padding-card">
+                                    <h4 class="font-20 text-left judul-promo semi-bold">{{ $promo->PromoName }}</h4>
+                                    </h4>
+                                    <hr class="hr-color">
+                                    <p class="font-18 text-atribut medium">
+                                        Deskripsi : {{ $promo->PromoDescription }} <br>
+                                        Periode : {{ $promo->PromoSDate }} - {{ $promo->PromoEDate }} <br>
+                                        Status : Tidak Aktif <br>
+                                        Tagline : {{ $promo->PromoSupport }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="row d-flex justify-content-center padding-card-2">
+                            <div class="col-lg-12">
+                                <a href="/edit-promo" class="btn btn-block btn-chat py-sm-2 medium mt-5">
+                                    Update
+                                </a>
+                            </div>
+                        </div>
                         <div class="row d-flex justify-content-center">
-                            <div class="col-lg-3 mx-auto my-auto">
-                                <img class="rounded-sm float-left card-img-top"
-                                    src="{{ asset('img/promo/promo_banana_snack_01.jpg') }}">
-                            </div>
-                            <div class="col-lg-9 my-auto padding-card">
-                                <h4 class="font-20 text-left judul-promo semi-bold">PROMO BIG DISKON 22% - Tahun Baru
-                                </h4>
-                                <hr class="hr-color">
-                                <p class="font-18 text-atribut medium">
-                                    Deskripsi : Untuk 10 Pembeli Pertama di Shopee <br>
-                                    Periode : 31 Desember 2022 - 2 Januari 2023 <br>
-                                    Status : Tidak Aktif <br>
-                                    Tagline : #bananasnackpromo#bananasnacknewyearpromo#bigdiskon
-                                </p>
+                            <div class="col-lg-12">
+                                <a href="/delete-promo" class="btn btn-block btn-delete py-sm-2 medium mt-3">
+                                    Delete
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="row d-flex justify-content-center padding-card-2">
-                        <div class="col-lg-12">
-                            <a href="/edit-promo" class="btn btn-block btn-chat py-sm-2 medium mt-5">
-                                Update
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-12">
-                            <a href="/delete-promo" class="btn btn-block btn-delete py-sm-2 medium mt-3">
-                                Delete
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

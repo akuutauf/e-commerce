@@ -14,7 +14,7 @@
 @section('content')
     {{-- Start Container Form --}}
     <section id="edit-card" class="mt-4 p-lg-5">
-        <form action="/productsitm/" class="form-group pt-5 pb-5" method="POST">
+        <form action="/promoproducts/" class="form-group pt-5 pb-5" method="POST">
             @csrf
             <div class="container container-form">
                 <div class="row">

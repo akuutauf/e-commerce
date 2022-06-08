@@ -5,6 +5,7 @@ use App\Http\Controllers\DetailsProduct;
 use App\Http\Controllers\DetailsProductCustomer;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsItm;
+use App\Http\Controllers\PromoProducts;
 use App\Http\Controllers\SearchAdmin;
 use App\Http\Controllers\SearchCustomer;
 use Illuminate\Support\Facades\Auth;
@@ -25,13 +26,13 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/kelola-promo', function () {
-    return view('admin.kelola-promo');
-});
+// Route::get('/kelola-promo', function () {
+//     return view('admin.kelola-promo');
+// });
 
-Route::get('/add-promo', function () {
-    return view('admin.tambah-promo');
-});
+// Route::get('/add-promo', function () {
+//     return view('admin.tambah-promo');
+// });
 
 Route::get('/edit-promo', function () {
     return view('admin.edit-promo');
@@ -53,6 +54,7 @@ Route::get('/beranda_customer', [ProductsItm::class, 'index']);
 Route::get('/details_product_customer/{id}/show', [DetailsProductCustomer::class, 'show']);
 Route::get('/search-admin', [SearchAdmin::class, 'index']);
 Route::get('/search-customer', [SearchCustomer::class, 'index']);
+
 
 /* not use controller
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
@@ -117,6 +119,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('beranda-admin', 'App\Http\Controllers\BerandaAdmin');
     Route::resource('details-product', 'App\Http\Controllers\DetailsProduct');
     Route::resource('dashboard-toko-admin', 'App\Http\Controllers\DashboardAdmin');
+    Route::resource('promoproducts', 'App\Http\Controllers\PromoProducts');
 
     // get route from resource
     Route::get('/kelola-produk', [ProductsItm::class, 'index']);
@@ -124,6 +127,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard-toko-admin', [DashboardAdmin::class, 'index']);
     Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
     Route::get('/productsitm/{id}/show', [ProductsItm::class, 'show']);
+    Route::get('/kelola-promo',[PromoProducts::class, 'index']);
 });
 
 Auth::routes();

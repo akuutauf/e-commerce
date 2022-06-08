@@ -11,4 +11,5 @@ class Oprinf extends Model
     protected $table = 'oprinfs';
     protected $primaryKey = 'PrID';
     public $timestamps = false;
+    protected $guarded = [];
 }
