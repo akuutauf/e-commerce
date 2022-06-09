@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CarouselPromo;
 use App\Http\Controllers\DashboardAdmin;
 use App\Http\Controllers\DetailsProduct;
 use App\Http\Controllers\DetailsProductCustomer;
@@ -26,18 +27,6 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-// Route::get('/kelola-promo', function () {
-//     return view('admin.kelola-promo');
-// });
-
-// Route::get('/add-promo', function () {
-//     return view('admin.tambah-promo');
-// });
-
-// Route::get('/edit-promo', function () {
-//     return view('admin.edit-promo');
-// });
-
 Route::get('/delete-promo', function () {
     return view('admin.delete-promo');
 });
@@ -55,6 +44,28 @@ Route::get('/details_product_customer/{id}/show', [DetailsProductCustomer::class
 Route::get('/search-admin', [SearchAdmin::class, 'index']);
 Route::get('/search-customer', [SearchCustomer::class, 'index']);
 
+Route::middleware(['auth'])->group(function () {
+    // resource
+    Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
+    Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
+    Route::resource('beranda-admin', 'App\Http\Controllers\BerandaAdmin');
+    Route::resource('details-product', 'App\Http\Controllers\DetailsProduct');
+    Route::resource('dashboard-toko-admin', 'App\Http\Controllers\DashboardAdmin');
+    Route::resource('promoproducts', 'App\Http\Controllers\PromoProducts');
+
+    // get route from resource
+    Route::get('/kelola-produk', [ProductsItm::class, 'index']);
+    Route::get('/beranda_admin', [ProductsItm::class, 'index']);
+    Route::get('/dashboard-toko-admin', [DashboardAdmin::class, 'index']);
+    Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
+    Route::get('/productsitm/{id}/show', [ProductsItm::class, 'show']);
+    Route::get('/kelola-promo', [PromoProducts::class, 'index']);
+    Route::get('/promoproducts/{id}/show', [PromoProducts::class, 'show']);
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /* not use controller
 Route::get('/dashboard-toko-customer', 'App\Http\Controllers\BerandaController@produkKategoriClient');
@@ -110,27 +121,16 @@ Route::get('/add-produk', function () {
 Route::get('/dashboard-toko-customer', function () {
     return view('customer.dashboard-toko-customer');
 });
-*/
 
-Route::middleware(['auth'])->group(function () {
-    // resource
-    Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
-    Route::resource('productsitm', 'App\Http\Controllers\ProductsItm');
-    Route::resource('beranda-admin', 'App\Http\Controllers\BerandaAdmin');
-    Route::resource('details-product', 'App\Http\Controllers\DetailsProduct');
-    Route::resource('dashboard-toko-admin', 'App\Http\Controllers\DashboardAdmin');
-    Route::resource('promoproducts', 'App\Http\Controllers\PromoProducts');
-
-    // get route from resource
-    Route::get('/kelola-produk', [ProductsItm::class, 'index']);
-    Route::get('/beranda_admin', [ProductsItm::class, 'index']);
-    Route::get('/dashboard-toko-admin', [DashboardAdmin::class, 'index']);
-    Route::get('/details_product/{id}/show', [DetailsProduct::class, 'show']);
-    Route::get('/productsitm/{id}/show', [ProductsItm::class, 'show']);
-    Route::get('/kelola-promo',[PromoProducts::class, 'index']);
-    Route::get('/promoproducts/{id}/show', [PromoProducts::class, 'show']);
+Route::get('/kelola-promo', function () {
+    return view('admin.kelola-promo');
 });
 
-Auth::routes();
+Route::get('/add-promo', function () {
+    return view('admin.tambah-promo');
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/edit-promo', function () {
+    return view('admin.edit-promo');
+});
+*/
