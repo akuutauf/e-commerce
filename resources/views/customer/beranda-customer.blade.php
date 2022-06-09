@@ -12,61 +12,44 @@
                 <div class="carousel-item active">
                     <div class="container">
                         <div class="row p-5 mb-5">
-                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                                <img class="img-fluid" width="80%" src="{{ asset('img/carrousel_01.png') }}" alt="">
-                            </div>
-                            <div class="col-lg-6 mb-0 d-flex align-items-center">
-                                <div class="text-align-left align-self-center">
-                                    <h1 class="h1 color-theme semi-bold">Obugame <span
-                                            class="medium color-theme-2">E-Commerce</span></h1>
-                                    <h3 class="h3 font-20 text-justify medium">Selamat Datang! Obugame adalah suatu UMKM
-                                        yang bergerak dibidang produk kuliner dan kami menjual produk secara online.
-                                    </h3>
-                                    <p>
-                                        Kami menyediakan produk olahan hasil pertanian lainnya seperti Snack, Makanan dan
-                                        Minuman Instan.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row p-5 mb-5">
-                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                                <img class="img-fluid" width="80%" src="{{ asset('img/carrousel_04.png') }}" alt="">
-                            </div>
-                            <div class="col-lg-6 mb-0 d-flex align-items-center">
-                                <div class="text-align-left align-self-center">
-                                    <h1 class="h1 color-theme semi-bold">Obugame <span
-                                            class="medium color-theme-2">E-Commerce</span></h1>
-                                    <h3 class="h3 font-20 text-justify medium">Selamat Datang di website Obugame. Kami
-                                        menyediakan
-                                        berbagai produk Snack dan Beverage.</h3>
-                                    <p>
-                                        Kami Menyedikan berbagai produk camilan, yang enak disajikan bersama keluarga.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row p-5 mb-5">
-                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                                <img class="img-fluid" width="80%" src="{{ asset('img/carrousel_03.png') }}" alt="">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center pb-4">
+                                <img class="img-fluid rounded border-none" src="{{ asset('img/obugame_logo_02.jpg') }}"
+                                    alt="Nama Promo">
                             </div>
                             <div class="col-lg-6 mb-0 d-flex align-items-center">
                                 <div class="text-align-left">
-                                    <h1 class="h1 color-theme semi-bold">Obugame <span
-                                            class="medium color-theme-2">E-Commerce</span></h1>
-                                    <h3 class="h3 font-20 text-justify medium">Kami memudahkan Anda untuk melakukan
-                                        pemesanan pada produk kami.</h3>
-                                    <p>
-                                        Obugame buka di setiap hari Senin - Jumat di jam 08:00 - 16:00 WIB.
-                                    </p>
+                                    <h1 class="h4 color-theme semi-bold">Selamat Datang di Obugame
+                                        <h3 class="h3 font-18 text-left medium">Kami menyediakan berbagai jenis cemilan
+                                            Banana Snack,
+                                            Dragon Rengginang dan Dragon Drink untuk menemani suasana hatimu 😊
+                                        </h3>
+                                        <p class="text-left font-18 regular">
+                                            Jangan lewatkan promo menarik dari kami Yah, Selamat Berbelanja!
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-5 mb-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center pb-4">
+                                <img class="img-fluid rounded border-none" width="80%"
+                                    src="{{ asset('img/promo/promo_banana_snack_01.jpg') }}" alt="Nama Promo">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left">
+                                    <h1 class="h4 color-theme semi-bold">PROMO BIG DISKON 22%
+                                        Tahun
+                                        Baru
+                                        <h3 class="h3 font-18 text-left medium">Catat tanggalnya yuk, Periode promo
+                                            berlaku pada tanggal : 31 Desember 2022 - 2 Januari 2023
+                                        </h3>
+                                        <p class="text-left font-18 regular">
+                                            Promo berlaku untuk 10 Pembeli Pertama di Shopee Yuk buruan order sebelum
+                                            kehabisan
+                                        </p>
                                 </div>
                             </div>
                         </div>

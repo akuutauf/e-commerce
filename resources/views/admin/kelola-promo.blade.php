@@ -12,8 +12,6 @@
         $slug = explode('-', $date);
         return $slug[2] . ' ' . $month[(int) $slug[1]] . ' ' . $slug[0];
     }
-
-    $tanggal = dateConversion(date('Y-m-d'));
     @endphp
 @endsection
 
