@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Itm1;
-use Illuminate\Http\Request;
+use App\Models\Oprinf;
 
 class HomeController extends Controller
 {
@@ -27,9 +28,8 @@ class HomeController extends Controller
             'categories' => Itm1::select('MP_ProductName')->groupBy('MP_ProductName')->get(),
             'products' => Itm1::all()
         ];
+        $promo = Oprinf::where('PromoIsActive', true)->get();
 
-        // return dd($data['items']);
-        return view('admin.beranda-admin', $data);
-        // return view('home');
+        return view('admin.beranda-admin', $data)->with('promo', $promo);
     }
 }
