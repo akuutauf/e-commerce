@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Oprinf;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -14,7 +15,8 @@ class PromoProducts extends Controller
      */
     public function index()
     {
-        $oprinf= Oprinf::all();
+        // $oprinf = Oprinf::all();
+        $oprinf = Oprinf::orderBy('PromoIsActive', 'desc')->get();
         return view('admin.kelola-promo', compact(['oprinf']));
     }
 
@@ -48,7 +50,7 @@ class PromoProducts extends Controller
      */
     public function show($id)
     {
-        $oprinf= Oprinf::find($id);
+        $oprinf = Oprinf::find($id);
         return view('admin.delete-promo')->with('oprinf', $oprinf);
     }
 
