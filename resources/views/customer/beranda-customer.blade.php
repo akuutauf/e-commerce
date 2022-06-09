@@ -2,6 +2,17 @@
 
 @section('title')
     <title>Obugame | Beranda Customer</title>
+
+    @php
+    // fungsi konversi data tipe date ke tanggal
+    function dateConversion($date)
+    {
+        $month = [1 => 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+        $slug = explode('-', $date);
+        return $slug[2] . ' ' . $month[(int) $slug[1]] . ' ' . $slug[0];
+    }
+    @endphp
 @endsection
 
 @section('carrousel')
@@ -31,30 +42,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row p-5 mb-5">
-                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center pb-4">
-                                <img class="img-fluid rounded border-none" width="80%"
-                                    src="{{ asset('img/promo/promo_banana_snack_01.jpg') }}" alt="Nama Promo">
-                            </div>
-                            <div class="col-lg-6 mb-0 d-flex align-items-center">
-                                <div class="text-align-left">
-                                    <h1 class="h4 color-theme semi-bold">PROMO BIG DISKON 22%
-                                        Tahun
-                                        Baru
-                                        <h3 class="h3 font-18 text-left medium">Catat tanggalnya yuk, Periode promo
-                                            berlaku pada tanggal : 31 Desember 2022 - 2 Januari 2023
-                                        </h3>
-                                        <p class="text-left font-18 regular">
-                                            Promo berlaku untuk 10 Pembeli Pertama di Shopee Yuk buruan order sebelum
-                                            kehabisan
-                                        </p>
+                {{-- Start Looping Data Promo --}}
+                @foreach ($promo as $dataPromo)
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row p-5 mb-5">
+                                <div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center pb-4">
+                                    <img class="img-fluid rounded border-none" width="80%"
+                                        src="{{ asset('img/promo/' . $dataPromo->ImgUrlPromo1) }}" alt="Nama Promo">
+                                </div>
+                                <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                    <div class="text-align-left">
+                                        <h1 class="h4 color-theme semi-bold">{{ $dataPromo->PromoName }}
+                                            <h3 class="h3 font-18 text-left medium">Catat tanggalnya yuk, Periode promo
+                                                berlaku pada tanggal : {{ dateConversion($dataPromo->PromoSDate) }} -
+                                                {{ dateConversion($dataPromo->PromoEDate) }}
+                                            </h3>
+                                            <p class="text-left font-18 regular">
+                                                Promo berlaku {{ $dataPromo->PromoDescription }}
+                                            </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
+                {{-- End Looping Data Promo --}}
             </div>
             <a class="carousel-control-prev carrousel-color carrousel-btn" style="width: 8%" type="button"
                 data-target="#carrousel-arrow" data-slide="prev">
@@ -86,7 +99,8 @@
                                         <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
                                         <div class="card-body">
                                             <p class="h6 card-text medium text-left text-card">{{ $value->Itemname }}</p>
-                                            <p class="card-text product-price bold">Rp. {{ intval($value->MP_UnitPrice) }}
+                                            <p class="card-text product-price bold">Rp.
+                                                {{ intval($value->MP_UnitPrice) }}
                                             </p>
                                             <div class="row">
                                                 <div class="col-6">

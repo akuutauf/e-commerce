@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Itm1;
+use App\Models\Oprinf;
 use Illuminate\Http\Request;
 
 class BerandaAdmin extends Controller
@@ -19,8 +20,10 @@ class BerandaAdmin extends Controller
             'products' => Itm1::all()
         ];
 
+        $promo = Oprinf::where('PromoIsActive', true)->get();
+
         // return dd($data['items']);
-        return view('admin.beranda-admin', $data);
+        return view('admin.beranda-admin', $data)->with('promo', $promo);
     }
 
     /**

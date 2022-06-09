@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Itm1;
+use App\Models\Oprinf;
 use Illuminate\Http\Request;
 
 class BerandaCustomer extends Controller
@@ -18,7 +19,9 @@ class BerandaCustomer extends Controller
             'categories' => Itm1::select('MP_ProductName')->groupBy('MP_ProductName')->get(),
             'products' => Itm1::all()
         ];
-        return view('customer.beranda-customer', $data);
+
+        $promo = Oprinf::where('PromoIsActive', true)->get();
+        return view('customer.beranda-customer', $data)->with('promo', $promo);
     }
 
     /**
