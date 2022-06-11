@@ -460,7 +460,7 @@ body {
 }
 
 .loading-col {
-    background: white !important;
+    background: transparent !important;
     overflow: hidden;
 }
 

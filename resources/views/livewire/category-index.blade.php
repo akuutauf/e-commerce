@@ -34,22 +34,26 @@
                         <div class="col-lg-3 d-flex justify-content-center mb-4">
                             <a href="/details_product/{{ $product->DocEntry }}/show" class="card-a">
                                 <div class="card shadow-card border-none">
-                                    <img class="card-img-top" src="{{ $product->MP_Pic1 }}" alt="Card image cap">
+                                    <img class="card-img-top" src="{{ $product->MP_Pic1 }}" alt="">
                                     <div class="card-body">
-                                        <p class="h6 card-text medium text-left text-card">{{ $product->Itemname }}
+                                        <p class="h6 card-text medium text-left text-card">
+                                            <span> {{ $product->Itemname }}</span>
                                         </p>
-                                        <p class="card-text product-price bold">Rp.
-                                            {{ intval($product->MP_UnitPrice) }}
+                                        <p class="card-text product-price bold"><span>Rp.
+                                                {{ intval($product->MP_UnitPrice) }}</span>
                                         </p>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <p class="card-text semi-bold font-10 text-left text-card">
-                                                    Obugame<br><span class="card-text total-sales regular medium">Stok
-                                                        {{ $product->MPStockProduct }}</span></p>
+                                                    <span>Obugame</span><br><span
+                                                        class="card-text total-sales regular medium">Stok
+                                                        {{ $product->MPStockProduct }}</span>
+                                                </p>
                                             </div>
                                             <div class="col-lg-6">
                                                 <h6 class="card-text text-right shop-location mt-4 font-10 semi-bold">
-                                                    {{ $product->MPName }}</h6>
+                                                    <span>{{ $product->MPName }}</span>
+                                                </h6>
                                             </div>
                                         </div>
                                     </div>
@@ -62,22 +66,29 @@
                         <div class="col-lg-3 d-flex justify-content-center mb-4">
                             <a href="/details_product/{{ $product->DocEntry }}/show" class="card-a">
                                 <div class="card shadow-card border-none">
-                                    <img class="card-img-top" src="{{ $product->MP_Pic1 }}" alt="Card image cap">
+                                    <div class="">
+                                        <img class="card-img-top" src="{{ $product->MP_Pic1 }}"
+                                            alt="Card image cap">
+                                    </div>
                                     <div class="card-body">
-                                        <p class="h6 card-text medium text-left text-card">{{ $product->Itemname }}
+                                        <p class="h6 card-text medium text-left text-card">
+                                            <span>{{ $product->Itemname }}</span>
                                         </p>
-                                        <p class="card-text product-price bold">Rp.
-                                            {{ intval($product->MP_UnitPrice) }}
+                                        <p class="card-text product-price bold">
+                                            <span>Rp. {{ intval($product->MP_UnitPrice) }}</span>
                                         </p>
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <p class="card-text semi-bold font-10 text-left text-card">
-                                                    Obugame<br><span class="card-text total-sales regular medium">Stok
-                                                        {{ $product->MPStockProduct }}</span></p>
+                                                    <span>Obugame</span><br><span
+                                                        class="card-text total-sales regular medium">Stok
+                                                        {{ $product->MPStockProduct }}</span>
+                                                </p>
                                             </div>
                                             <div class="col-lg-6">
                                                 <h6 class="card-text text-right shop-location mt-4 font-10 semi-bold">
-                                                    {{ $product->MPName }}</h6>
+                                                    <span>{{ $product->MPName }} </span>
+                                                </h6>
                                             </div>
                                         </div>
                                     </div>

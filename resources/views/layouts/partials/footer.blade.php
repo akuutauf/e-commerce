@@ -13,11 +13,11 @@
                           </li><br>
                           <li>
                               <i class="fa fa-phone fa-fw"></i>
-                              <a class="text-decoration-none text-white" href="">082-332-743-884</a>
+                              <a class="text-decoration-none text-white" href="">081-232-667-461</a>
                           </li><br>
                           <li>
                               <i class="fa fa-envelope fa-fw"></i>
-                              <a class="text-decoration-none text-white" href="">obugame@gmail.com</a>
+                              <a class="text-decoration-none text-white" href="">obugameku@gmail.com</a>
                           </li>
                       </ul>
                   </div>
@@ -26,8 +26,8 @@
                       <h2 class="h2 text-light border-bottom pb-3 border-light title-footer">Produk</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
                           <li><a class="text-decoration-none text-white" href="#">Banana Snack</a></li><br>
-                          <li><a class="text-decoration-none text-white" href="#">Dragon Rengginang</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Dragon Drink</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="#">Dragon Rengginang</a></li><br>
                       </ul>
                   </div>
 
@@ -57,15 +57,19 @@
                           </li>
                           <li class="list-inline-item border border-light rounded-circle text-center  py-1 px-1">
                               <a class="text-light text-decoration-none" target="_blank"
-                                  href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                                  href="https://www.instagram.com/obugame/"><i
+                                      class="fab fa-instagram fa-lg fa-fw"></i></a>
                           </li>
                           <li class="list-inline-item border border-light rounded-circle text-center py-1 px-1">
-                              <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                              <a class="text-light text-decoration-none" target="_blank"
+                                  href="https://www.facebook.com/sahabatobugamenia/"><i
                                       class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                           </li>
-                          <li class="list-inline-item border border-light rounded-circle text-center  py-1 px-1">
-                              <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
-                                      class="fab fa-twitter fa-lg fa-fw"></i></a>
+                          <li class="list-inline-item border border-light rounded-circle text-center py-1 px-1 mb-1">
+                              <a class="text-light text-decoration-none" target="_blank"
+                                  href="https://shopee.co.id/elladeffi?page=0">
+                                  <img height="24.5" width="24.5" src="{{ asset('icons/shopee.png') }}" alt="">
+                              </a>
                           </li>
                       </ul>
                   </div>
@@ -92,7 +96,6 @@
                   </div>
               </div>
           </div>
-
       </footer>
   </section>
   <!-- End Footer -->
