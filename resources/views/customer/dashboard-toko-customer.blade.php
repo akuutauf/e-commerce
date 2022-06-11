@@ -12,24 +12,23 @@
                 <div class="col">
                     <div class="row">
                         <div class="col d-flex justify-content-center my-auto">
-                            <img src="{{ asset('img/obugame_logo_02.jpg') }}" width="250"
+                            <img src="{{ asset('img/obugame_logo_02.jpg') }}"
                                 class="img-thumbnail image-toko rounded-circle shadow">
                         </div>
                         <div class="col py-5 my-auto">
                             <h3 class="semi-bold">Obugame</h3>
                             <div class="row">
-                                <div class="col-4 my-auto">
+                                <div class="col-lg-4 my-auto">
                                     <button class="btn-online medium text-white">
                                         Online
                                     </button>
                                 </div>
-                                <div class="col my-auto">
+                                <div class="col-lg-8 my-auto">
                                     <h6 class="secondary-color font-10 nama-kota">Banyuwangi <i
                                             class="fa-solid fa-location-dot color-theme"></i></h6>
                                 </div>
                             </div>
-                            <a href="https://shopee.co.id/elladeffi" target="_blank"
-                                class="btn btn-chat px-sm-3 py-sm-2 medium mt-3">
+                            <a href="https://shopee.co.id/elladeffi" target="_blank" class="btn btn-chat medium mt-2">
                                 Chat Penjual
                             </a>
                         </div>
