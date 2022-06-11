@@ -87,30 +87,41 @@
     <section class="mt-lg-5">
         @foreach ($categories as $item)
             <div class="container mt-5 mb-3">
-                <h3 class="medium font-23 text-left">{{ $item->MP_ProductName }}</h3>
+                <h3 class="medium font-23 text-left"><span
+                        class="loading load-text"><span>{{ $item->MP_ProductName }}</span></span>
+                </h3>
             </div>
             <div class="container bg-white rounded-sm shadow-card border-none">
-                <div class="row py-4 px-2">
+                <div class="row py-1 px-2">
                     @foreach ($products as $value)
                         @if ($item->MP_ProductName == $value->MP_ProductName)
-                            <div class="col-lg-3 d-flex justify-content-center">
-                                <a href="/details_product_customer/{{ $value->DocEntry }}/show" class="card-a">
-                                    <div class="card shadow-card border-none">
-                                        <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
+                            <div class="col-lg-3 d-flex justify-content-center loading-col py-3">
+                                <a href="/details_product/{{ $value->DocEntry }}/show" class="card-a">
+                                    <div class="card shadow-card border">
+                                        <div class="loading load-img">
+                                            <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
+                                        </div>
                                         <div class="card-body">
-                                            <p class="h6 card-text medium text-left text-card">{{ $value->Itemname }}</p>
-                                            <p class="card-text product-price bold">Rp.
-                                                {{ intval($value->MP_UnitPrice) }}
+                                            <p class="h6 card-text medium text-left text-card loading load-text">
+                                                <span>{{ $value->Itemname }}</span>
+                                            </p>
+                                            <p class="card-text product-price bold loading load-text"><span>Rp.
+                                                    {{ intval($value->MP_UnitPrice) }}</span>
                                             </p>
                                             <div class="row">
-                                                <div class="col-6">
-                                                    <p class="card-text semi-bold font-10 text-left text-card">
-                                                        Obugame<br><span class="card-text total-sales regular medium">Stok
-                                                            {{ $value->MPStockProduct }}</span></p>
+                                                <div class="col-lg-6">
+                                                    <p
+                                                        class="card-text semi-bold font-10 text-left text-card loading load-text">
+                                                        <span>Obugame</span><br><span
+                                                            class="card-text total-sales regular medium">Stok
+                                                            {{ $value->MPStockProduct }}</span>
+                                                    </p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class="card-text text-right shop-location mt-4 font-10 semi-bold">
-                                                        {{ $value->MPName }}</p>
+                                                <div class="col-lg-6">
+                                                    <h6
+                                                        class="card-text text-right shop-location mt-4 font-10 semi-bold loading load-text">
+                                                        <span>{{ $value->MPName }}</span>
+                                                    </h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -128,4 +139,40 @@
         <div id="konten" class="container my-5"></div>
     </section>
     {{-- Kategori Produk End --}}
+
+    {{-- Javascript animation card --}}
+    <script type="text/javascript">
+        // variabel selector for loading
+        const loadImg = document.querySelectorAll(".load-img");
+        const loadText = document.querySelectorAll(".load-text");
+
+        // variabel selector for content
+        const contentText = document.querySelectorAll(".load-text span");
+        const contentImg = document.querySelectorAll(".load-img img");
+
+        const renderCard = () => {
+            // Remove the skeleton loading effect
+            loadImg.forEach((loadImg) => {
+                loadImg.classList.remove("loading")
+            });
+            loadText.forEach((loadText) => {
+                loadText.classList.remove("loading")
+            });
+
+            // Show the hidden html elements
+            contentText.forEach((contentText) => {
+                contentText.style.visibility = "visible";
+            });
+
+            contentImg.forEach((contentImg) => {
+                contentImg.style.visibility = "visible";
+            });
+
+        }
+
+        // execute renderCard on setTimeout
+        setTimeout(() => {
+            renderCard();
+        }, 5000)
+    </script>
 @endsection
