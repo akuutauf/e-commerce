@@ -64,11 +64,10 @@
                 @else
                     @foreach ($products as $product)
                         <div class="col-lg-3 d-flex justify-content-center mb-4">
-                            <a href="/details_product/{{ $product->DocEntry }}/show" class="card-a">
+                            <a href="/details_product_customer/{{ $product->DocEntry }}/show" class="card-a">
                                 <div class="card shadow-card border-none">
                                     <div class="">
-                                        <img class="card-img-top" src="{{ $product->MP_Pic1 }}"
-                                            alt="Card image cap">
+                                        <img class="card-img-top" src="{{ $product->MP_Pic1 }}" alt="Card image cap">
                                     </div>
                                     <div class="card-body">
                                         <p class="h6 card-text medium text-left text-card">
