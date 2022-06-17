@@ -96,7 +96,7 @@
                     @foreach ($products as $value)
                         @if ($item->MP_ProductName == $value->MP_ProductName)
                             <div class="col-lg-3 d-flex justify-content-center loading-col py-3">
-                                <a href="/details_product/{{ $value->DocEntry }}/show" class="card-a">
+                                <a href="/details_product_customer/{{ $value->DocEntry }}/show" class="card-a">
                                     <div class="card shadow-card border">
                                         <div class="loading load-img">
                                             <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
