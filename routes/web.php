@@ -31,6 +31,10 @@ Route::get('/delete-promo', function () {
     return view('admin.delete-promo');
 });
 
+Route::get('/join-mitra', function () {
+    return view('join-mitra');
+});
+
 // resource
 Route::resource('beranda-customer', 'App\Http\Controllers\BerandaCustomer');
 Route::resource('details-product-customer', 'App\Http\Controllers\DetailsProduct');

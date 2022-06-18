@@ -173,6 +173,6 @@
         // execute renderCard on setTimeout
         setTimeout(() => {
             renderCard();
-        }, 5000)
+        }, 3000)
     </script>
 @endsection

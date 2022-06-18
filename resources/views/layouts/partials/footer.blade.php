@@ -40,6 +40,7 @@
                           <li><a class="text-decoration-none text-white" href="#">Product</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Promo Media</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Obugame Story</a></li><br>
+                          <li><a class="text-decoration-none text-white" href="/join-mitra">Bermitra Bersama Kami</a>
                       </ul>
                   </div>
 
@@ -68,34 +69,22 @@
                           <li class="list-inline-item border border-light rounded-circle text-center py-1 px-1 mb-1">
                               <a class="text-light text-decoration-none" target="_blank"
                                   href="https://shopee.co.id/elladeffi?page=0">
-                                  <img height="24.5" width="24.5" src="{{ asset('icons/shopee.png') }}" alt="">
+                                  <img height="24.5" width="24.5" src="{{ asset('icons/shopee.png') }}"
+                                      alt="">
                               </a>
                           </li>
                       </ul>
                   </div>
-                  <div class="col-auto ml-auto">
-                      <div class="input-group mb-2">
-                          <input type="text" class="form-control bg-dark border-light text-light" id="subscribeEmail"
-                              placeholder="Alamat Email">
-                          <a href="" class="input-group-text semi-bold ml-1 btn-kirim">Kirim</a>
-                      </div>
+                  <div class="col-9">
+                      <p class="text-right text-light">
+                          Copyrights &copy; 2022 Obugame
+                          | Designed by <a rel="sponsored" href="" target="_blank"
+                              class="text-white"><b>OBUGAMI</b></a>
+                      </p>
                   </div>
               </div>
           </div>
-
-          <div class="w-100 bg-black py-3">
-              <div class="container">
-                  <div class="row pt-2">
-                      <div class="col-12">
-                          <p class="text-right text-light">
-                              Copyrights &copy; 2022 Obugame
-                              | Designed by <a rel="sponsored" href="" target="_blank"
-                                  class="text-white"><b>OBUGAMI</b></a>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+          <div class="w-100 bg-black py-3"></div>
       </footer>
   </section>
   <!-- End Footer -->

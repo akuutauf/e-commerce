@@ -84,6 +84,10 @@ body {
     background-color: #9772fb;
 }
 
+.bg-theme-color {
+    background-color: #9772fb;
+}
+
 .carrousel-color {
     background-color: #f5f5f5;
 }
@@ -103,6 +107,14 @@ body {
 
 .color-theme-2 {
     color: #b8b5ff;
+}
+
+.color-description {
+    color: #465881 !important;
+}
+
+.color-description-2 {
+    color: #2f2e41 !important;
 }
 
 .search-color {
@@ -436,6 +448,10 @@ body {
 
 #field-kelola-produk {
     margin-top: 9rem;
+}
+
+.gold-text {
+    color: #f4e06d !important;
 }
 
 /* Animate load content */
