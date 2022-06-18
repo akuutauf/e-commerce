@@ -26,10 +26,10 @@
             <div class="row text-center">
                 <div class="col">
                     <h3 class="semi-bold text-white">Obugame</h3>
-                    <h2 class="gold-text">Bermitra Bersama Kami</h2>
+                    <h2 class="semi-bold gold-text">Bermitra Bersama Kami</h2>
                 </div>
             </div>
-            <div class="row mb-3 mt-5 text-left d-flex justify-content-center">
+            <div class="row mb-3 mt-4 text-left d-flex justify-content-center">
                 <div class="col-lg-4 mb-3">
                     <p class="semi-bold text-white text-left h2">
                         Yuk bergabung bersama <span class="gold-text">#Obugame</span> jadikan usaha bisnis kamu sukses
@@ -41,18 +41,19 @@
                         ngangenin. Sudah banyak produk dan partner kami, Ayo tunggu apa lagi, mari kita bermitra
                         bersama!</p>
                     <div class="row">
-                        <div class="col-lg-6 mb-3">
-                            <h2 class="text-white"><span class="gold-text">20</span><br>Produk</h2>
-                            <p class="text-white">Puluhan jenis inovasi produk yang telah kami produksi.</p>
+                        <div class="col-lg-6">
+                            <h2 id="text-info" class="text-white"><span class="gold-text">20</span><br>Produk</h2>
+                            <p id="text-info" class="text-white">Puluhan jenis inovasi produk yang telah kami produksi.
+                            </p>
                         </div>
                         <div class="col-lg-6">
-                            <h2 class="text-white"><span class="gold-text">15</span><br>Mitra</h2>
-                            <p class="text-white">Belasan partners yang telah bekerjasama dengan kami</p>
+                            <h2 id="text-info" class="text-white"><span class="gold-text">15</span><br>Mitra</h2>
+                            <p id="text-info" class="text-white">Belasan partners yang telah bekerjasama dengan kami</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center my-auto">
-                    <img src="{{ asset('ilustrator/mitra.svg') }}" width="500" alt="">
+                    <img src="{{ asset('ilustrator/mitra.svg') }}" class="img-fluid" width="500" alt="">
                 </div>
             </div>
         </div>
@@ -70,14 +71,30 @@
             <div class="row text-center">
                 <div class="col">
                     <h3 class="semi-bold color-theme">Obugame</h3>
-                    <h2 class="color-description-2">Syarat dan Ketentuan Reseller</h2>
+                    <h2 class="semi-bold color-description-2">Syarat dan Ketentuan Reseller</h2>
                 </div>
             </div>
-            <div class="row mb-3 mt-5 text-left d-flex justify-content-around">
-                <div class="col-lg-5 text-center my-auto mb-3">
-                    <img src="{{ asset('ilustrator/mitra.svg') }}" width="500" alt="">
+            <div class="row mb-3 mt-3 text-left d-flex justify-content-around">
+                <div class="col-lg-5 text-center my-auto mb-5">
+                    <div class="card card-list-produk shadow-card border-none p-3">
+                        <div class="row">
+                            <div class="col-lg-12 my-auto padding-card text-left">
+                                <h4 class="text-left semi-bold pl-3 pb-2">Syarat dan Ketentuan</h4>
+                                <ol class="text-list regular">
+                                    <li>Wajib memiliki alamat email</li>
+                                    <li>Wajib memiliki nomor telepon aktif</li>
+                                    <li>Memiliki akun toko shopee sebagai reseller</li>
+                                    <li>Memiliki media sosial wa, facebook, dan ig</li>
+                                </ol>
+                                <hr class="hr-color hr-card ml-4">
+                                <a href="" class="btn btn-chat mt-2 medium ml-3 mb-2">
+                                    Bermitra Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-5 mb-5 p-5 my-auto">
                     <p class="semi-bold color-description-2 text-left h2">
                         Syarat dan ketentuan bermitra bersama <span class="color-theme">#Obugame</span>, yuk Bermitra
                         bersama kami!
@@ -87,7 +104,7 @@
                         kami
                         siap membantu dan bermitra dengan
                         Anda. Berikut adalah syarat dan ketentuan untuk bermitra bersama kami. Tunggu apa lagi yuk mulai
-                        bangun Anda bisnis kamu bersama <span class="color-theme medium">#Obugame.</span>
+                        bangun bisnis Anda bersama <span class="color-theme medium">#Obugame.</span>
                     </p>
                 </div>
             </div>

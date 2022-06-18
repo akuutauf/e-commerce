@@ -281,6 +281,10 @@ body {
     width: 70% !important;
 }
 
+.hr-card {
+    width: 90% !important;
+}
+
 .icon-size {
     font-size: x-large;
 }
@@ -454,6 +458,10 @@ body {
     color: #f4e06d !important;
 }
 
+.text-list {
+    color: #465881 !important;
+}
+
 /* Animate load content */
 .loading {
     background: #e2e2e2 !important;
@@ -540,6 +548,11 @@ body {
     #konten {
         max-width: 70%;
     }
+
+    #text-info {
+        text-align: center;
+    }
+
     .icon-store {
         font-size: 2rem;
     }
