@@ -438,6 +438,10 @@ body {
     color: #575a89;
 }
 
+.menu-icon-footer {
+    font-size: 2rem !important;
+}
+
 #carouselExampleCaptions {
     margin-top: 80px;
 }
