@@ -23,7 +23,7 @@
 </head>
 
 <body id="login-body">
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 pt-1 pb-5">
         <div class="row d-flex justify-content-center mt-5">
             {{-- Start Form Login --}}
             <div class="col-lg-6">

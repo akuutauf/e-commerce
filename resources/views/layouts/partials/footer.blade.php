@@ -79,7 +79,7 @@
                   </div>
               </div>
           </div>
-          <div class="w-100 bg-black py-3"></div>
+          <div class="bg-theme-color py-1"></div>
       </footer>
   </section>
   <!-- End Footer -->

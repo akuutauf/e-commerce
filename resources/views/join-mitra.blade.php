@@ -1,4 +1,4 @@
-@extends('base-admin')
+@extends('base-customer')
 
 @section('title')
     <title>Obugame | Join Reseller</title>

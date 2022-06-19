@@ -43,7 +43,7 @@ Route::resource('search-admin', 'App\Http\Controllers\SearchAdmin');
 Route::resource('search-customer', 'App\Http\Controllers\SearchCustomer');
 
 // get route from resource
-Route::get('/beranda_customer', [ProductsItm::class, 'index']);
+// Route::get('/beranda_customer', [ProductsItm::class, 'index']);
 Route::get('/details_product_customer/{id}/show', [DetailsProductCustomer::class, 'show']);
 Route::get('/search-admin', [SearchAdmin::class, 'index']);
 Route::get('/search-customer', [SearchCustomer::class, 'index']);

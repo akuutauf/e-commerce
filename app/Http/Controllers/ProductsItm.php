@@ -52,7 +52,7 @@ class ProductsItm extends Controller
      */
     public function show($id)
     {
-        $itm1= Itm1::find($id);
+        $itm1 = Itm1::find($id);
         return view('admin.delete-produk')->with('itm1', $itm1);
     }
 
@@ -80,11 +80,32 @@ class ProductsItm extends Controller
     public function update(Request $request, $id)
     {
         $itm1 = Itm1::where('DocEntry', $id);
-        $itm1->update($request->only('Itemcode','Itemname','MPName', 'MP_ProductName', 'MP_ProductCategory', 'Etalase',
-                                    'MPKondisi', 'UrlVideoProduct','MP_MinOrder','MP_UnitPrice', 'MP_GroceryPrice',
-                                    'MPStockProduct','MPProductWeight','MP_ProductLength','MP_ProductWidth','MP_ProductHeight',
-                                    'MP_Pic1','MPProductLink','MPStatusProduct','MP_POProduct','MPSKU','MP_Delivery',
-                                    'PromoSupport','MP_ProductDescription'));
+        $itm1->update($request->only(
+            'Itemcode',
+            'Itemname',
+            'MPName',
+            'MP_ProductName',
+            'MP_ProductCategory',
+            'Etalase',
+            'MPKondisi',
+            'UrlVideoProduct',
+            'MP_MinOrder',
+            'MP_UnitPrice',
+            'MP_GroceryPrice',
+            'MPStockProduct',
+            'MPProductWeight',
+            'MP_ProductLength',
+            'MP_ProductWidth',
+            'MP_ProductHeight',
+            'MP_Pic1',
+            'MPProductLink',
+            'MPStatusProduct',
+            'MP_POProduct',
+            'MPSKU',
+            'MP_Delivery',
+            'PromoSupport',
+            'MP_ProductDescription'
+        ));
         return redirect('/kelola-produk');
     }
 

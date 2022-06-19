@@ -2,7 +2,11 @@
 <section id="navbar">
     <nav class="navbar navbar-expand-md navbar-dark navbar-color fixed-top shadow-card  ">
         <div id="navbar-container" class="container d-flex justify-content-lg-around align-items-center">
-            <a class="navbar-brand semi-bold font-20" href="/beranda-customer">Obugame</a>
+            @if (auth()->user() != null)
+                <a class="navbar-brand semi-bold font-20" href="/home">Obugame</a>
+            @else
+                <a class="navbar-brand semi-bold font-20" href="/beranda-customer">Obugame</a>
+            @endif
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
