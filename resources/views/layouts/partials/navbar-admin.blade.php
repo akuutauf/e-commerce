@@ -11,22 +11,26 @@
                 <form class="form-inline my-3 mx-auto search-bar" method="GET" action="{{ url('search-admin') }}">
                     <input type="text" name="search" id="search" class="form-control pl-5 medium secondary-color"
                         size="40" type="search" placeholder="Cari produk di Obugame" aria-label="Search" <label
-                        for="search" class="label-search fa-solid fa-magnifying-glass search-color ml-3 my-auto"></label>
+                        for="search"
+                        class="label-search fa-solid fa-magnifying-glass search-color ml-3 my-auto"></label>
                 </form>
                 <div id="icon-store" class="mx-lg-5 p-3">
                     <a href="/dashboard-toko-admin"><i class="fa-solid fa-store icon-size icon-store"></i></a>
                 </div>
-                <a id="Login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                              document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                </a>
+                {{-- Pengecekkan tombol user --}}
+                @if (auth()->user() != null)
+                    <a id="Login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
-                {{-- <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto"
-                    href="{{ route('logout') }}">LOGOUT</a> --}}
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @else
+                    <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="/">LOGIN</a>
+                @endif
             </div>
         </div>
     </nav>
