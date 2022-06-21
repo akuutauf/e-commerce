@@ -22,21 +22,38 @@
                 <div id="icon-store" class="mx-lg-5 p-3">
                     <a href="/dashboard-toko-customer"><i class="fa-solid fa-store icon-size icon-store-2"></i></a>
                 </div>
+                {{-- Menu Navbar Dropdown --}}
+                <div class="dropdown">
+                    <button class="btn btn-login dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        @if (auth()->user() != null)
+                            Admin
+                        @else
+                            Customer
+                        @endif
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        @if (auth()->user() != null)
+                            {{-- Pengecekkan tombol user --}}
+                            <a class="dropdown-item" href="/kelola-produk">Kelola Produk</a>
+                            <a class="dropdown-item" href="/kelola-promo">Kelola Promo</a>
+                            <a class="dropdown-item" href="/join-mitra">Join Reseller</a>
+                            <hr class="hr-panel">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}</a>
 
-                {{-- Pengecekkan tombol user --}}
-                @if (auth()->user() != null)
-                    <a id="Login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                  document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-                @else
-                    <a id="login-button" class="btn btn-login px-sm-4 py-sm-1 my-auto" href="/">LOGIN</a>
-                @endif
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        @else
+                            <a class="dropdown-item" href="/join-mitra">Join Reseller</a>
+                            <hr class="hr-panel">
+                            <a class="dropdown-item" href="/login">Login</a>
+                        @endif
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
