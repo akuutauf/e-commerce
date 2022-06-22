@@ -466,6 +466,11 @@ body {
     color: #465881 !important;
 }
 
+#item-menu:hover {
+    background-color: #9772fb !important;
+    color: #ffffff;
+}
+
 /* Animate load content */
 .loading {
     background: #e2e2e2 !important;

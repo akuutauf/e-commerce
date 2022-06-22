@@ -3,9 +3,9 @@
     <nav class="navbar navbar-expand-md navbar-dark navbar-color fixed-top shadow-card  ">
         <div id="navbar-container" class="container d-flex justify-content-lg-around align-items-center">
             @if (auth()->user() != null)
-                <a class="navbar-brand semi-bold font-20" href="/home">Obugame</a>
+                <a title="Beranda" class="navbar-brand semi-bold font-20" href="/home">Obugame</a>
             @else
-                <a class="navbar-brand semi-bold font-20" href="/beranda-customer">Obugame</a>
+                <a title="Beranda" class="navbar-brand semi-bold font-20" href="/beranda-customer">Obugame</a>
             @endif
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,12 +20,14 @@
                         class="label-search fa-solid fa-magnifying-glass search-color ml-3 my-auto"></label>
                 </form>
                 <div id="icon-store" class="mx-lg-5 p-3">
-                    <a href="/dashboard-toko-customer"><i class="fa-solid fa-store icon-size icon-store-2"></i></a>
+                    <a title="Dashboard Toko" href="/dashboard-toko-customer"><i
+                            class="fa-solid fa-store icon-size icon-store-2"></i></a>
                 </div>
                 {{-- Menu Navbar Dropdown --}}
                 <div class="dropdown">
                     <button class="btn btn-login dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        @if (auth()->user() != null) title="Menu Admin" @else title="Menu Customer" @endif>
                         @if (auth()->user() != null)
                             Admin
                         @else
@@ -35,22 +37,33 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         @if (auth()->user() != null)
                             {{-- Pengecekkan tombol user --}}
-                            <a class="dropdown-item" href="/kelola-produk">Kelola Produk</a>
-                            <a class="dropdown-item" href="/kelola-promo">Kelola Promo</a>
-                            <a class="dropdown-item" href="/join-mitra">Join Reseller</a>
+                            <a id="item-menu" class="dropdown-item" href="/beranda-customer">Beranda</a>
+                            <a id="item-menu" class="dropdown-item" href="/kelola-produk">Kelola Produk</a>
+                            <a id="item-menu" class="dropdown-item" href="/kelola-promo">Kelola Promo</a>
+                            <a id="item-menu" class="dropdown-item" href="/join-mitra">Join Reseller</a>
                             <hr class="hr-panel">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            <a id="item-menu" class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}</a>
+                                {{ __('Logout') }}
+                                <i class="fa-solid fa-arrow-right-to-bracket pl-5"></i>
+                            </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
                         @else
-                            <a class="dropdown-item" href="/join-mitra">Join Reseller</a>
+                            <a id="item-menu" class="dropdown-item" href="/beranda-customer">Beranda</a>
+                            <a id="item-menu" class="dropdown-item" href="/join-mitra">Join Reseller</a>
                             <hr class="hr-panel">
-                            <a class="dropdown-item" href="/login">Login</a>
+                            <a id="item-menu" class="dropdown-item" href="/login">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        Login
+                                        <i class="fa-solid fa-arrow-right-to-bracket pl-5"></i>
+                                    </div>
+                                </div>
+                            </a>
                         @endif
                     </div>
                 </div>

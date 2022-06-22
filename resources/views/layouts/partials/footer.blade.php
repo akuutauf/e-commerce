@@ -31,7 +31,11 @@
                   <div class="col-md-4 pt-5">
                       <h2 class="h2 text-light border-bottom pb-3 border-light title-footer">E-Commerce</h2>
                       <ul class="list-unstyled text-light footer-link-list pt-3">
-                          <li><a class="text-decoration-none text-white" href="#">Home</a></li><br>
+                          @if (auth()->user() != null)
+                              <li><a class="text-decoration-none text-white" href="/home">Home</a></li><br>
+                          @else
+                              <li><a class="text-decoration-none text-white" href="/beranda-customer">Home</a></li><br>
+                          @endif
                           <li><a class="text-decoration-none text-white" href="#">About Us</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Contact Us</a></li><br>
                           <li><a class="text-decoration-none text-white" href="#">Product</a></li><br>
