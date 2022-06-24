@@ -185,6 +185,10 @@ body {
     border: 2px solid #9772fb !important;
 }
 
+.menu-navigator {
+    background-color: #9772fb !important;
+}
+
 .btn-delete {
     background-color: #ff6584;
     color: #ffffff;
@@ -528,6 +532,12 @@ body {
 
 /* End Animated content */
 
+/* Animation Carousel */
+#carousel-navigator:hover {
+    cursor: pointer;
+}
+/* End Animation Carousel */
+
 /* Media Screen Responsive */
 @media only screen and (max-width: 1750px) {
     .padding-card-2 {
@@ -568,7 +578,7 @@ body {
     .icon-store-2 {
         font-size: 2.4rem;
     }
-    .card {
+    .card-element {
         margin-top: 1.5rem;
     }
     .first-card {

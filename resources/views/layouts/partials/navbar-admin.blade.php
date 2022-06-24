@@ -28,7 +28,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                         @if (auth()->user() != null) title="Menu Admin" @else title="Menu Customer" @endif>
                         @if (auth()->user() != null)
-                            Admin
+                            {{ Auth::user()->name }}
                         @else
                             Customer
                         @endif

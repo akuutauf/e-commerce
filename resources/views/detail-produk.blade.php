@@ -10,87 +10,33 @@
         <div class="container pb-5 border-sm shadow-sm">
             <div class="row">
                 <div class="col-lg-5 mt-5">
-                    <div class="card mb-3 shadow-card border-none">
-                        <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}" alt="Card image cap"
-                            id="product-detail">
-                    </div>
-                    <div class="row">
-                        <!--Start Controls-->
-                        <div class="col-1 align-self-center">
-                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
-                                <i class="text-dark fas fa-chevron-left"></i>
-                                <span class="sr-only">Previous</span>
-                            </a>
+                    <div id="itemsProduct" class="card-element carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li id="carousel-navigator" class="rounded" data-target="#itemsProduct" data-slide-to="0"
+                                class="active"></li>
+                            <li id="carousel-navigator" class="rounded" data-target="#itemsProduct" data-slide-to="1"></li>
+                            <li id="carousel-navigator" class="rounded" data-target="#itemsProduct" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 card-img" src="{{ asset($itm1->MP_Pic1) }}" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 card-img" src="{{ asset($itm1->MP_Pic2) }}" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 card-img" src="{{ asset($itm1->MP_Pic3) }}" alt="Third slide">
+                            </div>
                         </div>
-                        <!--End Controls-->
-                        <!-F-Start Carousel Wrapper-->
-                            <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item"
-                                data-bs-ride="carousel">
-                                <!--Start Slides-->
-                                <div class="carousel-inner product-links-wap" role="listbox">
-
-                                    <!--First slide-->
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-4 my-auto">
-                                                <a href="">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
-                                                        alt="Product Image 1">
-                                                </a>
-                                            </div>
-                                            <div class="col-4 my-auto">
-                                                <a href="">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic3) }}"
-                                                        alt="Product Image 2">
-                                                </a>
-                                            </div>
-                                            <div class="col-4 my-auto">
-                                                <a href="">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic1) }}"
-                                                        alt="Product Image 3">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--/.First slide-->
-
-                                    <!--Second slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-4 my-auto">
-                                                <a href="">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic4) }}"
-                                                        alt="Product Image 4">
-                                                </a>
-                                            </div>
-                                            <div class="col-4 my-auto">
-                                                <a href="">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic2) }}"
-                                                        alt="Product Image 5">
-                                                </a>
-                                            </div>
-                                            <div class="col-4 my-auto">
-                                                <a href="">
-                                                    <img class="card-img img-fluid" src="{{ asset($itm1->MP_Pic5) }}"
-                                                        alt="Product Image 6">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--/.Second slide-->
-                                </div>
-                                <!--End Slides-->
-                            </div>
-                            <!--End Carousel Wrapper-->
-
-                            <!--Start Controls-->
-                            <div class="col-1 align-self-center">
-                                <a href="#multi-item-example" role="button" data-bs-slide="next">
-                                    <i class="text-dark fas fa-chevron-right"></i>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                            <!--End Controls-->
+                        {{-- Arrow Position --}}
+                        <a class="carousel-control-prev" href="#itemsProduct" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#itemsProduct" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
                 <!-- col end -->
@@ -121,7 +67,8 @@
                             <div class="row">
                                 <div class="col-lg-6 mt-4">
                                     <h4 class="medium font-25">Berat Bersih :</h4>
-                                    <h3 class="secondary-color regular font-23">{{ intval($itm1->MPProductWeight) }} gram
+                                    <h3 class="secondary-color regular font-23">{{ intval($itm1->MPProductWeight) }}
+                                        gram
                                     </h3>
                                 </div>
                                 <div class="col-lg-6 mt-4">
