@@ -37,6 +37,15 @@
                                         <p class="text-left font-18 regular">
                                             Jangan lewatkan promo menarik dari kami Yah, Selamat Berbelanja!
                                         </p>
+                                        @if (auth()->user() != null)
+                                            <a href="/dashboard-toko-admin" class="btn btn-chat mt-2 medium">
+                                                Yuk Buruan Order
+                                            </a>
+                                        @else
+                                            <a href="/dashboard-toko-customer" class="btn btn-chat mt-2 medium">
+                                                Yuk Buruan Order
+                                            </a>
+                                        @endif
                                 </div>
                             </div>
                         </div>

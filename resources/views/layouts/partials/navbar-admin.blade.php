@@ -26,7 +26,7 @@
                 <div class="dropdown">
                     <button class="btn btn-login dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        @if (auth()->user() != null) title="Menu Admin" @else title="Menu Customer" @endif>
+                        @if (auth()->user() != null) title="Menu User" @else title="Menu Customer" @endif>
                         @if (auth()->user() != null)
                             {{ Auth::user()->name }}
                         @else
@@ -36,28 +36,46 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         @if (auth()->user() != null)
                             {{-- Pengecekkan tombol user --}}
-                            <a id="item-menu" class="dropdown-item" href="/home">Beranda</a>
-                            <a id="item-menu" class="dropdown-item" href="/kelola-produk">Kelola Produk</a>
-                            <a id="item-menu" class="dropdown-item" href="/kelola-promo">Kelola Promo</a>
-                            <a id="item-menu" class="dropdown-item" href="/join-mitra">Join Reseller</a>
+                            <a id="item-menu" class="dropdown-item" href="/home">
+                                <i class="fa-solid fa-house pr-3"></i>
+                                Beranda
+                            </a>
+                            <a id="item-menu" class="dropdown-item" href="/kelola-produk">
+                                <i class="fa-solid fa-bars-progress pr-3"></i>
+                                Kelola Produk
+                            </a>
+                            <a id="item-menu" class="dropdown-item" href="/kelola-promo">
+                                <i class="fa-solid fa-tags pr-3"></i>
+                                Kelola Promo
+                            </a>
+                            <a id="item-menu" class="dropdown-item" href="/join-mitra">
+                                <i class="fa-solid fa-bullhorn pr-3"></i>
+                                Join Reseller
+                            </a>
                             <hr class="hr-panel">
                             <a id="item-menu" class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
+                                <i class="fa-solid fa-power-off pr-3"></i>
                                 {{ __('Logout') }}
-                                <i class="fa-solid fa-arrow-right-to-bracket pl-5"></i>
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
                         @else
-                            <a id="item-menu" class="dropdown-item" href="/home">Beranda</a>
-                            <a id="item-menu" class="dropdown-item" href="/join-mitra">Join Reseller</a>
+                            <a id="item-menu" class="dropdown-item" href="/home">
+                                <i class="fa-solid fa-house pr-3"></i>
+                                Beranda
+                            </a>
+                            <a id="item-menu" class="dropdown-item" href="/join-mitra">
+                                <i class="fa-solid fa-bullhorn pr-3"></i>
+                                Join Reseller
+                            </a>
                             <hr class="hr-panel">
                             <a id="item-menu" class="dropdown-item" href="/login">
+                                <i class="fa-solid fa-power-off pr-3"></i>
                                 Login
-                                <i class="fa-solid fa-arrow-right-to-bracket pl-5"></i>
                             </a>
                         @endif
                     </div>
