@@ -5,7 +5,7 @@
 
     {{-- Date dropper Requirements --}}
     <script src="{{ asset('js/datedropper-javascript.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script> --}}
 @endsection
 
 @section('content')

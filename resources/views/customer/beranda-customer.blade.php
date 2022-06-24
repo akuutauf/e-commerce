@@ -3,6 +3,15 @@
 @section('title')
     <title>Obugame | Beranda Customer</title>
 
+    {{-- Cdn Online For Owl Animation --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     @php
     // fungsi konversi data tipe date ke tanggal
     function dateConversion($date)
@@ -102,43 +111,46 @@
             </div>
             <div class="container bg-white rounded-sm shadow-card border-none">
                 <div class="row py-1 px-2">
-                    @foreach ($products as $value)
-                        @if ($item->MP_ProductName == $value->MP_ProductName)
-                            <div class="col-lg-3 d-flex justify-content-center loading-col py-3">
-                                <a href="/details_product_customer/{{ $value->DocEntry }}/show" class="card-a">
-                                    <div class="card shadow-card border">
-                                        <div class="loading load-img">
-                                            <img class="card-img-top" src="{{ $value->MP_Pic1 }}" alt="Card image cap">
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="h6 card-text medium text-left text-card loading load-text">
-                                                <span>{{ $value->Itemname }}</span>
-                                            </p>
-                                            <p class="card-text product-price bold loading load-text"><span>Rp.
-                                                    {{ intval($value->MP_UnitPrice) }}</span>
-                                            </p>
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <p
-                                                        class="card-text semi-bold font-10 text-left text-card loading load-text">
-                                                        <span>Obugame</span><br><span
-                                                            class="card-text total-sales regular medium">Stok
-                                                            {{ $value->MPStockProduct }}</span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <h6
-                                                        class="card-text text-right shop-location mt-4 font-10 semi-bold loading load-text">
-                                                        <span>{{ $value->MPName }}</span>
-                                                    </h6>
+                    <div class="owl-carousel owl-theme">
+                        @foreach ($products as $value)
+                            @if ($item->MP_ProductName == $value->MP_ProductName)
+                                <div class="item d-flex justify-content-center loading-col py-3">
+                                    <a href="/details_product_customer/{{ $value->DocEntry }}/show" class="card-a">
+                                        <div class="card shadow-card border">
+                                            <div class="loading load-img">
+                                                <img class="card-img-top" src="{{ $value->MP_Pic1 }}"
+                                                    alt="Card image cap">
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="h6 card-text medium text-left text-card loading load-text">
+                                                    <span>{{ $value->Itemname }}</span>
+                                                </p>
+                                                <p class="card-text product-price bold loading load-text"><span>Rp.
+                                                        {{ intval($value->MP_UnitPrice) }}</span>
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <p
+                                                            class="card-text semi-bold font-10 text-left text-card loading load-text">
+                                                            <span>Obugame</span><br><span
+                                                                class="card-text total-sales regular medium">Stok
+                                                                {{ $value->MPStockProduct }}</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h6
+                                                            class="card-text text-right shop-location mt-4 font-10 semi-bold loading load-text">
+                                                            <span>{{ $value->MPName }}</span>
+                                                        </h6>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        @endif
-                    @endforeach
+                                    </a>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
             </div>
             <div class="container mt-5 pt-1 mb-4">
@@ -182,6 +194,37 @@
         // execute renderCard on setTimeout
         setTimeout(() => {
             renderCard();
-        }, 3000)
+        }, 2000)
+    </script>
+
+    {{-- Start Requirement Owl Animation --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            stagePadding: 10,
+            margin: 25,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
     </script>
 @endsection

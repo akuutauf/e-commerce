@@ -5,7 +5,7 @@
 
     {{-- Date dropper Requirements --}}
     <script src="{{ asset('js/datedropper-javascript.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script> --}}
 @endsection
 
 @section('content')
@@ -80,8 +80,10 @@
                                 <label for="PromoIsActive" class="medium">Status Promo :</label>
                                 <select class="form-control form-theme" id="PromoIsActive" name="PromoIsActive">
                                     <option value="">Pilih Status Promo</option>
-                                    <option value="1" {{ $oprinf->PromoIsActive == 1 ? 'selected' : '' }}>AKTIF</option>
-                                    <option value="0" {{ $oprinf->PromoIsActive == 0 ? 'selected' : '' }}>TIDAK AKTIF
+                                    <option value="1" {{ $oprinf->PromoIsActive == 1 ? 'selected' : '' }}>AKTIF
+                                    </option>
+                                    <option value="0" {{ $oprinf->PromoIsActive == 0 ? 'selected' : '' }}>TIDAK
+                                        AKTIF
                                     </option>
                                 </select>
                             </div>
@@ -100,8 +102,8 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoDescription" class="medium">Deskripsi Promo :</label>
-                            <textarea class="form-control form-color " id="PromoDescription" name="PromoDescription" placeholder="Deskripsi Promo"
-                                rows="3">{{ $oprinf->PromoDescription }}</textarea>
+                            <textarea class="form-control form-color " id="PromoDescription" name="PromoDescription"
+                                placeholder="Deskripsi Promo" rows="3">{{ $oprinf->PromoDescription }}</textarea>
                         </div>
                     </div>
                 </div>

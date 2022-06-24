@@ -5,7 +5,7 @@
 
     {{-- Date dropper Requirements --}}
     <script src="{{ asset('js/datedropper-javascript.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script> --}}
 @endsection
 
 @section('content')
@@ -59,16 +59,16 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="ImgUrlPromo1" class="medium">Gambar Promo 1 :</label>
-                            <input type="text" class="form-control form-theme-disable" id="ImgUrlPromo1" name="ImgUrlPromo1"
-                                placeholder="img/promo/promo_banana_snack_01.jpg" disabled
+                            <input type="text" class="form-control form-theme-disable" id="ImgUrlPromo1"
+                                name="ImgUrlPromo1" placeholder="img/promo/promo_banana_snack_01.jpg" disabled
                                 value="{{ $oprinf->ImgUrlPromo1 }}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="ImgUrlPromo2" class="medium">Gambar Promo 2 :</label>
-                            <input type="text" class="form-control form-theme-disable" id="ImgUrlPromo2" name="ImgUrlPromo2"
-                                placeholder="img/promo/promo_banana_snack_02.jpg" disabled
+                            <input type="text" class="form-control form-theme-disable" id="ImgUrlPromo2"
+                                name="ImgUrlPromo2" placeholder="img/promo/promo_banana_snack_02.jpg" disabled
                                 value="{{ $oprinf->ImgUrlPromo2 }}">
                         </div>
                     </div>
@@ -90,9 +90,9 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoSupport" class="medium">Promo Support :</label>
-                            <input type="text" class="form-control form-theme-disable" id="PromoSupport" name="PromoSupport"
-                                placeholder="#bananasnackpromo#bananasnacknewyearpromo#bigdiskon" disabled
-                                value="{{ $oprinf->PromoSupport }}">
+                            <input type="text" class="form-control form-theme-disable" id="PromoSupport"
+                                name="PromoSupport" placeholder="#bananasnackpromo#bananasnacknewyearpromo#bigdiskon"
+                                disabled value="{{ $oprinf->PromoSupport }}">
                         </div>
                     </div>
                 </div>
@@ -100,8 +100,8 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="PromoDescription" class="medium">Deskripsi Promo :</label>
-                            <textarea class="form-control form-theme-2" id="PromoDescription" name="PromoDescription" placeholder="Deskripsi Promo"
-                                rows="3" disabled>{{ $oprinf->PromoDescription }}</textarea>
+                            <textarea class="form-control form-theme-2" id="PromoDescription" name="PromoDescription"
+                                placeholder="Deskripsi Promo" rows="3" disabled>{{ $oprinf->PromoDescription }}</textarea>
                         </div>
                     </div>
                 </div>
